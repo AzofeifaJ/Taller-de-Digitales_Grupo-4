@@ -31,29 +31,29 @@ Por último la serie 74HCxx por su nombre alta velocidad de CMOS, este posee uno
 
 **Pregunta 7:** Para cada una de las variantes TTL y CMOS especifique en una tabla:
 *Respuesta:*
-| Rango de tensión eléctrica de alimentación VCC o VDD, VSS. |
-|:----------:|:---------:|:---------:|:---------:|:---------:|:---------:|
-| Parámetros    | TTL74xx    | TTL74Lxx    | TTL74LSxx    | TTL74HCxx   | CMOS4000    |
-| VCC (V)    | +4.75 a +5.10   | +4.1 a +5    | +4.75+5.25    | No usa    | No usa    |
-| VDD (V)    | No usa   | No usa    | No usa   | +2.2 a +5.78   | +3.2 a +14.8    |
-| VSS    | 0 (GND)    | 0 (GND)   | 0 (GND)    | 0 (GND)    | 0 (GND)    |
+### Rango de tensión eléctrica de alimentación VCC o VDD, VSS. 
+| Parámetros | TTL74xx      | TTL74Lxx     | TTL74LSxx    | TTL74HCxx    | CMOS4000       |
+|------------|--------------|--------------|--------------|--------------|-----------------|
+| VCC (V)    | +4.75 a +5.10| +4.1 a +5    | +4.75 a +5.25| No usa       | No usa          |
+| VDD (V)    | No usa       | No usa       | No usa       | +2.2 a +5.78 | +3.2 a +14.8    |
+| VSS        | 0 (GND)      | 0 (GND)      | 0 (GND)      | 0 (GND)      | 0 (GND)         |
 
-| Rango de tensiones de entrada y salida. |
-|:----------:|:---------:|:---------:|:---------:|:---------:|:---------:|
-| Parámetros | TTL74xx | TTL74Lxx |TTL74LSxx| TTL74HCxx |CMOS4000 |
-| VIL (V) | <0.7 | <=0.8 | <0.8 | <0.3 | <=1.7 |
-| VIH (V) | >2.0 | >=2.0 | >2.0 | >=0.7 | >=3.3 |
-| VOL (V) | <=0.4 | <=0.4 | <=0.5 | <=0.4 | <0.5 |
-| VOH (V) | >=2.5 | >2.5 | >2.7 | -0.4 | >=4.5 |
-| IIK (A) | -0.02 | -0.025 | 0.010 | 0.02 | -0.000001 (max) |
-|IOK (A) | -0.025 | 0.025 | +-0.02 | 0.02 | +-0.01|
+### Rango de tensiones de entrada y salida. 
+| Parámetros | TTL74xx | TTL74Lxx | TTL74LSxx | TTL74HCxx | CMOS4000     |
+|------------|---------|----------|-----------|-----------|--------------|
+| VIL (V)    | <0.7   | <=0.8    | <0.8     | <0.3     | <=1.7        |
+| VIH (V)    | >2.0   | >=2.0    | >2.0     | >=0.7    | >=3.3        |
+| VOL (V)    | <=0.4   | <=0.4    | <=0.5     | <=0.4    | <0.5         |
+| VOH (V)    | >=2.5   | >2.5     | >2.7     | -0.4     | >=4.5        |
+| IIK (A)    | -0.02   | -0.025   | 0.010     | 0.02     | -0.000001 (max)|
+| IOK (A)    | -0.025  | 0.025    | ±0.02     | 0.02     | ±0.01        |
 
-| Tiempos de propagación y transmisión. |
-|:----------:|:---------:|:---------:|:---------:|:---------:|:---------:|
-| Parámetros | TTL74xx | TTL74Lxx | TTL74LSxx | TTL74HCxx | CMOS4000 |
-| tP D (ns) | 10-16 | 15-25 | 4-10 | 5-15 | 10-50 |
-| tt (ns) | 10-15 | 15-20 | 4-10 | 5-15 | 10-50 |
-|t subida o bajada (ns) | 5-10 | 8-15 | 2-6 | 2-6 | 5-20 |
+### Tiempos de propagación y transmisión. 
+| Parámetros        | TTL74xx | TTL74Lxx | TTL74LSxx | TTL74HCxx | CMOS4000 |
+|-------------------|---------|----------|-----------|-----------|----------|
+| tP D (ns)         | 10-16   | 15-25    | 4-10      | 5-15      | 10-50    |
+| tt (ns)           | 10-15   | 15-20    | 4-10      | 5-15      | 10-50    |
+| t subida o bajada (ns) | 5-10  | 8-15     | 2-6       | 2-6       | 5-20     |
 
 **Pregunta 8:**
 *Respuesta:*
