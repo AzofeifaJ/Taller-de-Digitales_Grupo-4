@@ -1,4 +1,4 @@
-# Laboratorio-1_Taller-de-Digitales_Grupo-4
+# Taller-de-Diseños-Digitales_Grupo-4
 
 ## Integrantes
 
