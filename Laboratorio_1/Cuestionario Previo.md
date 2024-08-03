@@ -8,8 +8,8 @@ En el caso del 74Lxx conocido como bajo poder de TTL, este posee un consumo de e
 En el caso de 74LSxx conocido como bajo poder Schottky, su consumo de energía similar a la serie estándar, su velocidad se encuentra en un rango mayor a la serie L pero menor a la serie estándar, el nombre de Schottky se debe a su utilización de diodos, los cuales ayudan con la potencia de velocidad sin afectar el consumo de energía. 
 Por último la serie 74HCxx por su nombre alta velocidad de CMOS, este posee uno de los consumos más bajo de la familia TTL, debido a la tecnología CMOS en sus circuitos, produciendo una alta velocidad, compatibilidad con otras series de la familia, por lo cual su utilización es ideal en sistemas modernos que requieran una velocidad y presión alta. 
 
-**Pregunta 2:**
-*Respuesta:*
+**Pregunta 2:** Investigue las caracter´ısticas de la familia CMOS 4000.
+*Respuesta:* En el libro "CMOS: Circuit Design, Layout, and Simulation" de R. Jacob Baker, se destacan varias características importantes de los circuitos de la familia CMOS 4000. Estos circuitos se caracterizan por su notable bajo consumo de energía, ya que solo utilizan corriente durante los cambios de estado, lo que los hace muy eficientes. Además, ofrecen una alta inmunidad al ruido, lo cual es crucial para mantener la integridad de las señales en ambientes ruidosos. Pueden operar en un amplio rango de voltajes de alimentación, típicamente entre 3V y 15V, lo que les otorga una gran flexibilidad para diversas aplicaciones. Las entradas de estos circuitos tienen una alta impedancia, lo que minimiza la carga en las señales de entrada y permite conectar múltiples dispositivos sin afectar el rendimiento. También son compatibles con niveles lógicos TTL, lo que facilita su integración con otros tipos de circuitos. Además, estos dispositivos están diseñados para funcionar en un rango de temperaturas muy amplio, desde -55°C hasta +125°C, y cuentan con protección contra descargas electrostáticas, lo que los hace robustos y fiables en condiciones adversas.
 
 **Pregunta 3:**
 *Respuesta:*
@@ -23,8 +23,9 @@ Por último la serie 74HCxx por su nombre alta velocidad de CMOS, este posee uno
 5. I<sub>IK</sub>: Corriente máxima de lazo cerrado que fluye por el circuito en su entrada, específicamente en las entradas, cuando no se llega a un voltaje adecuado de operación o se tiene un nivel negativo.
 6. I<sub>OK</sub>: Corriente máxima de lazo cerrado que fluye por el circuito en su salida, debido a que no se tiene un voltaje de salida dentro del rango permitido, como lo puede ser superior a Vcc o por debajo de GND. 
 
-**Pregunta 5:**
-*Respuesta:*
+**Pregunta 5:** Investigue qué son los tiempos de propagación tP D, tP LH y tP HL y los tiempos de transición
+tt, tr y tf.
+*Respuesta:* Los tiempos de propagación y transición son esenciales para el desempeño de los circuitos CMOS. El tiempo de propagación (tP D) se refiere al tiempo que una señal tarda en viajar desde la entrada hasta la salida de un circuito lógico, generalmente medido al 50% del cambio de voltaje. Dentro de esto, encontramos el tiempo de propagación de bajo a alto (tP LH) y de alto a bajo (tP HL), que son los intervalos que una señal tarda en cambiar de un nivel bajo a uno alto, y viceversa. Estos tiempos se miden al 50% del cambio de voltaje de entrada y salida. Por otro lado, los tiempos de transición, como el tiempo de subida (tr) y el tiempo de bajada (tf), son cruciales para determinar la velocidad de cambio de estado de una señal. El tiempo de subida se mide desde el 10% al 90% del cambio de voltaje, mientras que el tiempo de bajada se mide desde el 90% al 10%. Estos parámetros son fundamentales para diseñar y simular circuitos CMOS que sean tanto eficientes como de alto rendimiento.
 
 **Pregunta 6:**
 *Respuesta:*
@@ -66,8 +67,9 @@ Por último la serie 74HCxx por su nombre alta velocidad de CMOS, este posee uno
 Pull-up: Los circuitos conocidos como pull-up son una configuración en las termianles de los transitores, en este caso en la terminal colector y la linea de la fuente de alimentación se comportan como una resitencia, de manera que se mantiene la señal en el estado lógico alto, es decir un uno lógico para la salida, si la fuente de alimentación se descontecta se comportará como un cero lógico pero es poco recomendado, ya que lo que se pretende es evitar ruido y flutaciones en el voltaje. 
 Pull-down: si se desea un cero lógico en la salida, se utiliza la configuración pull-down, la cual esta en la terminal emisor conectada a tierra, de esta forma la señal dara como salida una tension baja cuando no está siendo activamente llevada a un estado alto. 
 
-**Pregunta 11:**
-*Respuesta:*
+**Pregunta 11:** Investigue qué es un circuito disparador Schmitt (Schmitt trigger). Revise las características
+técnicas del circuito 74∗14.
+*Respuesta:* Los disparadores Schmitt, como el 74LS14, juegan un papel crucial en el diseño digital al convertir señales ruidosas o de transición lenta en señales digitales limpias. Estos circuitos usan una característica llamada histéresis, que establece dos niveles de umbral para las transiciones de señal: uno para pasar de bajo a alto y otro para ir de alto a bajo. Esto ayuda a filtrar el ruido y evita que la señal fluctúe innecesariamente. El 74LS14 es un buen ejemplo de este tipo de circuito. El cual fue diseñado para funcionar con un voltaje de 5V, ofrece tiempos de respuesta rápidos y es ideal para aplicaciones que necesitan señales digitales claras y confiables. Su capacidad para manejar señales problemáticas y entregar resultados estables lo convierte en una herramienta muy útil en el diseño de circuitos digitales.
 
 **Pregunta 12:**
 *Respuesta:*
@@ -75,8 +77,9 @@ Pull-down: si se desea un cero lógico en la salida, se utiliza la configuració
 **Pregunta 13:** Investigue que es el efecto de rebote y típicos circuitos anti-rebote (debouncing circuits)
 *Respuesta:* En el caso de un efecto rebote se determina cuando se activa o desativa un interrutor, produciendo una flutación de señales por un periodo de tiempo determinado hasta que dicha señal se estabilice. Si no se evita o se protege el circuito contra este efecto puede proboca lecturas erroneas en la salida o ruido en el sistema. Entre los circuitos anti-rebote podemos encontrar un circuito RC (el más simple), ya que solo necetita de una resitencia y un capacitor para suavizar o delimitar la señal al momento de activarse un interruptor. Para circuitos de mayor nivel se pueden usar un circuito Schmit Trigger, este procesa altas señales en caso de que la flutuación se muy exagerada para el sistema. Y por ultimo en casa de FMS, se utiliza un circuito Flip-Flop tipo D, este almacena la señal del interrutor y elmina el rebote, para luego dar la señal ya estabilizada al sistema. 
 
-**Pregunta 14:**
-*Respuesta:*
+**Pregunta 14:** Explique qu´e es el modelado de comportamiento y de estructura en dise˜no digital. Brinde
+un ejemplo de cada uno.
+*Respuesta:* El modelado de comportamiento se enfoca en describir cómo debe funcionar un sistema digital, como en el caso de un contador, donde se especifica que debe contar de 0 a 15. Aquí, no es necesario entrar en detalles sobre los componentes físicos, sino en cómo debe responder el sistema a las señales de entrada. Por otro lado, el modelado de estructura se trata de detallar cómo se ensamblan y conectan los distintos bloques del sistema, como los flip-flops y las puertas lógicas, para construir físicamente el contador. Ambos enfoques son esenciales: el modelado de comportamiento nos ayuda a definir qué queremos que haga el sistema, mientras que el modelado de estructura se encarga de cómo implementar esas funciones en hardware real.
 
 **Pregunta 15:**
 *Respuesta:*
@@ -84,5 +87,5 @@ Pull-down: si se desea un cero lógico en la salida, se utiliza la configuració
 **Pregunta 16:** Investigue sobre la tecnología de FPGAs. Describa el funcionamiento de la lógica programable en general, así como los componentes básicos de una.
 *Respuesta:* Se conoce como FPGAs, a los sistemas de circuitos integrados que contiene una matriz de bolques lógicos de arquitetura abierta, por lo cual se le permite la configuración, añadir interconexiones programables, memorias e inputs y outputs. Donde resalta su alta programabilidad, ya que se puede programar un número de veces nesesarios hasata alcanzar el estado deseado. Como tambíen permite la modificación si así es requerido. Por ultimo su sistema de interconexiones permite conectar nuevos bloques lógicos o nuevos recuersos adecuados al diseño. Entre sus componentes podemos encontrar sistemas como circuitos Flip-Flop, bloques de entrada y/o salida del sistema, memoria RAM, bloques de multiplicación, relojes, pero se destaca su bloque lógico de configuración conocidos como LUTs, donde se implementa las funciones lógicas de maximo 4 a 5 entradas dependiendo del diseño establecido. Si estudiamos su lógica programable tendremos que esta es establece en el interior del circuito por medio de las estruturas interna de la FPGA, o los anteriormente mencionados LUTs.
 
-**Pregunta 17:**
-*Respuesta:*
+**Pregunta 17:** Investigue sobre los proyectos de YOSYS y nextpnr ¿Cu´ales son sus funciones como herramientas
+*Respuesta:* En el diseño de FPGAs con VHDL, el proceso generalmente comienza con una herramienta de síntesis como Yosys. Esta herramienta convierte el código VHDL en una netlist de puertas lógicas, que es una representación básica de cómo funcionará el diseño. Luego, se pasa a una herramienta de colocación y enrutamiento, como nextpnr. Aquí es donde se hace el trabajo de ubicar los componentes en la FPGA y conectar todas las señales. La idea es que el diseño no solo funcione bien, sino que también esté optimizado para el hardware específico de la FPGA, asegurando que todo esté bien posicionado y que las conexiones se manejen de manera eficiente.
