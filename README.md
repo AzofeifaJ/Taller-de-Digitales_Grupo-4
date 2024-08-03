@@ -2,8 +2,8 @@
 
 ## Integrantes
 
-- Alonzo
-- Johan
+- Alonso Azofeifa Jimenez
+- Johan Madrigal Acosta
 - Francisco Javier Suarez Sarmiento
 
 ## Profesor
