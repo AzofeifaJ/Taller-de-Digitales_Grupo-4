@@ -11,8 +11,9 @@ Por último la serie 74HCxx por su nombre alta velocidad de CMOS, este posee uno
 **Pregunta 2:** Investigue las características de la familia CMOS 4000.
 *Respuesta:* Algunas características son que se caracterizan por su notable bajo consumo de energía, ya que solo utilizan corriente durante los cambios de estado, lo que los hace muy eficientes. Además, ofrecen una alta inmunidad al ruido, lo cual es crucial para mantener la integridad de las señales en ambientes ruidosos. Pueden operar en un amplio rango de voltajes de alimentación, típicamente entre 3V y 15V, lo que les otorga una gran flexibilidad para diversas aplicaciones. Las entradas de estos circuitos tienen una alta impedancia, lo que minimiza la carga en las señales de entrada y permite conectar múltiples dispositivos sin afectar el rendimiento. También son compatibles con niveles lógicos TTL, lo que facilita su integración con otros tipos de circuitos. Además, estos dispositivos están diseñados para funcionar en un rango de temperaturas muy amplio, desde -55°C hasta +125°C, y cuentan con protección contra descargas electrostáticas, lo que los hace robustos y fiables en condiciones adversas.
 
-**Pregunta 3:**
-*Respuesta:*
+**Pregunta 3:** nvestigue que cuidados deben tenerse al manipular las tecnologias CMOS.
+*Respuesta:* La primer medida al manipular un dispositivo CMOS es tener en cuenta que son sensibles a las cargas electrostáticas ya que esto se pueden dañar fácilmente. Se recomienda manipularlos con guantes, no toca los pines o manipularlos con pinzas aisladas. Además como cualquier otro componente electrónico es importante no exponerlo a humedad, por lo tanto no tener las manos mojadas y una última consideración más, es utilizar una fuente con proteción a sobrecargas de la red eléctrica.
+
 
 **Pregunta 4:**  Investigue el significado de los parámetros:
 *Respuesta:* 
@@ -27,8 +28,10 @@ Por último la serie 74HCxx por su nombre alta velocidad de CMOS, este posee uno
 tt, tr y tf.
 *Respuesta:* Los tiempos de propagación y transición son esenciales para el desempeño de los circuitos CMOS. El tiempo de propagación (tP D) se refiere al tiempo que una señal tarda en viajar desde la entrada hasta la salida de un circuito lógico, generalmente medido al 50% del cambio de voltaje. Dentro de esto, encontramos el tiempo de propagación de bajo a alto (tP LH) y de alto a bajo (tP HL), que son los intervalos que una señal tarda en cambiar de un nivel bajo a uno alto, y viceversa. Estos tiempos se miden al 50% del cambio de voltaje de entrada y salida. Por otro lado, los tiempos de transición, como el tiempo de subida (tr) y el tiempo de bajada (tf), son cruciales para determinar la velocidad de cambio de estado de una señal. El tiempo de subida se mide desde el 10% al 90% del cambio de voltaje, mientras que el tiempo de bajada se mide desde el 90% al 10%. Estos parámetros son fundamentales para diseñar y simular circuitos CMOS que sean tanto eficientes como de alto rendimiento.
 
-**Pregunta 6:**
-*Respuesta:*
+**Pregunta 6:** . Investigue qué significa el término fan-out y cúales valores típicos se encuentran en las
+familias TTL y CMOS.
+*Respuesta:* El término fan-out hace referencia al número de entradas de puertas lógicas que pueden ser accioandas por la salida de otra puerta lógica sin ver afectado el rendimiento de esta. EN la famila TTL el fan-out más común es de 10 entradas y para CMOS se pueden manejar hasta 50 puertas lógicas
+
 
 **Pregunta 7:** Para cada una de las variantes TTL y CMOS especifique en una tabla:
 *Respuesta:*
@@ -61,8 +64,11 @@ tt, tr y tf.
 
 *Respuesta:* El 74xx00 es un IC que contiene cuatro puertas NAND, fundamentales para realizar operaciones lógicas básicas en los circuitos. Por otro lado, el 74xx02 tiene cuatro puertas NOR, que realizan la lógica opuesta a la puerta OR y son esenciales para construir circuitos lógicos. El 74xx04 es un hex inversor con seis puertas NOT, utilizado para invertir señales digitales y facilitar el diseño de circuitos complejos. El 74xx14 es un disparador Schmitt, que mejora la señal al limpiar las entradas ruidosas o lentas gracias a su histéresis. En la familia CMOS, el 4001 incluye cuatro puertas NOR, mientras que el 4011 tiene cuatro puertas NAND, ambos ofreciendo beneficios en términos de eficiencia energética y características CMOS. El 4069 es otro hex inversor, pero en tecnología CMOS, similar al 74xx04. Finalmente, el 40106 es un disparador Schmitt en CMOS, que, al igual que el 74xx14, usa histéresis para manejar mejor las señales ruidosas.
 
-**Pregunta 9:**
-*Respuesta:*
+**Pregunta 9:** Revise la estructura básica, a nivel de transistores, de una compuerta NAND en circuitos
+integrados CMOS.
+*Respuesta:*  La compuerta NANS se puede obtener con el uso de 2 2 arreglos de transistores, la primera consiste en 2 transistores PMOS en serie y la segunda en 2 transistores NMOS en serie. Gracias a esta configuración permite cuando A y B sean 1 los transistores NMOS concuden mientras los PMOS no lo hacen, cusando conectar la salida del circuito a tierra. Si cualquiera de las entradas es 0, al menos uno de los transistores PMOS conducirá y al menos uno de los transistores NMOS no, lo que conecta la salida a la fuente de alimentación supeeior.
+![image](https://github.com/user-attachments/assets/3a5e34eb-c2d0-4bca-872c-0010fc25c528)
+
 
 **Pregunta 10:** Investigue sobre el concepto y el uso de los circuitos pull-up y pull-down en electrónica digital.
 *Respuesta:*
@@ -73,8 +79,8 @@ Pull-down: si se desea un cero lógico en la salida, se utiliza la configuració
 técnicas del circuito 74∗14.
 *Respuesta:* Los disparadores Schmitt, como el 74LS14, juegan un papel crucial en el diseño digital al convertir señales ruidosas o de transición lenta en señales digitales limpias. Estos circuitos usan una característica llamada histéresis, que establece dos niveles de umbral para las transiciones de señal: uno para pasar de bajo a alto y otro para ir de alto a bajo. Esto ayuda a filtrar el ruido y evita que la señal fluctúe innecesariamente. El 74LS14 es un buen ejemplo de este tipo de circuito. El cual fue diseñado para funcionar con un voltaje de 5V, ofrece tiempos de respuesta rápidos y es ideal para aplicaciones que necesitan señales digitales claras y confiables.
 
-**Pregunta 12:**
-*Respuesta:*
+**Pregunta 12:** Investigue en que consiste la modulaci´on de ancho de pulso (PWM).
+*Respuesta:* La modulación de ancho de pulso consiste en una técnica que se utiliza para poder controlar la cantidad energía que se entrega a una carga por medio de la variación del ancho de los pulsos de la señal periódica.
 
 **Pregunta 13:** Investigue que es el efecto de rebote y típicos circuitos anti-rebote (debouncing circuits)
 *Respuesta:* En el caso de un efecto rebote se determina cuando se activa o desativa un interrutor, produciendo una flutación de señales por un periodo de tiempo determinado hasta que dicha señal se estabilice. Si no se evita o se protege el circuito contra este efecto puede proboca lecturas erroneas en la salida o ruido en el sistema. Entre los circuitos anti-rebote podemos encontrar un circuito RC (el más simple), ya que solo necetita de una resitencia y un capacitor para suavizar o delimitar la señal al momento de activarse un interruptor. Para circuitos de mayor nivel se pueden usar un circuito Schmit Trigger, este procesa altas señales en caso de que la flutuación se muy exagerada para el sistema. Y por ultimo en casa de FMS, se utiliza un circuito Flip-Flop tipo D, este almacena la señal del interrutor y elmina el rebote, para luego dar la señal ya estabilizada al sistema. 
@@ -83,8 +89,8 @@ técnicas del circuito 74∗14.
 un ejemplo de cada uno.
 *Respuesta:* El modelado de comportamiento se enfoca en describir cómo debe funcionar un sistema digital, como en el caso de un contador, donde se especifica que debe contar de 0 a 15. Aquí, no es necesario entrar en detalles sobre los componentes físicos, sino en cómo debe responder el sistema a las señales de entrada. Por otro lado, el modelado de estructura se trata de detallar cómo se ensamblan y conectan los distintos bloques del sistema, como los flip-flops y las puertas lógicas, para construir físicamente el contador. Ambos enfoques son esenciales: el modelado de comportamiento nos ayuda a definir qué queremos que haga el sistema, mientras que el modelado de estructura se encarga de cómo implementar esas funciones en hardware real.
 
-**Pregunta 15:**
-*Respuesta:*
+**Pregunta 15:** Explique el proceso de síntesis lógica en el diseño de circuitos digitales, tanto para el desarrollo de un ASIC como para una FPGA.
+*Respuesta:* El primer paso para la síntesis lógica del diseño de un circuito digitales poder describir el problema que se tiene y poder plasmarlo en un lenguaje de descrición de hardware como los que hemos usado en cursos anteriores como lo puede ser Verilog o Ensambaldor. Los iguiente es sintetizar lo hecho por medio del lenguaje para transformarlo en una red de puertas lógicas para poder ajustarlo en los parámetros de diseño que se establezcan. Luego de esto se mapea el diseño con el uso de una biblioteca de celdas estandarizadas, con esto se puede ensamblar un prototipo el cual se utiliza para poder validar el correcto funcionamiento para filamente poder relizar un diseño de chip que pueda ejecutar todos los parámetros preciamente definidos en la descripción de problema.
 
 **Pregunta 16:** Investigue sobre la tecnología de FPGAs. Describa el funcionamiento de la lógica programable en general, así como los componentes básicos de una.
 *Respuesta:* Se conoce como FPGAs, a los sistemas de circuitos integrados que contiene una matriz de bolques lógicos de arquitetura abierta, por lo cual se le permite la configuración, añadir interconexiones programables, memorias e inputs y outputs. Donde resalta su alta programabilidad, ya que se puede programar un número de veces nesesarios hasata alcanzar el estado deseado. Como tambíen permite la modificación si así es requerido. Por ultimo su sistema de interconexiones permite conectar nuevos bloques lógicos o nuevos recuersos adecuados al diseño. Entre sus componentes podemos encontrar sistemas como circuitos Flip-Flop, bloques de entrada y/o salida del sistema, memoria RAM, bloques de multiplicación, relojes, pero se destaca su bloque lógico de configuración conocidos como LUTs, donde se implementa las funciones lógicas de maximo 4 a 5 entradas dependiendo del diseño establecido. Si estudiamos su lógica programable tendremos que esta es establece en el interior del circuito por medio de las estruturas interna de la FPGA, o los anteriormente mencionados LUTs.
