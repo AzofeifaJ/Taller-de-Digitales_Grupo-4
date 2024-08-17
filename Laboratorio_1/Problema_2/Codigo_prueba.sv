@@ -6,7 +6,7 @@
 // Grupo 4
 //////////////////////////////////////////////////////////////////////////////////
 `timescale 1ns / 1ps
-module contador_luz_led ( // Da por medio de 4 leds su complemento a 2
+module Complemento_a2( // Da por medio de 4 leds su complemento a 2
     input logic clk,             // Entrada de reloj
     input logic rst,             // Botón de reinicio
     input logic [3:0] interruptor, // Entrada del interruptor de 4 bits (0 a 15)

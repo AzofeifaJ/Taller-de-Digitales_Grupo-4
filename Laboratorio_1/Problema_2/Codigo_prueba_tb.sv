@@ -7,7 +7,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 `timescale 1ns / 1ps
 
-module contador_luz_led_tb;
+module Complemento_a2_tb;
 
     // Parámetros de prueba
     logic clk;
@@ -17,7 +17,7 @@ module contador_luz_led_tb;
     logic [3:0] numero;
 
     // Instancia del módulo a probar
-    contador_luz_led uut (
+    Complemento_a2 uut (
         .clk(clk),
         .rst(rst),
         .interruptor(interruptor),
