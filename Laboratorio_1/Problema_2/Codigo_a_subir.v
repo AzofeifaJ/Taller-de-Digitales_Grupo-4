@@ -1,4 +1,4 @@
-module complemento_a2 (
+module top (
     input wire clk,                // Entrada de reloj
     input wire [3:0] numero, // Entrada del número (0 a 15)
     output reg [3:0] leds         // Salida del complemento a 2
