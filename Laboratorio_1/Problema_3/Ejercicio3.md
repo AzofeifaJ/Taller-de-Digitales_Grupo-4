@@ -26,4 +26,13 @@ En este caso se aumenta el numero de bits permitidos por lo que podemos ver cant
 ![Resultados del testbench de 16bits](fot_16.png)
 Por ultimo tenemos los resultados con el maximo de bits posibles, para este caso se tiene que aumentar el tiempo dado que al ser tantas variaciones en poco periodos no se logran ver. 
 Se puede determinar que el mux parametrizados, nos da una utilidad en caso donde se conoce con que valores se van a trabajar y como este nos puede reducir o especificar los periodos de trabajo. 
+### Pruebas de la implementación del en la tang nano 9k
+# Seleccion de la entrada 1, selector activo  valos 3 binario.
+![Mux con salida de la entrada 1](0.jpeg)
+# Seleccion de la entrada 2, selectro solo uno activo valor 2 binario
+![Mux con salida de la entrada 2](1.jpeg)
+# Seleccion de la entrada 3, selector con valor de 1 binario
+![MUx con salida de la entrada 3](2.jpeg)
+
+Como podemos ver los resultados tanto de la prueba con vivado como en la aplicacion de la tang nano 9k, son correctos de acuerdo al libro. 
 

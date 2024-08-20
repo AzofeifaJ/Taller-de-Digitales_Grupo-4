@@ -3,8 +3,9 @@
   "modules": {
     "ALU": {
       "attributes": {
-        "abc9_box": "00000000000000000000000000000001",
         "blackbox": "00000000000000000000000000000001",
+        "abc9_box": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
         "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:623.1-706.10"
       },
       "parameter_default_values": {
@@ -1942,6 +1943,7 @@
     "GND": {
       "attributes": {
         "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
         "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:549.1-551.10"
       },
       "ports": {
@@ -2002,7 +2004,7 @@
         }
       },
       "cells": {
-        "$specify$120": {
+        "$specify$119": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2110,8 +2112,9 @@
     },
     "LUT1": {
       "attributes": {
-        "abc9_lut": "00000000000000000000000000000001",
         "blackbox": "00000000000000000000000000000001",
+        "abc9_lut": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
         "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:2.1-8.10"
       },
       "parameter_default_values": {
@@ -2128,7 +2131,7 @@
         }
       },
       "cells": {
-        "$specify$3": {
+        "$specify$2": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2202,7 +2205,7 @@
         }
       },
       "cells": {
-        "$specify$4": {
+        "$specify$3": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2233,7 +2236,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$5": {
+        "$specify$4": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2291,9 +2294,8 @@
     },
     "LUT3": {
       "attributes": {
-        "blackbox": "00000000000000000000000000000001",
         "abc9_lut": "00000000000000000000000000000001",
-        "cells_not_processed": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
         "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:22.1-32.10"
       },
       "parameter_default_values": {
@@ -2318,7 +2320,7 @@
         }
       },
       "cells": {
-        "$specify$6": {
+        "$specify$5": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2349,7 +2351,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$7": {
+        "$specify$6": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2380,7 +2382,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$8": {
+        "$specify$7": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2485,37 +2487,6 @@
             "SRC_DST_PEN": "0",
             "SRC_DST_POL": "0",
             "SRC_WIDTH": "00000000000000000000000000000001",
-            "T_FALL_MAX": "00000000000000000000011000101111",
-            "T_FALL_MIN": "00000000000000000000011000101111",
-            "T_FALL_TYP": "00000000000000000000011000101111",
-            "T_RISE_MAX": "00000000000000000000010000011101",
-            "T_RISE_MIN": "00000000000000000000010000011101",
-            "T_RISE_TYP": "00000000000000000000010000011101"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:39.3-39.28"
-          },
-          "port_directions": {
-            "DST": "input",
-            "EN": "input",
-            "SRC": "input"
-          },
-          "connections": {
-            "DST": [ 2 ],
-            "EN": [ "1" ],
-            "SRC": [ 4 ]
-          }
-        },
-        "$specify$11": {
-          "hide_name": 1,
-          "type": "$specify2",
-          "parameters": {
-            "DST_WIDTH": "00000000000000000000000000000001",
-            "FULL": "0",
-            "SRC_DST_PEN": "0",
-            "SRC_DST_POL": "0",
-            "SRC_WIDTH": "00000000000000000000000000000001",
             "T_FALL_MAX": "00000000000000000000010010100000",
             "T_FALL_MIN": "00000000000000000000010010100000",
             "T_FALL_TYP": "00000000000000000000010010100000",
@@ -2538,7 +2509,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$12": {
+        "$specify$11": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2569,7 +2540,7 @@
             "SRC": [ 6 ]
           }
         },
-        "$specify$9": {
+        "$specify$8": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2598,6 +2569,37 @@
             "DST": [ 2 ],
             "EN": [ "1" ],
             "SRC": [ 3 ]
+          }
+        },
+        "$specify$9": {
+          "hide_name": 1,
+          "type": "$specify2",
+          "parameters": {
+            "DST_WIDTH": "00000000000000000000000000000001",
+            "FULL": "0",
+            "SRC_DST_PEN": "0",
+            "SRC_DST_POL": "0",
+            "SRC_WIDTH": "00000000000000000000000000000001",
+            "T_FALL_MAX": "00000000000000000000011000101111",
+            "T_FALL_MIN": "00000000000000000000011000101111",
+            "T_FALL_TYP": "00000000000000000000011000101111",
+            "T_RISE_MAX": "00000000000000000000010000011101",
+            "T_RISE_MIN": "00000000000000000000010000011101",
+            "T_RISE_TYP": "00000000000000000000010000011101"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:39.3-39.28"
+          },
+          "port_directions": {
+            "DST": "input",
+            "EN": "input",
+            "SRC": "input"
+          },
+          "connections": {
+            "DST": [ 2 ],
+            "EN": [ "1" ],
+            "SRC": [ 4 ]
           }
         }
       },
@@ -2664,7 +2666,7 @@
         }
       },
       "cells": {
-        "$specify$39": {
+        "$specify$38": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2695,7 +2697,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$40": {
+        "$specify$39": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2726,7 +2728,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$41": {
+        "$specify$40": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2814,7 +2816,7 @@
         }
       },
       "cells": {
-        "$specify$42": {
+        "$specify$41": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2845,7 +2847,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$43": {
+        "$specify$42": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2876,7 +2878,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$44": {
+        "$specify$43": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2964,7 +2966,7 @@
         }
       },
       "cells": {
-        "$specify$45": {
+        "$specify$44": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2995,7 +2997,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$46": {
+        "$specify$45": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3026,7 +3028,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$47": {
+        "$specify$46": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3114,7 +3116,7 @@
         }
       },
       "cells": {
-        "$specify$48": {
+        "$specify$47": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3145,7 +3147,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$49": {
+        "$specify$48": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3176,7 +3178,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$50": {
+        "$specify$49": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3264,7 +3266,7 @@
         }
       },
       "cells": {
-        "$specify$51": {
+        "$specify$50": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3295,7 +3297,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$52": {
+        "$specify$51": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3326,7 +3328,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$53": {
+        "$specify$52": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3405,7 +3407,7 @@
         }
       },
       "cells": {
-        "$specify$121": {
+        "$specify$120": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -4018,7 +4020,7 @@
         }
       },
       "cells": {
-        "$specify$130": {
+        "$specify$129": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -4049,7 +4051,7 @@
             "SRC": [ 4, 5, 6, 7 ]
           }
         },
-        "$specify$131": {
+        "$specify$130": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4084,7 +4086,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$132": {
+        "$specify$131": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4119,7 +4121,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$133": {
+        "$specify$132": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4154,7 +4156,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$134": {
+        "$specify$133": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -4263,7 +4265,7 @@
         }
       },
       "cells": {
-        "$specify$135": {
+        "$specify$134": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -4294,7 +4296,7 @@
             "SRC": [ 6, 7, 8, 9 ]
           }
         },
-        "$specify$136": {
+        "$specify$135": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4329,7 +4331,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$137": {
+        "$specify$136": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4364,7 +4366,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$138": {
+        "$specify$137": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4399,7 +4401,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$139": {
+        "$specify$138": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -4510,7 +4512,7 @@
         }
       },
       "cells": {
-        "$specify$140": {
+        "$specify$139": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -4541,7 +4543,7 @@
             "SRC": [ 10, 11, 12, 13 ]
           }
         },
-        "$specify$141": {
+        "$specify$140": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4576,7 +4578,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$142": {
+        "$specify$141": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4611,7 +4613,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$143": {
+        "$specify$142": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4646,7 +4648,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$144": {
+        "$specify$143": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -4758,7 +4760,7 @@
         }
       },
       "cells": {
-        "$specify$145": {
+        "$specify$144": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -4789,7 +4791,7 @@
             "SRC": [ 8, 9, 10, 11 ]
           }
         },
-        "$specify$146": {
+        "$specify$145": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4824,7 +4826,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$147": {
+        "$specify$146": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4859,7 +4861,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$148": {
+        "$specify$147": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4894,7 +4896,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$149": {
+        "$specify$148": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -5014,7 +5016,7 @@
         }
       },
       "cells": {
-        "$specify$150": {
+        "$specify$149": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -5045,7 +5047,7 @@
             "SRC": [ 10, 11, 12, 13 ]
           }
         },
-        "$specify$151": {
+        "$specify$150": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5080,7 +5082,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$152": {
+        "$specify$151": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5115,7 +5117,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$153": {
+        "$specify$152": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5150,7 +5152,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$154": {
+        "$specify$153": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -5272,7 +5274,7 @@
         }
       },
       "cells": {
-        "$specify$155": {
+        "$specify$154": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -5303,7 +5305,7 @@
             "SRC": [ 14, 15, 16, 17 ]
           }
         },
-        "$specify$156": {
+        "$specify$155": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5338,7 +5340,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$157": {
+        "$specify$156": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5373,7 +5375,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$158": {
+        "$specify$157": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5408,7 +5410,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$159": {
+        "$specify$158": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -5627,7 +5629,7 @@
         }
       },
       "cells": {
-        "$specify$160": {
+        "$specify$159": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -5664,7 +5666,7 @@
             "SRC": [ 100 ]
           }
         },
-        "$specify$161": {
+        "$specify$160": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5699,7 +5701,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$162": {
+        "$specify$161": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5734,7 +5736,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$163": {
+        "$specify$162": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5769,7 +5771,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$164": {
+        "$specify$163": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5804,7 +5806,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$165": {
+        "$specify$164": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5839,7 +5841,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$166": {
+        "$specify$165": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5874,7 +5876,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$167": {
+        "$specify$166": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5909,7 +5911,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$168": {
+        "$specify$167": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5944,7 +5946,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$169": {
+        "$specify$168": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5979,7 +5981,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$170": {
+        "$specify$169": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6014,7 +6016,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$171": {
+        "$specify$170": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6049,7 +6051,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$172": {
+        "$specify$171": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6322,7 +6324,7 @@
         }
       },
       "cells": {
-        "$specify$173": {
+        "$specify$172": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -6359,7 +6361,7 @@
             "SRC": [ 108 ]
           }
         },
-        "$specify$174": {
+        "$specify$173": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6394,7 +6396,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$175": {
+        "$specify$174": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6429,7 +6431,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$176": {
+        "$specify$175": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6464,7 +6466,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$177": {
+        "$specify$176": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6499,7 +6501,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$178": {
+        "$specify$177": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6534,7 +6536,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$179": {
+        "$specify$178": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6569,7 +6571,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$180": {
+        "$specify$179": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6604,7 +6606,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$181": {
+        "$specify$180": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6639,7 +6641,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$182": {
+        "$specify$181": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6674,7 +6676,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$183": {
+        "$specify$182": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6709,7 +6711,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$184": {
+        "$specify$183": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6744,7 +6746,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$185": {
+        "$specify$184": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7342,6 +7344,7 @@
     "VCC": {
       "attributes": {
         "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
         "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:545.1-547.10"
       },
       "ports": {
@@ -7396,7 +7399,7 @@
         }
       },
       "cells": {
-        "$specify$13": {
+        "$specify$12": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7427,7 +7430,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$14": {
+        "$specify$13": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7458,7 +7461,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$15": {
+        "$specify$14": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7489,7 +7492,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$16": {
+        "$specify$15": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7520,7 +7523,7 @@
             "SRC": [ 6 ]
           }
         },
-        "$specify$17": {
+        "$specify$16": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7635,7 +7638,7 @@
         }
       },
       "cells": {
-        "$specify$18": {
+        "$specify$17": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7666,7 +7669,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$19": {
+        "$specify$18": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7697,7 +7700,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$20": {
+        "$specify$19": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7728,7 +7731,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$21": {
+        "$specify$20": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7759,7 +7762,7 @@
             "SRC": [ 6 ]
           }
         },
-        "$specify$22": {
+        "$specify$21": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7790,7 +7793,7 @@
             "SRC": [ 7 ]
           }
         },
-        "$specify$23": {
+        "$specify$22": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7916,7 +7919,7 @@
         }
       },
       "cells": {
-        "$specify$24": {
+        "$specify$23": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7947,7 +7950,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$25": {
+        "$specify$24": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7978,7 +7981,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$26": {
+        "$specify$25": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8009,7 +8012,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$27": {
+        "$specify$26": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8040,7 +8043,7 @@
             "SRC": [ 6 ]
           }
         },
-        "$specify$28": {
+        "$specify$27": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8071,7 +8074,7 @@
             "SRC": [ 7 ]
           }
         },
-        "$specify$29": {
+        "$specify$28": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8102,7 +8105,7 @@
             "SRC": [ 8 ]
           }
         },
-        "$specify$30": {
+        "$specify$29": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8239,7 +8242,7 @@
         }
       },
       "cells": {
-        "$specify$31": {
+        "$specify$30": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8270,7 +8273,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$32": {
+        "$specify$31": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8301,7 +8304,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$33": {
+        "$specify$32": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8332,7 +8335,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$34": {
+        "$specify$33": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8363,7 +8366,7 @@
             "SRC": [ 6 ]
           }
         },
-        "$specify$35": {
+        "$specify$34": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8394,7 +8397,7 @@
             "SRC": [ 7 ]
           }
         },
-        "$specify$36": {
+        "$specify$35": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8425,7 +8428,7 @@
             "SRC": [ 8 ]
           }
         },
-        "$specify$37": {
+        "$specify$36": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8456,7 +8459,7 @@
             "SRC": [ 9 ]
           }
         },
-        "$specify$38": {
+        "$specify$37": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8759,300 +8762,28 @@
     "top": {
       "attributes": {
         "top": "00000000000000000000000000000001",
-        "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:1.1-9.10"
+        "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:1.1-10.10"
       },
       "ports": {
-        "numero": {
+        "A": {
           "direction": "input",
           "bits": [ 2, 3, 4, 5 ]
         },
+        "B": {
+          "direction": "input",
+          "bits": [ 6, 7, 8, 9 ]
+        },
+        "s": {
+          "direction": "input",
+          "bits": [ 10, 11 ]
+        },
         "led": {
           "direction": "output",
-          "bits": [ 6, 7, 8, 9 ]
+          "bits": [ 12, 13, 14, 15 ]
         }
       },
       "cells": {
-        "complemento_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:6.26-6.34|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 10 ],
-            "COUT": [ 11 ],
-            "I0": [ 12 ],
-            "I1": [ 13 ],
-            "I3": [ 14 ],
-            "SUM": [ 15 ]
-          }
-        },
-        "complemento_ALU_SUM_1": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:6.26-6.34|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 16 ],
-            "COUT": [ 10 ],
-            "I0": [ 12 ],
-            "I1": [ 17 ],
-            "I3": [ 14 ],
-            "SUM": [ 18 ]
-          }
-        },
-        "complemento_ALU_SUM_2": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:6.26-6.34|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 19 ],
-            "COUT": [ 16 ],
-            "I0": [ 12 ],
-            "I1": [ 20 ],
-            "I3": [ 14 ],
-            "SUM": [ 21 ]
-          }
-        },
-        "complemento_ALU_SUM_3": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:6.26-6.34|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 12 ],
-            "COUT": [ 19 ],
-            "I0": [ 14 ],
-            "I1": [ 22 ],
-            "I3": [ 14 ],
-            "SUM": [ 23 ]
-          }
-        },
-        "complemento_ALU_SUM_3_COUT_GND_G": {
-          "hide_name": 0,
-          "type": "GND",
-          "parameters": {
-          },
-          "attributes": {
-          },
-          "port_directions": {
-            "G": "output"
-          },
-          "connections": {
-            "G": [ 12 ]
-          }
-        },
-        "complemento_ALU_SUM_I3_VCC_V": {
-          "hide_name": 0,
-          "type": "VCC",
-          "parameters": {
-          },
-          "attributes": {
-          },
-          "port_directions": {
-            "V": "output"
-          },
-          "connections": {
-            "V": [ 14 ]
-          }
-        },
-        "led_OBUF_O": {
-          "hide_name": 0,
-          "type": "OBUF",
-          "parameters": {
-          },
-          "attributes": {
-            "keep": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "I": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I": [ 24 ],
-            "O": [ 9 ]
-          }
-        },
-        "led_OBUF_O_1": {
-          "hide_name": 0,
-          "type": "OBUF",
-          "parameters": {
-          },
-          "attributes": {
-            "keep": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "I": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I": [ 25 ],
-            "O": [ 8 ]
-          }
-        },
-        "led_OBUF_O_1_I_LUT1_F": {
-          "hide_name": 0,
-          "type": "LUT1",
-          "parameters": {
-            "INIT": "01"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:135.23-136.15"
-          },
-          "port_directions": {
-            "F": "output",
-            "I0": "input"
-          },
-          "connections": {
-            "F": [ 25 ],
-            "I0": [ 18 ]
-          }
-        },
-        "led_OBUF_O_2": {
-          "hide_name": 0,
-          "type": "OBUF",
-          "parameters": {
-          },
-          "attributes": {
-            "keep": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "I": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I": [ 26 ],
-            "O": [ 7 ]
-          }
-        },
-        "led_OBUF_O_2_I_LUT1_F": {
-          "hide_name": 0,
-          "type": "LUT1",
-          "parameters": {
-            "INIT": "01"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:135.23-136.15"
-          },
-          "port_directions": {
-            "F": "output",
-            "I0": "input"
-          },
-          "connections": {
-            "F": [ 26 ],
-            "I0": [ 21 ]
-          }
-        },
-        "led_OBUF_O_3": {
-          "hide_name": 0,
-          "type": "OBUF",
-          "parameters": {
-          },
-          "attributes": {
-            "keep": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "I": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I": [ 27 ],
-            "O": [ 6 ]
-          }
-        },
-        "led_OBUF_O_3_I_LUT1_F": {
-          "hide_name": 0,
-          "type": "LUT1",
-          "parameters": {
-            "INIT": "01"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:135.23-136.15"
-          },
-          "port_directions": {
-            "F": "output",
-            "I0": "input"
-          },
-          "connections": {
-            "F": [ 27 ],
-            "I0": [ 23 ]
-          }
-        },
-        "led_OBUF_O_I_LUT1_F": {
-          "hide_name": 0,
-          "type": "LUT1",
-          "parameters": {
-            "INIT": "01"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:135.23-136.15"
-          },
-          "port_directions": {
-            "F": "output",
-            "I0": "input"
-          },
-          "connections": {
-            "F": [ 24 ],
-            "I0": [ 15 ]
-          }
-        },
-        "numero_IBUF_I": {
+        "A_IBUF_I": {
           "hide_name": 0,
           "type": "IBUF",
           "parameters": {
@@ -9066,10 +8797,10 @@
           },
           "connections": {
             "I": [ 5 ],
-            "O": [ 13 ]
+            "O": [ 16 ]
           }
         },
-        "numero_IBUF_I_1": {
+        "A_IBUF_I_1": {
           "hide_name": 0,
           "type": "IBUF",
           "parameters": {
@@ -9086,7 +8817,7 @@
             "O": [ 17 ]
           }
         },
-        "numero_IBUF_I_2": {
+        "A_IBUF_I_2": {
           "hide_name": 0,
           "type": "IBUF",
           "parameters": {
@@ -9100,10 +8831,10 @@
           },
           "connections": {
             "I": [ 3 ],
-            "O": [ 20 ]
+            "O": [ 18 ]
           }
         },
-        "numero_IBUF_I_3": {
+        "A_IBUF_I_3": {
           "hide_name": 0,
           "type": "IBUF",
           "parameters": {
@@ -9117,46 +8848,324 @@
           },
           "connections": {
             "I": [ 2 ],
+            "O": [ 19 ]
+          }
+        },
+        "B_IBUF_I": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 9 ],
+            "O": [ 20 ]
+          }
+        },
+        "B_IBUF_I_1": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 8 ],
+            "O": [ 21 ]
+          }
+        },
+        "B_IBUF_I_2": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 7 ],
             "O": [ 22 ]
+          }
+        },
+        "B_IBUF_I_3": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 6 ],
+            "O": [ 23 ]
+          }
+        },
+        "led_OBUF_O": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 24 ],
+            "O": [ 15 ]
+          }
+        },
+        "led_OBUF_O_1": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 25 ],
+            "O": [ 14 ]
+          }
+        },
+        "led_OBUF_O_1_I_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "11001010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:143.23-144.37"
+          },
+          "port_directions": {
+            "F": "output",
+            "I0": "input",
+            "I1": "input",
+            "I2": "input"
+          },
+          "connections": {
+            "F": [ 25 ],
+            "I0": [ 21 ],
+            "I1": [ 17 ],
+            "I2": [ 26 ]
+          }
+        },
+        "led_OBUF_O_2": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 27 ],
+            "O": [ 13 ]
+          }
+        },
+        "led_OBUF_O_2_I_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "11001010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:143.23-144.37"
+          },
+          "port_directions": {
+            "F": "output",
+            "I0": "input",
+            "I1": "input",
+            "I2": "input"
+          },
+          "connections": {
+            "F": [ 27 ],
+            "I0": [ 22 ],
+            "I1": [ 18 ],
+            "I2": [ 26 ]
+          }
+        },
+        "led_OBUF_O_3": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 28 ],
+            "O": [ 12 ]
+          }
+        },
+        "led_OBUF_O_3_I_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "10101100"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:143.23-144.37"
+          },
+          "port_directions": {
+            "F": "output",
+            "I0": "input",
+            "I1": "input",
+            "I2": "input"
+          },
+          "connections": {
+            "F": [ 28 ],
+            "I0": [ 19 ],
+            "I1": [ 23 ],
+            "I2": [ 26 ]
+          }
+        },
+        "led_OBUF_O_I_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "11001010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:143.23-144.37"
+          },
+          "port_directions": {
+            "F": "output",
+            "I0": "input",
+            "I1": "input",
+            "I2": "input"
+          },
+          "connections": {
+            "F": [ 24 ],
+            "I0": [ 20 ],
+            "I1": [ 16 ],
+            "I2": [ 26 ]
+          }
+        },
+        "s_IBUF_I": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 11 ],
+            "O": [ 29 ]
+          }
+        },
+        "s_IBUF_I_1": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 10 ],
+            "O": [ 26 ]
           }
         }
       },
       "netnames": {
-        "complemento": {
+        "A": {
           "hide_name": 0,
-          "bits": [ 23, 21, 18, 15 ],
+          "bits": [ 2, 3, 4, 5 ],
           "attributes": {
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:5.15-5.26"
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:2.17-2.18"
           }
         },
-        "complemento_ALU_SUM_3_COUT": {
+        "A_IBUF_I_1_O": {
           "hide_name": 0,
-          "bits": [ 12, 19, 16, 10 ],
+          "bits": [ 21, 17, 26 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:6.26-6.34|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25"
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21"
           }
         },
-        "complemento_ALU_SUM_COUT": {
+        "A_IBUF_I_2_O": {
           "hide_name": 0,
-          "bits": [ 19, 16, 10, 11 ],
+          "bits": [ 22, 18, 26 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:6.26-6.34|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:38.25-38.27",
-            "unused_bits": "3"
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21"
           }
         },
-        "complemento_ALU_SUM_I3": {
+        "A_IBUF_I_3_O": {
           "hide_name": 0,
-          "bits": [ 14 ],
+          "bits": [ 19, 23, 26 ],
           "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "A_IBUF_I_O": {
+          "hide_name": 0,
+          "bits": [ 20, 16, 26 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9 ],
+          "attributes": {
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:3.17-3.18"
           }
         },
         "led": {
           "hide_name": 0,
-          "bits": [ 6, 7, 8, 9 ],
+          "bits": [ 12, 13, 14, 15 ],
           "attributes": {
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:3.22-3.25"
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:5.18-5.21"
           }
         },
         "led_OBUF_O_1_I": {
@@ -9167,13 +9176,13 @@
         },
         "led_OBUF_O_2_I": {
           "hide_name": 0,
-          "bits": [ 26 ],
+          "bits": [ 27 ],
           "attributes": {
           }
         },
         "led_OBUF_O_3_I": {
           "hide_name": 0,
-          "bits": [ 27 ],
+          "bits": [ 28 ],
           "attributes": {
           }
         },
@@ -9183,17 +9192,18 @@
           "attributes": {
           }
         },
-        "numero": {
+        "s": {
           "hide_name": 0,
-          "bits": [ 2, 3, 4, 5 ],
+          "bits": [ 10, 11 ],
           "attributes": {
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:2.22-2.28"
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:4.17-4.18"
           }
         },
-        "numero_IBUF_I_O": {
+        "s_IBUF_I_O": {
           "hide_name": 0,
-          "bits": [ 22, 20, 17, 13 ],
+          "bits": [ 26, 29 ],
           "attributes": {
+            "unused_bits": "1 "
           }
         }
       }
