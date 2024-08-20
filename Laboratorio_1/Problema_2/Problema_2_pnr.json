@@ -39,20 +39,20 @@
       },
       "attributes": {
         "top": "00000000000000000000000000000001",
-        "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:1.1-9.10"
+        "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:1.1-9.10"
       },
       "ports": {
         "numero": {
           "direction": "input",
-          "bits": [ 3877512, 3877510, 1432107619, 1432107619 ]
+          "bits": [ 470878544, 3877510, 3877508, 3877506 ]
         },
         "led": {
           "direction": "output",
-          "bits": [ 1432107619, 3877502, 3877500, 3877497 ]
+          "bits": [ 3877502, 3877498, 3877494, 3877490 ]
         }
       },
       "cells": {
-        "complemento_ALU_SUM_I1_LUT1_F_LC": {
+        "led_OBUF_O_3_I_LUT1_F_LC": {
           "hide_name": 0,
           "type": "SLICE",
           "parameters": {
@@ -62,7 +62,7 @@
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "R23C4_SLICE3",
+            "NEXTPNR_BEL": "R15C30_SLICE4",
             "module_not_derived": "00000000000000000000000000000001",
             "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:135.23-136.15"
           },
@@ -81,15 +81,15 @@
             "LSR": [  ],
             "CE": [  ],
             "Q": [  ],
-            "F": [ 3877484 ],
+            "F": [ 3877501 ],
             "CLK": [  ],
             "D": [  ],
             "C": [  ],
             "B": [  ],
-            "A": [ 3877488 ]
+            "A": [ 3877485 ]
           }
         },
-        "complemento_ALU_SUM_I1_LUT1_F_1_LC": {
+        "led_OBUF_O_1_I_LUT1_F_LC": {
           "hide_name": 0,
           "type": "SLICE",
           "parameters": {
@@ -99,7 +99,7 @@
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "R22C4_SLICE6",
+            "NEXTPNR_BEL": "R15C18_SLICE7",
             "module_not_derived": "00000000000000000000000000000001",
             "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:135.23-136.15"
           },
@@ -118,15 +118,15 @@
             "LSR": [  ],
             "CE": [  ],
             "Q": [  ],
-            "F": [ 3877469 ],
+            "F": [ 3877493 ],
             "CLK": [  ],
             "D": [  ],
             "C": [  ],
             "B": [  ],
-            "A": [ 3877490 ]
+            "A": [ 3877477 ]
           }
         },
-        "complemento_ALU_SUM_I1_LUT1_F_2_LC": {
+        "led_OBUF_O_I_LUT1_F_LC": {
           "hide_name": 0,
           "type": "SLICE",
           "parameters": {
@@ -136,7 +136,7 @@
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "R24C9_SLICE0",
+            "NEXTPNR_BEL": "R22C33_SLICE3",
             "module_not_derived": "00000000000000000000000000000001",
             "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:135.23-136.15"
           },
@@ -155,15 +155,15 @@
             "LSR": [  ],
             "CE": [  ],
             "Q": [  ],
-            "F": [ 3877476 ],
+            "F": [ 3877489 ],
             "CLK": [  ],
             "D": [  ],
             "C": [  ],
             "B": [  ],
-            "A": [ 3877492 ]
+            "A": [ 3877471 ]
           }
         },
-        "complemento_ALU_SUM_I1_LUT1_F_3_LC": {
+        "led_OBUF_O_2_I_LUT1_F_LC": {
           "hide_name": 0,
           "type": "SLICE",
           "parameters": {
@@ -173,7 +173,7 @@
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "R25C4_SLICE0",
+            "NEXTPNR_BEL": "R13C9_SLICE4",
             "module_not_derived": "00000000000000000000000000000001",
             "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:135.23-136.15"
           },
@@ -192,12 +192,12 @@
             "LSR": [  ],
             "CE": [  ],
             "Q": [  ],
-            "F": [ 3877481 ],
+            "F": [ 3877497 ],
             "CLK": [  ],
             "D": [  ],
             "C": [  ],
             "B": [  ],
-            "A": [ 3877494 ]
+            "A": [ 3877482 ]
           }
         },
         "complemento_ALU_SUM_2_ALULC": {
@@ -211,7 +211,7 @@
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "R22C4_SLICE2"
+            "NEXTPNR_BEL": "R13C33_SLICE2"
           },
           "port_directions": {
             "LSR": "input",
@@ -230,10 +230,10 @@
             "Q": [  ],
             "F": [ 3877482 ],
             "CLK": [  ],
-            "D": [ 3877528 ],
-            "C": [ 3877528 ],
+            "D": [ 3877527 ],
+            "C": [ 3877527 ],
             "B": [ 3877481 ],
-            "A": [ 3877526 ]
+            "A": [ 3877525 ]
           }
         },
         "complemento_ALU_SUM_3_ALULC": {
@@ -247,7 +247,7 @@
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "R22C4_SLICE1"
+            "NEXTPNR_BEL": "R13C33_SLICE1"
           },
           "port_directions": {
             "LSR": "input",
@@ -266,10 +266,10 @@
             "Q": [  ],
             "F": [ 3877485 ],
             "CLK": [  ],
-            "D": [ 3877528 ],
-            "C": [ 3877528 ],
+            "D": [ 3877527 ],
+            "C": [ 3877527 ],
             "B": [ 3877484 ],
-            "A": [ 3877528 ]
+            "A": [ 3877527 ]
           }
         },
         "numero_IBUF_I$iob": {
@@ -282,10 +282,9 @@
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "R29C11_IOBB",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:2.22-2.28",
-            "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
-            "&PULL_MODE=UP": "00000000000000000000000000000001"
+            "NEXTPNR_BEL": "R1C42_IOBA",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:2.22-2.28",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
           },
           "port_directions": {
             "O": "output",
@@ -294,7 +293,7 @@
             "PAD": "inout"
           },
           "connections": {
-            "O": [ 3877490 ],
+            "O": [ 3877469 ],
             "OEN": [  ],
             "I": [  ],
             "PAD": [  ]
@@ -310,10 +309,9 @@
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "R29C11_IOBA",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:2.22-2.28",
-            "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
-            "&PULL_MODE=UP": "00000000000000000000000000000001"
+            "NEXTPNR_BEL": "R1C42_IOBB",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:2.22-2.28",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
           },
           "port_directions": {
             "O": "output",
@@ -322,7 +320,7 @@
             "PAD": "inout"
           },
           "connections": {
-            "O": [ 3877492 ],
+            "O": [ 3877476 ],
             "OEN": [  ],
             "I": [  ],
             "PAD": [  ]
@@ -338,10 +336,9 @@
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "R29C8_IOBB",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:2.22-2.28",
-            "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
-            "&PULL_MODE=UP": "00000000000000000000000000000001"
+            "NEXTPNR_BEL": "R13C47_IOBA",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:2.22-2.28",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
           },
           "port_directions": {
             "O": "output",
@@ -350,7 +347,7 @@
             "PAD": "inout"
           },
           "connections": {
-            "O": [ 3877494 ],
+            "O": [ 3877481 ],
             "OEN": [  ],
             "I": [  ],
             "PAD": [  ]
@@ -366,10 +363,9 @@
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "R29C8_IOBA",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:2.22-2.28",
-            "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
-            "&PULL_MODE=UP": "00000000000000000000000000000001"
+            "NEXTPNR_BEL": "R14C47_IOBA",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:2.22-2.28",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
           },
           "port_directions": {
             "O": "output",
@@ -378,42 +374,10 @@
             "PAD": "inout"
           },
           "connections": {
-            "O": [ 3877488 ],
+            "O": [ 3877484 ],
             "OEN": [  ],
             "I": [  ],
             "PAD": [  ]
-          }
-        },
-        "GSR": {
-          "hide_name": 0,
-          "type": "GSR",
-          "parameters": {
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "R1C1_GSR0"
-          },
-          "port_directions": {
-            "GSRI": "input"
-          },
-          "connections": {
-            "GSRI": [ 3877528 ]
-          }
-        },
-        "$PACKER_GND": {
-          "hide_name": 1,
-          "type": "GND",
-          "parameters": {
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "GND"
-          },
-          "port_directions": {
-            "G": "output"
-          },
-          "connections": {
-            "G": [ 3877526 ]
           }
         },
         "complemento_ALU_SUM_1_ALULC": {
@@ -427,7 +391,7 @@
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "R22C4_SLICE3"
+            "NEXTPNR_BEL": "R13C33_SLICE3"
           },
           "port_directions": {
             "LSR": "input",
@@ -446,10 +410,10 @@
             "Q": [  ],
             "F": [ 3877477 ],
             "CLK": [  ],
-            "D": [ 3877528 ],
-            "C": [ 3877528 ],
+            "D": [ 3877527 ],
+            "C": [ 3877527 ],
             "B": [ 3877476 ],
-            "A": [ 3877526 ]
+            "A": [ 3877525 ]
           }
         },
         "complemento_ALU_SUM_ALULC": {
@@ -463,7 +427,7 @@
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "R22C4_SLICE4"
+            "NEXTPNR_BEL": "R13C33_SLICE4"
           },
           "port_directions": {
             "LSR": "input",
@@ -482,10 +446,10 @@
             "Q": [  ],
             "F": [ 3877471 ],
             "CLK": [  ],
-            "D": [ 3877528 ],
-            "C": [ 3877528 ],
+            "D": [ 3877527 ],
+            "C": [ 3877527 ],
             "B": [ 3877469 ],
-            "A": [ 3877526 ]
+            "A": [ 3877525 ]
           }
         },
         "complemento_ALU_SUM_DUMMY_ALULC": {
@@ -499,7 +463,7 @@
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "R22C4_SLICE5"
+            "NEXTPNR_BEL": "R13C33_SLICE5"
           },
           "port_directions": {
             "LSR": "input",
@@ -524,6 +488,38 @@
             "A": [  ]
           }
         },
+        "$PACKER_GND": {
+          "hide_name": 1,
+          "type": "GND",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "GND"
+          },
+          "port_directions": {
+            "G": "output"
+          },
+          "connections": {
+            "G": [ 3877525 ]
+          }
+        },
+        "GSR": {
+          "hide_name": 0,
+          "type": "GSR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R1C1_GSR0"
+          },
+          "port_directions": {
+            "GSRI": "input"
+          },
+          "connections": {
+            "GSRI": [ 3877527 ]
+          }
+        },
         "complemento_ALU_SUM_3_HEAD_ALULC": {
           "hide_name": 0,
           "type": "SLICE",
@@ -535,7 +531,7 @@
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "R22C4_SLICE0"
+            "NEXTPNR_BEL": "R13C33_SLICE0"
           },
           "port_directions": {
             "LSR": "input",
@@ -555,7 +551,7 @@
             "F": [  ],
             "CLK": [  ],
             "D": [  ],
-            "C": [ 3877528 ],
+            "C": [ 3877527 ],
             "B": [  ],
             "A": [  ]
           }
@@ -573,7 +569,7 @@
             "V": "output"
           },
           "connections": {
-            "V": [ 3877528 ]
+            "V": [ 3877527 ]
           }
         },
         "led_OBUF_O_3$iob": {
@@ -587,7 +583,7 @@
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
             "NEXTPNR_BEL": "R15C1_IOBA",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:3.22-3.25",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:3.22-3.25",
             "&DRIVE=8": "00000000000000000000000000000001",
             "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001"
           },
@@ -600,7 +596,7 @@
           "connections": {
             "O": [  ],
             "OEN": [  ],
-            "I": [ 3877485 ],
+            "I": [ 3877501 ],
             "PAD": [  ]
           }
         },
@@ -615,7 +611,7 @@
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
             "NEXTPNR_BEL": "R16C1_IOBB",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:3.22-3.25",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:3.22-3.25",
             "&DRIVE=8": "00000000000000000000000000000001",
             "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001"
           },
@@ -628,7 +624,7 @@
           "connections": {
             "O": [  ],
             "OEN": [  ],
-            "I": [ 3877482 ],
+            "I": [ 3877497 ],
             "PAD": [  ]
           }
         },
@@ -643,7 +639,7 @@
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
             "NEXTPNR_BEL": "R21C1_IOBB",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:3.22-3.25",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:3.22-3.25",
             "&DRIVE=8": "00000000000000000000000000000001",
             "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001"
           },
@@ -656,7 +652,7 @@
           "connections": {
             "O": [  ],
             "OEN": [  ],
-            "I": [ 3877477 ],
+            "I": [ 3877493 ],
             "PAD": [  ]
           }
         },
@@ -671,7 +667,7 @@
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
             "NEXTPNR_BEL": "R22C1_IOBB",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:3.22-3.25",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:3.22-3.25",
             "&DRIVE=8": "00000000000000000000000000000001",
             "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001"
           },
@@ -684,80 +680,68 @@
           "connections": {
             "O": [  ],
             "OEN": [  ],
-            "I": [ 3877471 ],
+            "I": [ 3877489 ],
             "PAD": [  ]
           }
         }
       },
       "netnames": {
-        "numero_IBUF_I_2_O": {
+        "led_OBUF_O_3_I": {
           "hide_name": 0,
-          "bits": [ 3877494 ] ,
+          "bits": [ 3877501 ] ,
           "attributes": {
-            "ROUTING": "R29C8_Q6;;1;R29C8_W26;R29C8_Q6_W260;1;R29C6_W26;R29C6_W262_W260;1;R29C4_N26;R29C4_W262_N260;1;R27C4_N27;R27C4_N262_N270;1;R25C4_A0;R25C4_N272_A0;1",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
-            "force_downto": "00000000000000000000000000000001"
+            "ROUTING": "R15C30_F4;;1;R15C30_W24;R15C30_F4_W240;1;R15C28_W24;R15C28_W242_W240;1;R15C26_W24;R15C26_W242_W240;1;R15C24_W24;R15C24_W242_W240;1;R15C22_W24;R15C22_W242_W240;1;R15C20_W24;R15C20_W242_W240;1;R15C18_W24;R15C18_W242_W240;1;R15C16_W25;R15C16_W242_W250;1;R15C14_W25;R15C14_W252_W250;1;R15C12_W25;R15C12_W252_W250;1;R15C10_W25;R15C10_W252_W250;1;R15C8_W25;R15C8_W252_W250;1;R15C6_W83;R15C6_W252_W830;1;R15C3_W25;R15C3_E838_W250;1;R15C1_A0;R15C1_W252_A0;1"
           }
         },
-        "numero_IBUF_I_1_O": {
+        "led_OBUF_O_1_I": {
           "hide_name": 0,
-          "bits": [ 3877492 ] ,
+          "bits": [ 3877493 ] ,
           "attributes": {
-            "ROUTING": "R29C11_F6;;1;R29C11_N26;R29C11_F6_N260;1;R27C11_W26;R27C11_N262_W260;1;R27C9_N26;R27C9_W262_N260;1;R25C9_N27;R25C9_N262_N270;1;R24C9_A0;R24C9_N271_A0;1",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
-            "force_downto": "00000000000000000000000000000001"
+            "ROUTING": "R15C18_F7;;1;R15C18_S27;R15C18_F7_S270;1;R17C18_S27;R17C18_S272_S270;1;R19C18_S27;R19C18_S272_S270;1;R21C18_W27;R21C18_S272_W270;1;R21C16_W22;R21C16_W272_W220;1;R21C14_W23;R21C14_W222_W230;1;R21C12_W26;R21C12_W232_W260;1;R21C10_W26;R21C10_W262_W260;1;R21C8_W26;R21C8_W262_W260;1;R21C6_W27;R21C6_W262_W270;1;R21C4_W27;R21C4_W272_W270;1;R21C2_W22;R21C2_W272_W220;1;R21C1_D1;R21C1_E222_D1;1"
           }
         },
-        "numero_IBUF_I_O": {
+        "led_OBUF_O_2_I": {
           "hide_name": 0,
-          "bits": [ 3877490 ] ,
+          "bits": [ 3877497 ] ,
           "attributes": {
-            "ROUTING": "R29C11_Q6;;1;R29C11_W26;R29C11_Q6_W260;1;R29C9_W26;R29C9_W262_W260;1;R29C7_N26;R29C7_W262_N260;1;R27C7_N26;R27C7_N262_N260;1;R25C7_W26;R25C7_N262_W260;1;R25C5_N26;R25C5_W262_N260;1;R23C5_N27;R23C5_N262_N270;1;R22C5_W27;R22C5_N271_W270;1;R22C4_A6;R22C4_W271_A6;1",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
-            "force_downto": "00000000000000000000000000000001"
+            "ROUTING": "R13C9_F4;;1;R13C9_W24;R13C9_F4_W240;1;R13C7_W24;R13C7_W242_W240;1;R13C5_W24;R13C5_W242_W240;1;R13C3_W25;R13C3_W242_W250;1;R13C1_S25;R13C1_W252_S250;1;R15C1_S20;R15C1_S252_S200;1;R16C1_D1;R16C1_S201_D1;1"
           }
         },
-        "numero_IBUF_I_3_O": {
+        "led_OBUF_O_I": {
           "hide_name": 0,
-          "bits": [ 3877488 ] ,
+          "bits": [ 3877489 ] ,
           "attributes": {
-            "ROUTING": "R29C8_F6;;1;R29C8_N26;R29C8_F6_N260;1;R27C8_N26;R27C8_N262_N260;1;R25C8_N27;R25C8_N262_N270;1;R23C8_W27;R23C8_N272_W270;1;R23C6_W27;R23C6_W272_W270;1;R23C4_A3;R23C4_W272_A3;1",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
-            "force_downto": "00000000000000000000000000000001"
+            "ROUTING": "R22C33_F3;;1;R22C33_W23;R22C33_F3_W230;1;R22C31_W23;R22C31_W232_W230;1;R22C29_W23;R22C29_W232_W230;1;R22C27_W23;R22C27_W232_W230;1;R22C25_W26;R22C25_W232_W260;1;R22C23_W26;R22C23_W262_W260;1;R22C21_W26;R22C21_W262_W260;1;R22C19_W27;R22C19_W262_W270;1;R22C17_W22;R22C17_W272_W220;1;R22C15_W23;R22C15_W222_W230;1;R22C13_W23;R22C13_W232_W230;1;R22C11_W23;R22C11_W232_W230;1;R22C9_W26;R22C9_W232_W260;1;R22C7_W27;R22C7_W262_W270;1;R22C5_W27;R22C5_W272_W270;1;R22C3_W22;R22C3_W272_W220;1;R22C1_D1;R22C1_W222_D1;1"
           }
         },
         "complemento[0]": {
           "hide_name": 0,
           "bits": [ 3877485 ] ,
           "attributes": {
-            "ROUTING": "R22C4_F1;;1;R22C4_W21;R22C4_F1_W210;1;R22C2_N21;R22C2_W212_N210;1;R20C2_N24;R20C2_N212_N240;1;R18C2_N25;R18C2_N242_N250;1;R16C2_W25;R16C2_N252_W250;1;R16C1_N25;R16C1_E252_N250;1;R15C1_A0;R15C1_N251_A0;1",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:5.15-5.26"
+            "ROUTING": "R13C33_F1;;1;R13C33_S21;R13C33_F1_S210;1;R15C33_W21;R15C33_S212_W210;1;R15C31_W21;R15C31_W212_W210;1;R15C30_X06;R15C30_W211_X06;1;R15C30_A4;R15C30_X06_A4;1",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:5.15-5.26"
           }
         },
-        "complemento_ALU_SUM_I1[0]": {
+        "numero_IBUF_I_O[0]": {
           "hide_name": 0,
           "bits": [ 3877484 ] ,
           "attributes": {
-            "ROUTING": "R23C4_F3;;1;R23C4_N13;R23C4_F3_N130;1;R22C4_B1;R22C4_N131_B1;1",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:6.26-6.37|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:32.24-32.25",
-            "force_downto": "00000000000000000000000000000001"
+            "ROUTING": "R14C47_F6;;1;R14C47_W26;R14C47_F6_W260;1;R14C45_W27;R14C45_W262_W270;1;R14C43_W22;R14C43_W272_W220;1;R14C41_W22;R14C41_W222_W220;1;R14C39_W23;R14C39_W222_W230;1;R14C37_W26;R14C37_W232_W260;1;R14C35_W26;R14C35_W262_W260;1;R14C33_N26;R14C33_W262_N260;1;R13C33_X05;R13C33_N261_X05;1;R13C33_B1;R13C33_X05_B1;1"
           }
         },
         "complemento[1]": {
           "hide_name": 0,
           "bits": [ 3877482 ] ,
           "attributes": {
-            "ROUTING": "R22C4_F2;;1;R22C4_N22;R22C4_F2_N220;1;R20C4_W22;R20C4_N222_W220;1;R20C2_N22;R20C2_W222_N220;1;R18C2_N22;R18C2_N222_N220;1;R16C2_W22;R16C2_N222_W220;1;R16C1_D1;R16C1_E222_D1;1",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:5.15-5.26"
+            "ROUTING": "R13C33_F2;;1;R13C33_W22;R13C33_F2_W220;1;R13C31_W22;R13C31_W222_W220;1;R13C29_W22;R13C29_W222_W220;1;R13C27_W22;R13C27_W222_W220;1;R13C25_W22;R13C25_W222_W220;1;R13C23_W22;R13C23_W222_W220;1;R13C21_W23;R13C21_W222_W230;1;R13C19_W26;R13C19_W232_W260;1;R13C17_W26;R13C17_W262_W260;1;R13C15_W26;R13C15_W262_W260;1;R13C13_W27;R13C13_W262_W270;1;R13C11_W27;R13C11_W272_W270;1;R13C9_A4;R13C9_W272_A4;1",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:5.15-5.26"
           }
         },
-        "complemento_ALU_SUM_I1[1]": {
+        "numero_IBUF_I_O[1]": {
           "hide_name": 0,
           "bits": [ 3877481 ] ,
           "attributes": {
-            "ROUTING": "R25C4_F0;;1;R25C4_N20;R25C4_F0_N200;1;R23C4_N21;R23C4_N202_N210;1;R22C4_B2;R22C4_N211_B2;1",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:6.26-6.37|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:32.24-32.25",
-            "force_downto": "00000000000000000000000000000001"
+            "ROUTING": "R13C47_F6;;1;R13C47_W26;R13C47_F6_W260;1;R13C45_W26;R13C45_W262_W260;1;R13C43_W26;R13C43_W262_W260;1;R13C41_W27;R13C41_W262_W270;1;R13C39_W27;R13C39_W272_W270;1;R13C37_W22;R13C37_W272_W220;1;R13C35_W23;R13C35_W222_W230;1;R13C33_B2;R13C33_W232_B2;1"
           }
         },
         "complemento_ALU_SUM_3_COUT[1]": {
@@ -766,7 +750,7 @@
           "attributes": {
             "ROUTING": " ",
             "unused_bits": "3",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:6.26-6.37|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:38.25-38.27",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:6.26-6.34|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:38.25-38.27",
             "force_downto": "00000000000000000000000000000001"
           }
         },
@@ -774,17 +758,15 @@
           "hide_name": 0,
           "bits": [ 3877477 ] ,
           "attributes": {
-            "ROUTING": "R22C4_F3;;1;R22C4_N13;R22C4_F3_N130;1;R21C4_W23;R21C4_N131_W230;1;R21C2_W23;R21C2_W232_W230;1;R21C1_X06;R21C1_W231_X06;1;R21C1_D1;R21C1_X06_D1;1",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:5.15-5.26"
+            "ROUTING": "R13C33_F3;;1;R13C33_W23;R13C33_F3_W230;1;R13C31_S23;R13C31_W232_S230;1;R15C31_W23;R15C31_S232_W230;1;R15C29_W23;R15C29_W232_W230;1;R15C27_W26;R15C27_W232_W260;1;R15C25_W27;R15C25_W262_W270;1;R15C23_W27;R15C23_W272_W270;1;R15C21_W27;R15C21_W272_W270;1;R15C19_W27;R15C19_W272_W270;1;R15C18_A7;R15C18_W271_A7;1",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:5.15-5.26"
           }
         },
-        "complemento_ALU_SUM_I1[2]": {
+        "numero_IBUF_I_O[2]": {
           "hide_name": 0,
           "bits": [ 3877476 ] ,
           "attributes": {
-            "ROUTING": "R24C9_F0;;1;R24C9_N20;R24C9_F0_N200;1;R22C9_W20;R22C9_N202_W200;1;R22C7_W20;R22C7_W202_W200;1;R22C5_W21;R22C5_W202_W210;1;R22C4_B3;R22C4_W211_B3;1",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:6.26-6.37|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:32.24-32.25",
-            "force_downto": "00000000000000000000000000000001"
+            "ROUTING": "R1C42_Q6;;1;R1C42_W26;R1C42_Q6_W260;1;R1C40_W26;R1C40_W262_W260;1;R1C38_W26;R1C38_W262_W260;1;R1C36_S26;R1C36_W262_S260;1;R3C36_W26;R3C36_S262_W260;1;R3C34_S26;R3C34_W262_S260;1;R5C34_S27;R5C34_S262_S270;1;R7C34_S22;R7C34_S272_S220;1;R9C34_S81;R9C34_S222_S810;1;R13C34_W21;R13C34_S814_W210;1;R13C33_B3;R13C33_W211_B3;1"
           }
         },
         "complemento_ALU_SUM_3_COUT[2]": {
@@ -793,7 +775,7 @@
           "attributes": {
             "ROUTING": " ",
             "unused_bits": "3",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:6.26-6.37|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:38.25-38.27",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:6.26-6.34|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:38.25-38.27",
             "force_downto": "00000000000000000000000000000001"
           }
         },
@@ -801,31 +783,29 @@
           "hide_name": 0,
           "bits": [ 3877471 ] ,
           "attributes": {
-            "ROUTING": "R22C4_F4;;1;R22C4_W10;R22C4_F4_W100;1;R22C3_W20;R22C3_W101_W200;1;R22C1_D1;R22C1_W202_D1;1",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:5.15-5.26"
+            "ROUTING": "R13C33_F4;;1;R13C33_S24;R13C33_F4_S240;1;R15C33_S24;R15C33_S242_S240;1;R17C33_S24;R17C33_S242_S240;1;R19C33_S24;R19C33_S242_S240;1;R21C33_S25;R21C33_S242_S250;1;R22C33_A3;R22C33_S251_A3;1",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:5.15-5.26"
           }
         },
         "$PACKER_VCC_NET": {
           "hide_name": 1,
-          "bits": [ 3877528 ] ,
+          "bits": [ 3877527 ] ,
           "attributes": {
-            "ROUTING": "R22C4_D3;R22C4_X08_D3;1;R22C4_N20;R22C4_VCC_N200;1;R22C4_A1;R22C4_N200_A1;1;R22C4_C4;R22C4_X08_C4;1;R22C4_D1;R22C4_X08_D1;1;R22C4_C0;R22C4_X04_C0;1;R22C4_C3;R22C4_X04_C3;1;R22C4_C1;R22C4_X04_C1;1;R22C4_D4;R22C4_X04_D4;1;R22C4_X08;R22C4_VCC_X08;1;R22C4_D2;R22C4_X08_D2;1;R1C1_S22;R1C1_VCC_S220;1;R1C1_C4;R1C1_S220_C4;1;VCC;;1;R22C4_X04;R22C4_VCC_X04;1;R22C4_C2;R22C4_X04_C2;1"
+            "ROUTING": "R13C33_X08;R13C33_VCC_X08;1;R13C33_C4;R13C33_X08_C4;1;R1C1_S22;R1C1_VCC_S220;1;R1C1_C4;R1C1_S220_C4;1;R13C33_A1;R13C33_X03_A1;1;R13C33_D1;R13C33_X03_D1;1;R13C33_C0;R13C33_X04_C0;1;R13C33_C1;R13C33_X04_C1;1;R13C33_D2;R13C33_X03_D2;1;R13C33_C2;R13C33_X04_C2;1;R13C33_X03;R13C33_VCC_X03;1;R13C33_D3;R13C33_X03_D3;1;R13C33_C3;R13C33_X04_C3;1;VCC;;1;R13C33_X04;R13C33_VCC_X04;1;R13C33_D4;R13C33_X04_D4;1"
           }
         },
-        "complemento_ALU_SUM_I1[3]": {
+        "numero_IBUF_I_O[3]": {
           "hide_name": 0,
           "bits": [ 3877469 ] ,
           "attributes": {
-            "ROUTING": "R22C4_F6;;1;R22C4_X03;R22C4_F6_X03;1;R22C4_B4;R22C4_X03_B4;1",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:6.26-6.37|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:32.24-32.25",
-            "force_downto": "00000000000000000000000000000001"
+            "ROUTING": "R1C42_F6;;1;R1C42_S26;R1C42_F6_S260;1;R3C42_W26;R3C42_S262_W260;1;R3C40_S26;R3C40_W262_S260;1;R5C40_S26;R5C40_S262_S260;1;R7C40_S27;R7C40_S262_S270;1;R9C40_W27;R9C40_S272_W270;1;R9C38_S27;R9C38_W272_S270;1;R11C38_W27;R11C38_S272_W270;1;R11C36_W27;R11C36_W272_W270;1;R11C34_W27;R11C34_W272_W270;1;R11C33_S27;R11C33_W271_S270;1;R13C33_B4;R13C33_S272_B4;1"
           }
         },
         "$PACKER_GND_NET": {
           "hide_name": 1,
-          "bits": [ 3877526 ] ,
+          "bits": [ 3877525 ] ,
           "attributes": {
-            "ROUTING": "R21C4_S21;R21C4_VSS_S210;1;R22C4_A4;R22C4_S211_A4;1;R22C4_A3;R22C4_N210_A3;1;VSS;;1;R22C4_N21;R22C4_VSS_N210;1;R22C4_A2;R22C4_N210_A2;1"
+            "ROUTING": "R13C33_A2;R13C33_N210_A2;1;R13C33_N21;R13C33_VSS_N210;1;R13C33_A3;R13C33_N210_A3;1;VSS;;1;R13C33_W21;R13C33_VSS_W210;1;R13C33_A4;R13C33_W210_A4;1"
           }
         },
         "complemento_ALU_SUM_COUT[3]": {
@@ -834,7 +814,7 @@
           "attributes": {
             "ROUTING": " ",
             "unused_bits": "3",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:6.26-6.37|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:38.25-38.27",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:6.26-6.34|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:38.25-38.27",
             "force_downto": "00000000000000000000000000000001"
           }
         },
@@ -844,7 +824,7 @@
           "attributes": {
             "ROUTING": " ",
             "unused_bits": "3",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\Codigo_a_subir.v:6.26-6.37|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:38.25-38.27",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_2\\complementoa2.v:6.26-6.34|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:38.25-38.27",
             "force_downto": "00000000000000000000000000000001"
           }
         }
