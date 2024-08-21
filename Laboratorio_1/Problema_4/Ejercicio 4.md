@@ -9,7 +9,7 @@
 ## Plantamiento del problema
  Para este problema se puede establecer que en el total de un ciclo de 1ms hay que repartir en un cierto porcentaje definido por la entrada (En este caso los swiches), este siendo el tiempo dentro de ese 1ms se encienda y luego se apague el LED del la placa o también visto como 1 o 0 en a salida del sistema. Este número es actualizado en cada periodo.
 Para el diseño se propone el siguiente diagrama de flujo: 
-![Diagrama de flujo para propuesta de programación](diagrama de flujo.png)
+![Diagrama de flujo para propuesta de programación](Diagrama_de_flujo.png)
 
  ## Codigo de pruebas en vivado 
 
