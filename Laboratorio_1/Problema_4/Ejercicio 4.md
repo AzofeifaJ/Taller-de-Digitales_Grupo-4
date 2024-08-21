@@ -21,6 +21,6 @@ Para la prueba el código se programo simple_pwm_tb.sv. Se obtuvieron los siguie
  
 ## Videos de preuba del PWM
 #Prueba con entrada de 0001
-https://github.com/user-attachments/assets/bf8e0ebc-c83b-42b7-a944-b6ca512eaf43
+https://github.com/user-attachments/assets/af226e7f-5cb9-4fb3-a614-e9a0f80d910e
 
 
