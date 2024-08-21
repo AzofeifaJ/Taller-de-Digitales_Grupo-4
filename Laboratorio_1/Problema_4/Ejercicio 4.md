@@ -13,3 +13,5 @@
 
  Antes de subir el archivo a la tarjeta Tang Nano 9k, se debe realizar una prueba con el maximo de bits que corresponde a 4, siendo estos capaces de representar de 0 a 16 en binario para poder realizar icha prueba se utilizó simple_pwm.sv, al realizar está prueba se debera ver una entrada de 4 bits que contiene el número binario que se registra en el nterruptor. De está forma uno de los leds de la tarjeta deberan de asosiar la salida dada por la programación. Se debe tener en cuenta que se puede generar ruido por el uso de la protoboard o los jumpers o falsos contactos que pueden probocar fallas en el funcionamiento.
  
+## Videos de preuba.
+https://github.com/user-attachments/assets/bf8e0ebc-c83b-42b7-a944-b6ca512eaf43
