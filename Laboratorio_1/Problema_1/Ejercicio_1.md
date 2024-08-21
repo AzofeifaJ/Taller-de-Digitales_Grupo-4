@@ -13,7 +13,7 @@ conexiones debe basarse en el diagrama de la Figura 1. Para sus pruebas iniciale
 de botones o un dipswitch en lugar del contador de dos bits y muestre sus salidas en un
 grupo de LEDs.
 
-#Diseño del Decoder 
+# Diseño del Decoder 
 Un Decoder tiene N entradas y 2^N salidas. Activa exactamente una de sus salidas dependiendo de la combinación de entradas. En este caso se utilizará un decoder de salidas en bajo, como se muestra en la siguiente tabla de la verdad.
 
 |    IN  |     OUT     |
@@ -29,7 +29,7 @@ Sus ecuaciones Booleanas son: D0=~(A+B), D1=~(A+~B), D2=~(~A+B) y D3=~(~A+~B)
 Después se implementó en una simulación utilizando el software multisim para comprobar su funcionamiento sólo utilizando 2 NOT y 4 NOR.
 ![SimuDecoder](https://github.com/user-attachments/assets/bf29fe63-b5bb-4bd6-bacc-782df1aff0a3)
 
-#Diseño del Encoder 
+# Diseño del Encoder 
 Un Encoder tiene 2^N entradas y N salidas. Cada entrada representa un valor diferente, y solo una de las entradas está activa en un momento dado. Las salidas binarizan la entrada activa en un código binario de 2 bits, en este caso es de entradas en bajo, como se muestra en la siguiente tabla de la verdad.
 
 |       IN       |  OUT  |
