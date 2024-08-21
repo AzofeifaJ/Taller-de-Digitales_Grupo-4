@@ -19,5 +19,16 @@ Thestbensh
 Para la prueba el código se programo simple_pwm_tb.sv. Se obtuvieron los siguientes resultados:
 ![Resultados del testbench](pwm_tb.png)
  
-## Videos de preuba.
+## Videos de preuba del PWM
+#Prueba con entrada de 0001
 https://github.com/user-attachments/assets/bf8e0ebc-c83b-42b7-a944-b6ca512eaf43
+
+#Prueba con entrada de 0011
+https://github.com/user-attachments/assets/8aa1d406-16b1-481c-9d43-042425d87a5e
+
+#Prueba con entrada de 0111
+https://github.com/user-attachments/assets/20e0aa2f-dec8-48af-bab6-f9214301d42a
+
+#Prueba con entrada de 1111
+https://github.com/user-attachments/assets/c72a0a61-883b-4632-9025-8767f18f837e
+
