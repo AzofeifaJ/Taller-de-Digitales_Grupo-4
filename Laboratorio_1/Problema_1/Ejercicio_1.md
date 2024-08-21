@@ -40,6 +40,7 @@ Un Encoder tiene 2^N entradas y N salidas. Cada entrada representa un valor dife
 |  1   0   1   1 | 0  1  |
 |  1   1   0   1 | 1  0  |
 |  1   1   1   0 | 1  1  |
+
 Sus ecuaciones Booleanas son: A=~(D2)+~(D3) y B=~(D1)+~(D3)
 Después se implementó en una simulación utilizando el software multisim para comprobar su funcionamiento sólo utilizando 4 NOT y 2 NOR.
 ![SimuEncoder](https://github.com/user-attachments/assets/049ed2cd-472d-4c33-b8bd-d7643270bc88)
