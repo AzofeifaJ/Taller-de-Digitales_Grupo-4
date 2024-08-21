@@ -46,7 +46,7 @@ elaboradas de manera aleatoria.
 Para este problema se reviso la bobliografía vista en el cursod de diseño lógico, se consulto el libro Digital Design and Computer Architecture, donde se presenta una sección que explica el funcionamiento de las ALU. Como lo dice la ALU, es una combinación de variables matematicas  y lógicas operacionales. (1), para este caso se tiene un parametro de N-bits, por lo cual se debe de trabajar bajo este proceso. Por lo cual las entradas A y B, tiene que estar dentro de este parametro. Para el control de la operaciones podemos basarme en la siguiente tabla.
 # Tabla de operaciones de la ALU
 
-| ALU operaciones            |
+| ALU       |                |
 |-----------|----------------|
 |  F (2:0)  | Funciones      |
 |-----------|----------------|
