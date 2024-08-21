@@ -25,7 +25,7 @@ Un Decoder tiene N entradas y 2^N salidas. Activa exactamente una de sus salidas
 |  1  0  |  1   1   0   1 |
 |  1  1  |  1   1   1   0 |
 
-Sus ecuaciones Booleanas son: D0=~(A+B), D1=~(A+~B), D2=~(~A+B) y D3=~(~A+~B)
+Sus ecuaciones Booleanas son: D0=!(A+B), D1=!(A+!B), D2=!(!A+B) y D3=!(!A+!B)
 Después se implementó en una simulación utilizando el software multisim para comprobar su funcionamiento sólo utilizando 2 NOT y 4 NOR.
 ![SimuDecoder](https://github.com/user-attachments/assets/bf29fe63-b5bb-4bd6-bacc-782df1aff0a3)
 
@@ -41,7 +41,7 @@ Un Encoder tiene 2^N entradas y N salidas. Cada entrada representa un valor dife
 |  1   1   0   1 | 1  0  |
 |  1   1   1   0 | 1  1  |
 
-Sus ecuaciones Booleanas son: A=~(D2)+~(D3) y B=~(D1)+~(D3)
+Sus ecuaciones Booleanas son: A=!(D2)+!(D3) y B=!(D1)+!(D3)
 Después se implementó en una simulación utilizando el software multisim para comprobar su funcionamiento sólo utilizando 4 NOT y 2 NOR.
 ![SimuEncoder](https://github.com/user-attachments/assets/049ed2cd-472d-4c33-b8bd-d7643270bc88)
 Por último se implementó de forma física en la protoborad.
