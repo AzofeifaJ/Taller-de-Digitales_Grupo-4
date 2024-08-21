@@ -25,7 +25,7 @@ Un Decoder tiene N entradas y 2^N salidas. Activa exactamente una de sus salidas
 |  1  0  |  1   1   0   1 |
 |  1  1  |  1   1   1   0 |
 
-Sus ecuaciones Booleanas son: D0=¬(A+B), D1=!(A+!B), D2=!(!A+B) y D3=!(!A+!B)
+Sus ecuaciones Booleanas son: D0=!(A+B), D1=!(A+!B), D2=!(!A+B) y D3=!(!A+!B)
 Después se implementó en una simulación utilizando el software multisim para comprobar su funcionamiento sólo utilizando 2 NOT y 4 NOR.
 ![SimuDecoder](https://github.com/user-attachments/assets/bf29fe63-b5bb-4bd6-bacc-782df1aff0a3)
 
