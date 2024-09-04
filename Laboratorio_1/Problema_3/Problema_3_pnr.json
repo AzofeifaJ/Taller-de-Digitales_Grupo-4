@@ -39,16 +39,24 @@
       },
       "attributes": {
         "top": "00000000000000000000000000000001",
-        "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:1.1-10.10"
+        "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:1.1-13.10"
       },
       "ports": {
         "s": {
           "direction": "input",
-          "bits": [ 3877515, 3877512 ]
+          "bits": [ 3877589, 3877587 ]
         },
         "led": {
           "direction": "output",
-          "bits": [ 3877508, 3877504, 3877494, 3877491 ]
+          "bits": [ 3877559, 3877543, 3877518, 3877515 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 3877511, 3877508, 3877505, 3877502 ]
+        },
+        "C": {
+          "direction": "input",
+          "bits": [ 3877499, 3877496, 3877493, 3877490 ]
         },
         "B": {
           "direction": "input",
@@ -60,19 +68,19 @@
         }
       },
       "cells": {
-        "led_OBUF_O_1_I_LUT3_F_LC": {
+        "led_OBUF_O_2_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT1_F_LC": {
           "hide_name": 0,
           "type": "SLICE",
           "parameters": {
             "FF_TYPE": "DFF",
             "FF_USED": "00000000000000000000000000000000",
-            "INIT": "11001010"
+            "INIT": "10"
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "R18C13_SLICE5",
+            "NEXTPNR_BEL": "R11C20_SLICE0",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:143.23-144.37"
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:159.41-159.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:152.41-152.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
           },
           "port_directions": {
             "LSR": "input",
@@ -89,27 +97,27 @@
             "LSR": [  ],
             "CE": [  ],
             "Q": [  ],
-            "F": [ 3877493 ],
+            "F": [ 3877553 ],
             "CLK": [  ],
             "D": [  ],
-            "C": [ 3877497 ],
-            "B": [ 3877470 ],
-            "A": [ 3877482 ]
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877497 ]
           }
         },
-        "led_OBUF_O_I_LUT3_F_LC": {
+        "led_OBUF_O_3_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT1_F_LC": {
           "hide_name": 0,
           "type": "SLICE",
           "parameters": {
             "FF_TYPE": "DFF",
             "FF_USED": "00000000000000000000000000000000",
-            "INIT": "11001010"
+            "INIT": "10"
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "R14C42_SLICE1",
+            "NEXTPNR_BEL": "R11C31_SLICE0",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:143.23-144.37"
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:159.41-159.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:152.41-152.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
           },
           "port_directions": {
             "LSR": "input",
@@ -126,27 +134,27 @@
             "LSR": [  ],
             "CE": [  ],
             "Q": [  ],
-            "F": [ 3877490 ],
+            "F": [ 3877569 ],
             "CLK": [  ],
             "D": [  ],
-            "C": [ 3877497 ],
-            "B": [ 3877466 ],
-            "A": [ 3877479 ]
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877488 ]
           }
         },
-        "led_OBUF_O_3_I_LUT3_F_LC": {
+        "led_OBUF_O_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC": {
           "hide_name": 0,
           "type": "SLICE",
           "parameters": {
             "FF_TYPE": "DFF",
             "FF_USED": "00000000000000000000000000000000",
-            "INIT": "10101100"
+            "INIT": "10"
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "R15C44_SLICE3",
+            "NEXTPNR_BEL": "R2C10_SLICE1",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:143.23-144.37"
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:159.41-159.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:153.41-153.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
           },
           "port_directions": {
             "LSR": "input",
@@ -163,27 +171,138 @@
             "LSR": [  ],
             "CE": [  ],
             "Q": [  ],
-            "F": [ 3877507 ],
+            "F": [ 3877583 ],
             "CLK": [  ],
             "D": [  ],
-            "C": [ 3877497 ],
-            "B": [ 3877488 ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877503 ]
+          }
+        },
+        "led_OBUF_O_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R2C10_SLICE2",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:158.41-158.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:152.41-152.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877577 ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877466 ]
+          }
+        },
+        "led_OBUF_O_2_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R11C20_SLICE1",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:159.41-159.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:153.41-153.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877554 ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877509 ]
+          }
+        },
+        "led_OBUF_O_3_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R11C31_SLICE2",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:158.41-158.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:152.41-152.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877564 ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
             "A": [ 3877476 ]
           }
         },
-        "led_OBUF_O_2_I_LUT3_F_LC": {
+        "led_OBUF_O_3_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT1_F_LC": {
           "hide_name": 0,
           "type": "SLICE",
           "parameters": {
             "FF_TYPE": "DFF",
             "FF_USED": "00000000000000000000000000000000",
-            "INIT": "11001010"
+            "INIT": "10"
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "R17C11_SLICE4",
+            "NEXTPNR_BEL": "R11C31_SLICE3",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:143.23-144.37"
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:158.41-158.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:153.41-153.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
           },
           "port_directions": {
             "LSR": "input",
@@ -200,120 +319,345 @@
             "LSR": [  ],
             "CE": [  ],
             "Q": [  ],
-            "F": [ 3877503 ],
+            "F": [ 3877565 ],
             "CLK": [  ],
             "D": [  ],
-            "C": [ 3877497 ],
-            "B": [ 3877473 ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877500 ]
+          }
+        },
+        "led_OBUF_O_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT1_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R2C10_SLICE0",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:159.41-159.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:152.41-152.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877582 ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877491 ]
+          }
+        },
+        "led_OBUF_O_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT1_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R2C10_SLICE3",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:158.41-158.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:153.41-153.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877578 ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877479 ]
+          }
+        },
+        "led_OBUF_O_3_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R11C31_SLICE1",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:159.41-159.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:153.41-153.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877570 ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877512 ]
+          }
+        },
+        "led_OBUF_O_1_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R2C11_SLICE2",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:158.41-158.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:152.41-152.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877528 ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877470 ]
+          }
+        },
+        "led_OBUF_O_1_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT1_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R2C11_SLICE3",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:158.41-158.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:153.41-153.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877529 ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877482 ]
+          }
+        },
+        "led_OBUF_O_1_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT1_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R2C11_SLICE0",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:159.41-159.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:152.41-152.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877537 ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877494 ]
+          }
+        },
+        "led_OBUF_O_1_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R2C11_SLICE1",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:159.41-159.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:153.41-153.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877538 ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877506 ]
+          }
+        },
+        "led_OBUF_O_2_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R11C20_SLICE2",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:158.41-158.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:152.41-152.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877548 ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877473 ]
+          }
+        },
+        "led_OBUF_O_2_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT1_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "10"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R11C20_SLICE3",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:158.41-158.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:153.41-153.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877549 ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
             "A": [ 3877485 ]
-          }
-        },
-        "B_IBUF_I$iob": {
-          "hide_name": 0,
-          "type": "IOB",
-          "parameters": {
-            "ENABLE_USED": "00000000000000000000000000000000",
-            "OUTPUT_USED": "00000000000000000000000000000000",
-            "INPUT_USED": "00000000000000000000000000000001"
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "R14C47_IOBB",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:3.17-3.18",
-            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "O": "output",
-            "OEN": "input",
-            "I": "input",
-            "PAD": "inout"
-          },
-          "connections": {
-            "O": [ 3877479 ],
-            "OEN": [  ],
-            "I": [  ],
-            "PAD": [  ]
-          }
-        },
-        "B_IBUF_I_1$iob": {
-          "hide_name": 0,
-          "type": "IOB",
-          "parameters": {
-            "ENABLE_USED": "00000000000000000000000000000000",
-            "OUTPUT_USED": "00000000000000000000000000000000",
-            "INPUT_USED": "00000000000000000000000000000001"
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "R29C13_IOBA",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:3.17-3.18",
-            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "O": "output",
-            "OEN": "input",
-            "I": "input",
-            "PAD": "inout"
-          },
-          "connections": {
-            "O": [ 3877482 ],
-            "OEN": [  ],
-            "I": [  ],
-            "PAD": [  ]
-          }
-        },
-        "B_IBUF_I_2$iob": {
-          "hide_name": 0,
-          "type": "IOB",
-          "parameters": {
-            "ENABLE_USED": "00000000000000000000000000000000",
-            "OUTPUT_USED": "00000000000000000000000000000000",
-            "INPUT_USED": "00000000000000000000000000000001"
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "R29C11_IOBB",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:3.17-3.18",
-            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "O": "output",
-            "OEN": "input",
-            "I": "input",
-            "PAD": "inout"
-          },
-          "connections": {
-            "O": [ 3877485 ],
-            "OEN": [  ],
-            "I": [  ],
-            "PAD": [  ]
-          }
-        },
-        "B_IBUF_I_3$iob": {
-          "hide_name": 0,
-          "type": "IOB",
-          "parameters": {
-            "ENABLE_USED": "00000000000000000000000000000000",
-            "OUTPUT_USED": "00000000000000000000000000000000",
-            "INPUT_USED": "00000000000000000000000000000001"
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "R17C47_IOBB",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:3.17-3.18",
-            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "O": "output",
-            "OEN": "input",
-            "I": "input",
-            "PAD": "inout"
-          },
-          "connections": {
-            "O": [ 3877488 ],
-            "OEN": [  ],
-            "I": [  ],
-            "PAD": [  ]
           }
         },
         "led_OBUF_O$iob": {
@@ -327,7 +671,7 @@
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
             "NEXTPNR_BEL": "R22C1_IOBB",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:5.18-5.21",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:7.18-7.21",
             "&DRIVE=8": "00000000000000000000000000000001",
             "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001"
           },
@@ -340,7 +684,7 @@
           "connections": {
             "O": [  ],
             "OEN": [  ],
-            "I": [ 3877490 ],
+            "I": [ 3877514 ],
             "PAD": [  ]
           }
         },
@@ -355,7 +699,7 @@
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
             "NEXTPNR_BEL": "R21C1_IOBB",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:5.18-5.21",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:7.18-7.21",
             "&DRIVE=8": "00000000000000000000000000000001",
             "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001"
           },
@@ -368,7 +712,7 @@
           "connections": {
             "O": [  ],
             "OEN": [  ],
-            "I": [ 3877493 ],
+            "I": [ 3877517 ],
             "PAD": [  ]
           }
         },
@@ -383,7 +727,7 @@
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
             "NEXTPNR_BEL": "R16C1_IOBB",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:5.18-5.21",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:7.18-7.21",
             "&DRIVE=8": "00000000000000000000000000000001",
             "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001"
           },
@@ -396,7 +740,7 @@
           "connections": {
             "O": [  ],
             "OEN": [  ],
-            "I": [ 3877503 ],
+            "I": [ 3877542 ],
             "PAD": [  ]
           }
         },
@@ -411,7 +755,7 @@
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
             "NEXTPNR_BEL": "R15C1_IOBA",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:5.18-5.21",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:7.18-7.21",
             "&DRIVE=8": "00000000000000000000000000000001",
             "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001"
           },
@@ -424,7 +768,7 @@
           "connections": {
             "O": [  ],
             "OEN": [  ],
-            "I": [ 3877507 ],
+            "I": [ 3877558 ],
             "PAD": [  ]
           }
         },
@@ -439,7 +783,7 @@
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
             "NEXTPNR_BEL": "R1C2_IOBA",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:4.17-4.18",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:6.17-6.18",
             "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001"
           },
           "port_directions": {
@@ -449,7 +793,7 @@
             "PAD": "inout"
           },
           "connections": {
-            "O": [ 3877513 ],
+            "O": [ 3877523 ],
             "OEN": [  ],
             "I": [  ],
             "PAD": [  ]
@@ -466,7 +810,7 @@
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
             "NEXTPNR_BEL": "R5C1_IOBA",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:4.17-4.18",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:6.17-6.18",
             "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001"
           },
           "port_directions": {
@@ -476,104 +820,115 @@
             "PAD": "inout"
           },
           "connections": {
+            "O": [ 3877531 ],
+            "OEN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "C_IBUF_I_3$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R1C11_IOBA",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:4.17-4.18",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 3877500 ],
+            "OEN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "D_IBUF_I_3$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R1C37_IOBB",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:5.17-5.18",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 3877512 ],
+            "OEN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "D_IBUF_I_2$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R1C37_IOBA",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:5.17-5.18",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 3877509 ],
+            "OEN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "C_IBUF_I_2$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R1C10_IOBB",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:4.17-4.18",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
             "O": [ 3877497 ],
-            "OEN": [  ],
-            "I": [  ],
-            "PAD": [  ]
-          }
-        },
-        "A_IBUF_I_3$iob": {
-          "hide_name": 0,
-          "type": "IOB",
-          "parameters": {
-            "ENABLE_USED": "00000000000000000000000000000000",
-            "OUTPUT_USED": "00000000000000000000000000000000",
-            "INPUT_USED": "00000000000000000000000000000001"
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "R14C47_IOBA",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:2.17-2.18",
-            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "O": "output",
-            "OEN": "input",
-            "I": "input",
-            "PAD": "inout"
-          },
-          "connections": {
-            "O": [ 3877476 ],
-            "OEN": [  ],
-            "I": [  ],
-            "PAD": [  ]
-          }
-        },
-        "$PACKER_VCC": {
-          "hide_name": 1,
-          "type": "VCC",
-          "parameters": {
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "VCC"
-          },
-          "port_directions": {
-            "V": "output"
-          },
-          "connections": {
-            "V": [ 3877531 ]
-          }
-        },
-        "A_IBUF_I_2$iob": {
-          "hide_name": 0,
-          "type": "IOB",
-          "parameters": {
-            "ENABLE_USED": "00000000000000000000000000000000",
-            "OUTPUT_USED": "00000000000000000000000000000000",
-            "INPUT_USED": "00000000000000000000000000000001"
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "R13C47_IOBA",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:2.17-2.18",
-            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "O": "output",
-            "OEN": "input",
-            "I": "input",
-            "PAD": "inout"
-          },
-          "connections": {
-            "O": [ 3877473 ],
-            "OEN": [  ],
-            "I": [  ],
-            "PAD": [  ]
-          }
-        },
-        "A_IBUF_I_1$iob": {
-          "hide_name": 0,
-          "type": "IOB",
-          "parameters": {
-            "ENABLE_USED": "00000000000000000000000000000000",
-            "OUTPUT_USED": "00000000000000000000000000000000",
-            "INPUT_USED": "00000000000000000000000000000001"
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "R1C42_IOBB",
-            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:2.17-2.18",
-            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "O": "output",
-            "OEN": "input",
-            "I": "input",
-            "PAD": "inout"
-          },
-          "connections": {
-            "O": [ 3877470 ],
             "OEN": [  ],
             "I": [  ],
             "PAD": [  ]
@@ -606,6 +961,583 @@
             "PAD": [  ]
           }
         },
+        "C_IBUF_I_1$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R1C10_IOBA",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:4.17-4.18",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 3877494 ],
+            "OEN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "D_IBUF_I_1$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R1C12_IOBB",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:5.17-5.18",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 3877506 ],
+            "OEN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "D_IBUF_I$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R1C12_IOBA",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:5.17-5.18",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 3877503 ],
+            "OEN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "C_IBUF_I$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R1C8_IOBB",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:4.17-4.18",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 3877491 ],
+            "OEN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "led_OBUF_O_2_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R11C20_MUX2_LUT50"
+          },
+          "port_directions": {
+            "OF": "output",
+            "SEL": "input",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "OF": [ 3877546 ],
+            "SEL": [ 3877531 ],
+            "I1": [ 3877554 ],
+            "I0": [ 3877553 ]
+          }
+        },
+        "led_OBUF_O_2_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R11C20_MUX2_LUT51"
+          },
+          "port_directions": {
+            "OF": "output",
+            "SEL": "input",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "OF": [ 3877545 ],
+            "SEL": [ 3877531 ],
+            "I1": [ 3877549 ],
+            "I0": [ 3877548 ]
+          }
+        },
+        "B_IBUF_I_3$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R17C47_IOBB",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:3.17-3.18",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 3877488 ],
+            "OEN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "A_IBUF_I_1$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R1C42_IOBB",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:2.17-2.18",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 3877470 ],
+            "OEN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "led_OBUF_O_3_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R11C31_MUX2_LUT50"
+          },
+          "port_directions": {
+            "OF": "output",
+            "SEL": "input",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "OF": [ 3877562 ],
+            "SEL": [ 3877523 ],
+            "I1": [ 3877570 ],
+            "I0": [ 3877569 ]
+          }
+        },
+        "B_IBUF_I_2$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R29C11_IOBB",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:3.17-3.18",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 3877485 ],
+            "OEN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "led_OBUF_O_1_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R2C11_MUX2_LUT50"
+          },
+          "port_directions": {
+            "OF": "output",
+            "SEL": "input",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "OF": [ 3877521 ],
+            "SEL": [ 3877531 ],
+            "I1": [ 3877538 ],
+            "I0": [ 3877537 ]
+          }
+        },
+        "led_OBUF_O_1_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R2C11_MUX2_LUT51"
+          },
+          "port_directions": {
+            "OF": "output",
+            "SEL": "input",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "OF": [ 3877520 ],
+            "SEL": [ 3877531 ],
+            "I1": [ 3877529 ],
+            "I0": [ 3877528 ]
+          }
+        },
+        "A_IBUF_I_2$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R13C47_IOBA",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:2.17-2.18",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 3877473 ],
+            "OEN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "led_OBUF_O_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R2C10_MUX2_LUT51"
+          },
+          "port_directions": {
+            "OF": "output",
+            "SEL": "input",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "OF": [ 3877574 ],
+            "SEL": [ 3877531 ],
+            "I1": [ 3877578 ],
+            "I0": [ 3877577 ]
+          }
+        },
+        "led_OBUF_O_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_LC": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R2C10_MUX2_LUT50"
+          },
+          "port_directions": {
+            "OF": "output",
+            "SEL": "input",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "OF": [ 3877575 ],
+            "SEL": [ 3877531 ],
+            "I1": [ 3877583 ],
+            "I0": [ 3877582 ]
+          }
+        },
+        "$PACKER_VCC": {
+          "hide_name": 1,
+          "type": "VCC",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "VCC"
+          },
+          "port_directions": {
+            "V": "output"
+          },
+          "connections": {
+            "V": [ 3877604 ]
+          }
+        },
+        "B_IBUF_I_1$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R29C13_IOBA",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:3.17-3.18",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 3877482 ],
+            "OEN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "A_IBUF_I_3$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R14C47_IOBA",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:2.17-2.18",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 3877476 ],
+            "OEN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "led_OBUF_O_3_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_LC": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R11C31_MUX2_LUT51"
+          },
+          "port_directions": {
+            "OF": "output",
+            "SEL": "input",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "OF": [ 3877561 ],
+            "SEL": [ 3877523 ],
+            "I1": [ 3877565 ],
+            "I0": [ 3877564 ]
+          }
+        },
+        "led_OBUF_O_I_MUX2_LUT6_O_LC": {
+          "hide_name": 0,
+          "type": "MUX2_LUT6",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R2C10_MUX2_LUT60"
+          },
+          "port_directions": {
+            "OF": "output",
+            "SEL": "input",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "OF": [ 3877514 ],
+            "SEL": [ 3877523 ],
+            "I1": [ 3877575 ],
+            "I0": [ 3877574 ]
+          }
+        },
+        "led_OBUF_O_3_I_MUX2_LUT6_O_LC": {
+          "hide_name": 0,
+          "type": "MUX2_LUT6",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R11C31_MUX2_LUT60"
+          },
+          "port_directions": {
+            "OF": "output",
+            "SEL": "input",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "OF": [ 3877558 ],
+            "SEL": [ 3877531 ],
+            "I1": [ 3877562 ],
+            "I0": [ 3877561 ]
+          }
+        },
+        "B_IBUF_I$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R14C47_IOBB",
+            "src": "c:\\Users\\chisc\\Downloads\\GitHub\\Laboratorio-1_Taller-de-Digitales_Grupo-4\\Laboratorio_1\\Problema_3\\codigo_mux.v:3.17-3.18",
+            "&PULL_MODE=DOWN": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 3877479 ],
+            "OEN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "led_OBUF_O_1_I_MUX2_LUT6_O_LC": {
+          "hide_name": 0,
+          "type": "MUX2_LUT6",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R2C11_MUX2_LUT60"
+          },
+          "port_directions": {
+            "OF": "output",
+            "SEL": "input",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "OF": [ 3877517 ],
+            "SEL": [ 3877523 ],
+            "I1": [ 3877521 ],
+            "I0": [ 3877520 ]
+          }
+        },
+        "led_OBUF_O_2_I_MUX2_LUT6_O_LC": {
+          "hide_name": 0,
+          "type": "MUX2_LUT6",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R11C20_MUX2_LUT60"
+          },
+          "port_directions": {
+            "OF": "output",
+            "SEL": "input",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "OF": [ 3877542 ],
+            "SEL": [ 3877523 ],
+            "I1": [ 3877546 ],
+            "I0": [ 3877545 ]
+          }
+        },
         "$PACKER_GND": {
           "hide_name": 1,
           "type": "GND",
@@ -619,7 +1551,7 @@
             "G": "output"
           },
           "connections": {
-            "G": [ 3877529 ]
+            "G": [ 3877602 ]
           }
         },
         "GSR": {
@@ -635,139 +1567,403 @@
             "GSRI": "input"
           },
           "connections": {
-            "GSRI": [ 3877531 ]
+            "GSRI": [ 3877604 ]
           }
         }
       },
       "netnames": {
-        "A_IBUF_I_3_O[1]": {
+        "led_OBUF_O_2_I_MUX2_LUT6_O_I1": {
           "hide_name": 0,
-          "bits": [ 3877488 ] ,
+          "bits": [ 3877546 ] ,
           "attributes": {
-            "ROUTING": "R17C47_Q6;;1;R17C47_W26;R17C47_Q6_W260;1;R17C45_N26;R17C45_W262_N260;1;R15C45_W26;R15C45_N262_W260;1;R15C44_X03;R15C44_W261_X03;1;R15C44_B3;R15C44_X03_B3;1",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
-            "force_downto": "00000000000000000000000000000001"
+            "ROUTING": "R11C20_OF0;;1;R11C20_I1MUX1;R11C20_OF0_DUMMY_I1MUX1;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:157.13-157.15"
           }
         },
-        "A_IBUF_I_1_O[2]": {
+        "led_OBUF_O_2_I_MUX2_LUT6_O_I0": {
           "hide_name": 0,
-          "bits": [ 3877497 ] ,
+          "bits": [ 3877545 ] ,
           "attributes": {
-            "ROUTING": "R15C11_E26;R15C11_S262_E260;1;R15C13_E27;R15C13_E262_E270;1;R15C15_E27;R15C15_E272_E270;1;R15C17_E22;R15C17_E272_E220;1;R15C19_E23;R15C19_E222_E230;1;R15C21_E23;R15C21_E232_E230;1;R15C23_E23;R15C23_E232_E230;1;R15C25_E26;R15C25_E232_E260;1;R15C27_E26;R15C27_E262_E260;1;R15C29_E26;R15C29_E262_E260;1;R15C31_E27;R15C31_E262_E270;1;R15C33_E27;R15C33_E272_E270;1;R15C35_E22;R15C35_E272_E220;1;R15C37_E23;R15C37_E222_E230;1;R15C39_E26;R15C39_E232_E260;1;R15C41_E26;R15C41_E262_E260;1;R15C43_E26;R15C43_E262_E260;1;R15C44_C3;R15C44_E261_C3;1;R11C11_S23;R11C11_E232_S230;1;R13C11_S26;R13C11_S232_S260;1;R15C11_S26;R15C11_S262_S260;1;R17C11_X05;R17C11_S262_X05;1;R17C11_C4;R17C11_X05_C4;1;R14C13_E26;R14C13_S261_E260;1;R14C15_E26;R14C15_E262_E260;1;R14C17_E27;R14C17_E262_E270;1;R14C19_E27;R14C19_E272_E270;1;R14C21_E27;R14C21_E272_E270;1;R14C23_E22;R14C23_E272_E220;1;R14C25_E22;R14C25_E222_E220;1;R14C27_E22;R14C27_E222_E220;1;R14C29_E23;R14C29_E222_E230;1;R14C31_E26;R14C31_E232_E260;1;R14C33_E26;R14C33_E262_E260;1;R14C35_E26;R14C35_E262_E260;1;R14C37_E26;R14C37_E262_E260;1;R14C39_E26;R14C39_E262_E260;1;R14C41_E26;R14C41_E262_E260;1;R14C42_C1;R14C42_E261_C1;1;R5C1_F6;;1;R5C1_S26;R5C1_F6_S260;1;R7C1_E26;R7C1_S262_E260;1;R7C3_E27;R7C3_E262_E270;1;R7C5_S27;R7C5_E272_S270;1;R9C5_S27;R9C5_S272_S270;1;R11C5_E27;R11C5_S272_E270;1;R11C7_E22;R11C7_E272_E220;1;R11C9_E23;R11C9_E222_E230;1;R11C11_E23;R11C11_E232_E230;1;R11C13_S23;R11C13_E232_S230;1;R13C13_S26;R13C13_S232_S260;1;R15C13_S27;R15C13_S262_S270;1;R17C13_S22;R17C13_S272_S220;1;R18C13_C5;R18C13_S221_C5;1",
-            "unused_bits": "1 ",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
-            "force_downto": "00000000000000000000000000000001"
+            "ROUTING": "R11C20_OF2;;1;R11C20_I0MUX1;R11C20_OF2_DUMMY_I0MUX1;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:157.9-157.11"
           }
         },
-        "A_IBUF_I_2_O[0]": {
+        "led_OBUF_O_2_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1": {
           "hide_name": 0,
-          "bits": [ 3877485 ] ,
+          "bits": [ 3877554 ] ,
           "attributes": {
-            "ROUTING": "R29C11_Q6;;1;R29C11_N26;R29C11_Q6_N260;1;R27C11_N27;R27C11_N262_N270;1;R25C11_N27;R25C11_N272_N270;1;R23C11_N27;R23C11_N272_N270;1;R21C11_N22;R21C11_N272_N220;1;R19C11_N23;R19C11_N222_N230;1;R17C11_A4;R17C11_N232_A4;1",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
-            "force_downto": "00000000000000000000000000000001"
-          }
-        },
-        "led_OBUF_O_3_I": {
-          "hide_name": 0,
-          "bits": [ 3877507 ] ,
-          "attributes": {
-            "ROUTING": "R15C44_F3;;1;R15C44_W23;R15C44_F3_W230;1;R15C42_W26;R15C42_W232_W260;1;R15C40_W27;R15C40_W262_W270;1;R15C38_W22;R15C38_W272_W220;1;R15C36_W23;R15C36_W222_W230;1;R15C34_W26;R15C34_W232_W260;1;R15C32_W27;R15C32_W262_W270;1;R15C30_W22;R15C30_W272_W220;1;R15C28_W23;R15C28_W222_W230;1;R15C26_W26;R15C26_W232_W260;1;R15C24_W26;R15C24_W262_W260;1;R15C22_W26;R15C22_W262_W260;1;R15C20_W27;R15C20_W262_W270;1;R15C18_W22;R15C18_W272_W220;1;R15C16_W23;R15C16_W222_W230;1;R15C14_W23;R15C14_W232_W230;1;R15C12_W26;R15C12_W232_W260;1;R15C10_W26;R15C10_W262_W260;1;R15C8_W27;R15C8_W262_W270;1;R15C6_W82;R15C6_W272_W820;1;R15C3_W27;R15C3_E828_W270;1;R15C1_A0;R15C1_W272_A0;1"
-          }
-        },
-        "A_IBUF_I_1_O[0]": {
-          "hide_name": 0,
-          "bits": [ 3877482 ] ,
-          "attributes": {
-            "ROUTING": "R29C13_F6;;1;R29C13_N26;R29C13_F6_N260;1;R27C13_N26;R27C13_N262_N260;1;R25C13_N27;R25C13_N262_N270;1;R23C13_N27;R23C13_N272_N270;1;R21C13_N22;R21C13_N272_N220;1;R19C13_N23;R19C13_N222_N230;1;R18C13_A5;R18C13_N231_A5;1",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
-            "force_downto": "00000000000000000000000000000001"
-          }
-        },
-        "led_OBUF_O_1_I": {
-          "hide_name": 0,
-          "bits": [ 3877493 ] ,
-          "attributes": {
-            "ROUTING": "R18C13_F5;;1;R18C13_S25;R18C13_F5_S250;1;R20C13_W25;R20C13_S252_W250;1;R20C11_W25;R20C11_W252_W250;1;R20C9_W25;R20C9_W252_W250;1;R20C7_W20;R20C7_W252_W200;1;R20C5_W20;R20C5_W202_W200;1;R20C3_W20;R20C3_W202_W200;1;R20C1_S20;R20C1_W202_S200;1;R21C1_D1;R21C1_S201_D1;1"
-          }
-        },
-        "A_IBUF_I_O[0]": {
-          "hide_name": 0,
-          "bits": [ 3877479 ] ,
-          "attributes": {
-            "ROUTING": "R14C47_Q6;;1;R14C47_EW10;R14C47_Q6_EW10;1;R14C46_W25;R14C46_W111_W250;1;R14C44_W25;R14C44_W252_W250;1;R14C42_A1;R14C42_W252_A1;1",
-            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
-            "force_downto": "00000000000000000000000000000001"
+            "ROUTING": "R11C20_F1;;1;R11C20_I1MUX0;R11C20_F1_DUMMY_I1MUX0;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:159.41-159.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.13-151.15"
           }
         },
         "led_OBUF_O_2_I": {
           "hide_name": 0,
-          "bits": [ 3877503 ] ,
+          "bits": [ 3877542 ] ,
           "attributes": {
-            "ROUTING": "R17C11_F4;;1;R17C11_W24;R17C11_F4_W240;1;R17C9_W25;R17C9_W242_W250;1;R17C7_W20;R17C7_W252_W200;1;R17C5_W20;R17C5_W202_W200;1;R17C3_W20;R17C3_W202_W200;1;R17C1_N20;R17C1_W202_N200;1;R16C1_D1;R16C1_N201_D1;1"
+            "ROUTING": "R11C20_OF1;;1;R11C20_S21;R11C20_OF1_S210;1;R13C20_S24;R13C20_S212_S240;1;R15C20_W24;R15C20_S242_W240;1;R15C18_W24;R15C18_W242_W240;1;R15C16_W24;R15C16_W242_W240;1;R15C14_W24;R15C14_W242_W240;1;R15C12_W24;R15C12_W242_W240;1;R15C10_W24;R15C10_W242_W240;1;R15C8_W24;R15C8_W242_W240;1;R15C6_W25;R15C6_W242_W250;1;R15C4_W20;R15C4_W252_W200;1;R15C2_S20;R15C2_W202_S200;1;R16C2_W20;R16C2_S201_W200;1;R16C1_D1;R16C1_W201_D1;1"
           }
         },
-        "A_IBUF_I_3_O[0]": {
+        "led_OBUF_O_1_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1": {
           "hide_name": 0,
-          "bits": [ 3877476 ] ,
+          "bits": [ 3877538 ] ,
           "attributes": {
-            "ROUTING": "R14C47_F6;;1;R14C47_W26;R14C47_F6_W260;1;R14C45_W27;R14C45_W262_W270;1;R14C44_S27;R14C44_W271_S270;1;R15C44_A3;R15C44_S271_A3;1",
+            "ROUTING": "R2C11_F1;;1;R2C11_I1MUX0;R2C11_F1_DUMMY_I1MUX0;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:159.41-159.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "led_OBUF_O_1_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 3877537 ] ,
+          "attributes": {
+            "ROUTING": "R2C11_F0;;1;R2C11_I0MUX0;R2C11_F0_DUMMY_I0MUX0;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:159.41-159.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "A_IBUF_I_1_O[4]": {
+          "hide_name": 0,
+          "bits": [ 3877531 ] ,
+          "attributes": {
+            "ROUTING": "R3C11_N23;R3C11_E232_N230;1;R2C11_X08;R2C11_N231_X08;1;R2C11_SEL0;R2C11_X08_SEL0;1;R5C9_N27;R5C9_E272_N270;1;R3C9_E27;R3C9_N272_E270;1;R3C11_N27;R3C11_E272_N270;1;R2C11_X06;R2C11_N271_X06;1;R2C11_SEL2;R2C11_X06_SEL2;1;R11C21_E26;R11C21_E262_E260;1;R11C23_E26;R11C23_E262_E260;1;R11C25_E26;R11C25_E262_E260;1;R11C27_E27;R11C27_E262_E270;1;R11C29_E22;R11C29_E272_E220;1;R11C31_X01;R11C31_E222_X01;1;R11C31_SEL1;R11C31_X01_SEL1;1;R11C20_SEL2;R11C20_E261_SEL2;1;R5C1_E26;R5C1_F6_E260;1;R5C3_E26;R5C3_E262_E260;1;R5C5_E26;R5C5_E262_E260;1;R5C7_E27;R5C7_E262_E270;1;R5C9_S27;R5C9_E272_S270;1;R7C9_E27;R7C9_S272_E270;1;R7C11_E22;R7C11_E272_E220;1;R7C13_E22;R7C13_E222_E220;1;R7C15_E23;R7C15_E222_E230;1;R7C17_S23;R7C17_E232_S230;1;R9C17_S26;R9C17_S232_S260;1;R11C17_E26;R11C17_S262_E260;1;R11C19_E26;R11C19_E262_E260;1;R11C20_SEL0;R11C20_E261_SEL0;1;R2C10_SEL0;R2C10_X08_SEL0;1;R5C1_F6;;1;R5C1_N26;R5C1_F6_N260;1;R3C1_E26;R3C1_N262_E260;1;R3C3_E26;R3C3_E262_E260;1;R3C5_E27;R3C5_E262_E270;1;R3C7_E22;R3C7_E272_E220;1;R3C9_E23;R3C9_E222_E230;1;R3C10_N23;R3C10_E231_N230;1;R2C10_X08;R2C10_N231_X08;1;R2C10_SEL2;R2C10_X08_SEL2;1",
             "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
             "force_downto": "00000000000000000000000000000001"
           }
         },
-        "s_IBUF_I_O[1]": {
+        "led_OBUF_O_1_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1": {
           "hide_name": 0,
-          "bits": [ 3877513 ] ,
+          "bits": [ 3877529 ] ,
           "attributes": {
-            "ROUTING": " ",
-            "unused_bits": "1 "
+            "ROUTING": "R2C11_F3;;1;R2C11_I1MUX2;R2C11_F3_DUMMY_I1MUX2;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:158.41-158.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.13-151.15"
           }
         },
-        "A_IBUF_I_2_O[1]": {
+        "led_OBUF_O_1_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0": {
           "hide_name": 0,
-          "bits": [ 3877473 ] ,
+          "bits": [ 3877528 ] ,
           "attributes": {
-            "ROUTING": "R13C47_F6;;1;R13C47_S26;R13C47_F6_S260;1;R15C47_S27;R15C47_S262_S270;1;R17C47_W27;R17C47_S272_W270;1;R17C45_W27;R17C45_W272_W270;1;R17C43_W22;R17C43_W272_W220;1;R17C41_W23;R17C41_W222_W230;1;R17C39_W26;R17C39_W232_W260;1;R17C37_W27;R17C37_W262_W270;1;R17C35_W27;R17C35_W272_W270;1;R17C33_W27;R17C33_W272_W270;1;R17C31_W27;R17C31_W272_W270;1;R17C29_W27;R17C29_W272_W270;1;R17C27_W27;R17C27_W272_W270;1;R17C25_W22;R17C25_W272_W220;1;R17C23_W22;R17C23_W222_W220;1;R17C21_W23;R17C21_W222_W230;1;R17C19_W23;R17C19_W232_W230;1;R17C17_W23;R17C17_W232_W230;1;R17C15_W23;R17C15_W232_W230;1;R17C13_W23;R17C13_W232_W230;1;R17C11_B4;R17C11_W232_B4;1",
+            "ROUTING": "R2C11_F2;;1;R2C11_I0MUX2;R2C11_F2_DUMMY_I0MUX2;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:158.41-158.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "A_IBUF_I_1_O[5]": {
+          "hide_name": 0,
+          "bits": [ 3877523 ] ,
+          "attributes": {
+            "ROUTING": "R11C31_SEL0;R11C31_E261_SEL0;1;R2C10_E22;R2C10_E222_E220;1;R2C11_X01;R2C11_E221_X01;1;R2C11_SEL1;R2C11_X01_SEL1;1;R2C4_E26;R2C4_S261_E260;1;R2C6_E27;R2C6_E262_E270;1;R2C8_E22;R2C8_E272_E220;1;R2C10_X01;R2C10_E222_X01;1;R2C10_SEL1;R2C10_X01_SEL1;1;R11C20_X01;R11C20_S222_X01;1;R11C20_SEL1;R11C20_X01_SEL1;1;R1C2_F6;;1;R1C2_E26;R1C2_F6_E260;1;R1C4_S26;R1C4_E262_S260;1;R3C4_E26;R3C4_S262_E260;1;R3C6_E26;R3C6_E262_E260;1;R3C8_E26;R3C8_E262_E260;1;R3C10_E26;R3C10_E262_E260;1;R3C12_S26;R3C12_E262_S260;1;R5C12_E26;R5C12_S262_E260;1;R5C14_E27;R5C14_E262_E270;1;R5C16_E27;R5C16_E272_E270;1;R5C18_E27;R5C18_E272_E270;1;R5C20_S27;R5C20_E272_S270;1;R7C20_S22;R7C20_S272_S220;1;R9C20_S22;R9C20_S222_S220;1;R11C20_E22;R11C20_S222_E220;1;R11C22_E22;R11C22_E222_E220;1;R11C24_E23;R11C24_E222_E230;1;R11C26_E23;R11C26_E232_E230;1;R11C28_E26;R11C28_E232_E260;1;R11C30_E26;R11C30_E262_E260;1;R11C31_SEL2;R11C31_E261_SEL2;1",
             "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
             "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "led_OBUF_O_1_I_MUX2_LUT6_O_I1": {
+          "hide_name": 0,
+          "bits": [ 3877521 ] ,
+          "attributes": {
+            "ROUTING": "R2C11_OF0;;1;R2C11_I1MUX1;R2C11_OF0_DUMMY_I1MUX1;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:157.13-157.15"
+          }
+        },
+        "led_OBUF_O_1_I_MUX2_LUT6_O_I0": {
+          "hide_name": 0,
+          "bits": [ 3877520 ] ,
+          "attributes": {
+            "ROUTING": "R2C11_OF2;;1;R2C11_I0MUX1;R2C11_OF2_DUMMY_I0MUX1;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:157.9-157.11"
+          }
+        },
+        "led_OBUF_O_3_I": {
+          "hide_name": 0,
+          "bits": [ 3877558 ] ,
+          "attributes": {
+            "ROUTING": "R11C31_OF1;;1;R11C31_S21;R11C31_OF1_S210;1;R13C31_W21;R13C31_S212_W210;1;R13C29_W21;R13C29_W212_W210;1;R13C27_S21;R13C27_W212_S210;1;R15C27_W21;R15C27_S212_W210;1;R15C25_W24;R15C25_W212_W240;1;R15C23_W25;R15C23_W242_W250;1;R15C21_W20;R15C21_W252_W200;1;R15C19_W20;R15C19_W202_W200;1;R15C17_W20;R15C17_W202_W200;1;R15C15_W20;R15C15_W202_W200;1;R15C13_W21;R15C13_W202_W210;1;R15C11_W24;R15C11_W212_W240;1;R15C9_W24;R15C9_W242_W240;1;R15C7_W25;R15C7_W242_W250;1;R15C5_W25;R15C5_W252_W250;1;R15C3_W25;R15C3_W252_W250;1;R15C1_A0;R15C1_W252_A0;1"
+          }
+        },
+        "led_OBUF_O_1_I": {
+          "hide_name": 0,
+          "bits": [ 3877517 ] ,
+          "attributes": {
+            "ROUTING": "R2C11_OF1;;1;R2C11_S21;R2C11_OF1_S210;1;R4C11_W21;R4C11_S212_W210;1;R4C9_S21;R4C9_W212_S210;1;R6C9_S21;R6C9_S212_S210;1;R8C9_S21;R8C9_S212_S210;1;R10C9_W21;R10C9_S212_W210;1;R10C7_W21;R10C7_W212_W210;1;R10C5_W24;R10C5_W212_W240;1;R10C3_W25;R10C3_W242_W250;1;R10C1_S25;R10C1_W252_S250;1;R12C1_S20;R12C1_S252_S200;1;R14C1_S20;R14C1_S202_S200;1;R16C1_S20;R16C1_S202_S200;1;R18C1_S20;R18C1_S202_S200;1;R20C1_S20;R20C1_S202_S200;1;R21C1_D1;R21C1_S201_D1;1"
+          }
+        },
+        "led_OBUF_O_2_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 3877553 ] ,
+          "attributes": {
+            "ROUTING": "R11C20_F0;;1;R11C20_I0MUX0;R11C20_F0_DUMMY_I0MUX0;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:159.41-159.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.9-151.11"
           }
         },
         "led_OBUF_O_I": {
           "hide_name": 0,
-          "bits": [ 3877490 ] ,
+          "bits": [ 3877514 ] ,
           "attributes": {
-            "ROUTING": "R14C42_F1;;1;R14C42_W21;R14C42_F1_W210;1;R14C40_S21;R14C40_W212_S210;1;R16C40_W21;R16C40_S212_W210;1;R16C38_W21;R16C38_W212_W210;1;R16C36_S21;R16C36_W212_S210;1;R18C36_S21;R18C36_S212_S210;1;R20C36_S21;R20C36_S212_S210;1;R22C36_W21;R22C36_S212_W210;1;R22C34_W24;R22C34_W212_W240;1;R22C32_W24;R22C32_W242_W240;1;R22C30_W24;R22C30_W242_W240;1;R22C28_W25;R22C28_W242_W250;1;R22C26_W20;R22C26_W252_W200;1;R22C24_W20;R22C24_W202_W200;1;R22C22_W20;R22C22_W202_W200;1;R22C20_W21;R22C20_W202_W210;1;R22C18_W24;R22C18_W212_W240;1;R22C16_W25;R22C16_W242_W250;1;R22C14_W20;R22C14_W252_W200;1;R22C12_W20;R22C12_W202_W200;1;R22C10_W21;R22C10_W202_W210;1;R22C8_W24;R22C8_W212_W240;1;R22C6_W24;R22C6_W242_W240;1;R22C4_W25;R22C4_W242_W250;1;R22C2_W20;R22C2_W252_W200;1;R22C1_D1;R22C1_W201_D1;1"
+            "ROUTING": "R2C10_OF1;;1;R2C10_S21;R2C10_OF1_S210;1;R4C10_W21;R4C10_S212_W210;1;R4C8_W24;R4C8_W212_W240;1;R4C6_W25;R4C6_W242_W250;1;R4C4_S25;R4C4_W252_S250;1;R6C4_W25;R6C4_S252_W250;1;R6C2_S25;R6C2_W252_S250;1;R8C2_S20;R8C2_S252_S200;1;R10C2_S21;R10C2_S202_S210;1;R12C2_S24;R12C2_S212_S240;1;R14C2_S24;R14C2_S242_S240;1;R16C2_S24;R16C2_S242_S240;1;R18C2_S25;R18C2_S242_S250;1;R20C2_S20;R20C2_S252_S200;1;R22C2_W20;R22C2_S202_W200;1;R22C1_D1;R22C1_W201_D1;1"
+          }
+        },
+        "s_IBUF_I_O[2]": {
+          "hide_name": 0,
+          "bits": [ 3877512 ] ,
+          "attributes": {
+            "ROUTING": "R1C37_Q6;;1;R1C37_W26;R1C37_Q6_W260;1;R1C35_S26;R1C35_W262_S260;1;R3C35_W26;R3C35_S262_W260;1;R3C33_W26;R3C33_W262_W260;1;R3C31_S26;R3C31_W262_S260;1;R5C31_S27;R5C31_S262_S270;1;R7C31_S27;R7C31_S272_S270;1;R9C31_S27;R9C31_S272_S270;1;R11C31_A1;R11C31_S272_A1;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "led_OBUF_O_3_I_MUX2_LUT6_O_I0": {
+          "hide_name": 0,
+          "bits": [ 3877561 ] ,
+          "attributes": {
+            "ROUTING": "R11C31_OF2;;1;R11C31_I0MUX1;R11C31_OF2_DUMMY_I0MUX1;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:157.9-157.11"
+          }
+        },
+        "A_IBUF_I_2_O[3]": {
+          "hide_name": 0,
+          "bits": [ 3877509 ] ,
+          "attributes": {
+            "ROUTING": "R1C37_F6;;1;R1C37_S26;R1C37_F6_S260;1;R3C37_S26;R3C37_S262_S260;1;R5C37_W26;R5C37_S262_W260;1;R5C35_W27;R5C35_W262_W270;1;R5C33_W22;R5C33_W272_W220;1;R5C31_W23;R5C31_W222_W230;1;R5C29_W26;R5C29_W232_W260;1;R5C27_W26;R5C27_W262_W260;1;R5C25_W26;R5C25_W262_W260;1;R5C23_W27;R5C23_W262_W270;1;R5C21_S27;R5C21_W272_S270;1;R7C21_S82;R7C21_S272_S820;1;R11C21_W27;R11C21_S824_W270;1;R11C20_A1;R11C20_W271_A1;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "led_OBUF_O_3_I_MUX2_LUT6_O_I1": {
+          "hide_name": 0,
+          "bits": [ 3877562 ] ,
+          "attributes": {
+            "ROUTING": "R11C31_OF0;;1;R11C31_I1MUX1;R11C31_OF0_DUMMY_I1MUX1;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:157.13-157.15"
+          }
+        },
+        "A_IBUF_I_1_O[3]": {
+          "hide_name": 0,
+          "bits": [ 3877506 ] ,
+          "attributes": {
+            "ROUTING": "R1C12_Q6;;1;R1C12_EW10;R1C12_Q6_EW10;1;R1C11_N25;R1C11_W111_N250;1;R2C11_A1;R2C11_S252_A1;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "led_OBUF_O_3_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 3877564 ] ,
+          "attributes": {
+            "ROUTING": "R11C31_F2;;1;R11C31_I0MUX2;R11C31_F2_DUMMY_I0MUX2;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:158.41-158.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "A_IBUF_I_O[3]": {
+          "hide_name": 0,
+          "bits": [ 3877503 ] ,
+          "attributes": {
+            "ROUTING": "R1C12_F6;;1;R1C12_S13;R1C12_F6_S130;1;R2C12_W27;R2C12_S131_W270;1;R2C10_A1;R2C10_W272_A1;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "led_OBUF_O_3_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 3877565 ] ,
+          "attributes": {
+            "ROUTING": "R11C31_F3;;1;R11C31_I1MUX2;R11C31_F3_DUMMY_I1MUX2;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:158.41-158.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "s_IBUF_I_O[3]": {
+          "hide_name": 0,
+          "bits": [ 3877500 ] ,
+          "attributes": {
+            "ROUTING": "R1C11_F6;;1;R1C11_S26;R1C11_F6_S260;1;R3C11_E26;R3C11_S262_E260;1;R3C13_E26;R3C13_E262_E260;1;R3C15_S26;R3C15_E262_S260;1;R5C15_E26;R5C15_S262_E260;1;R5C17_S26;R5C17_E262_S260;1;R7C17_S26;R7C17_S262_S260;1;R9C17_S27;R9C17_S262_S270;1;R11C17_E27;R11C17_S272_E270;1;R11C19_E27;R11C19_E272_E270;1;R11C21_E27;R11C21_E272_E270;1;R11C23_E22;R11C23_E272_E220;1;R11C25_E23;R11C25_E222_E230;1;R11C27_E26;R11C27_E232_E260;1;R11C29_E27;R11C29_E262_E270;1;R11C31_A3;R11C31_E272_A3;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "led_OBUF_O_3_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 3877569 ] ,
+          "attributes": {
+            "ROUTING": "R11C31_F0;;1;R11C31_I0MUX0;R11C31_F0_DUMMY_I0MUX0;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:159.41-159.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "A_IBUF_I_2_O[1]": {
+          "hide_name": 0,
+          "bits": [ 3877497 ] ,
+          "attributes": {
+            "ROUTING": "R1C10_Q6;;1;R1C10_E26;R1C10_Q6_E260;1;R1C12_S26;R1C12_E262_S260;1;R3C12_S27;R3C12_S262_S270;1;R5C12_E27;R5C12_S272_E270;1;R5C14_S27;R5C14_E272_S270;1;R7C14_E27;R7C14_S272_E270;1;R7C16_E22;R7C16_E272_E220;1;R7C18_E23;R7C18_E222_E230;1;R7C20_S23;R7C20_E232_S230;1;R9C20_S23;R9C20_S232_S230;1;R11C20_X02;R11C20_S232_X02;1;R11C20_A0;R11C20_X02_A0;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "led_OBUF_O_3_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 3877570 ] ,
+          "attributes": {
+            "ROUTING": "R11C31_F1;;1;R11C31_I1MUX0;R11C31_F1_DUMMY_I1MUX0;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:159.41-159.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.13-151.15"
           }
         },
         "A_IBUF_I_1_O[1]": {
           "hide_name": 0,
+          "bits": [ 3877494 ] ,
+          "attributes": {
+            "ROUTING": "R1C10_F6;;1;R1C10_SN10;R1C10_F6_SN10;1;R2C10_E25;R2C10_S111_E250;1;R2C11_A0;R2C11_E251_A0;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "led_OBUF_O_I_MUX2_LUT6_O_I0": {
+          "hide_name": 0,
+          "bits": [ 3877574 ] ,
+          "attributes": {
+            "ROUTING": "R2C10_OF2;;1;R2C10_I0MUX1;R2C10_OF2_DUMMY_I0MUX1;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:157.9-157.11"
+          }
+        },
+        "A_IBUF_I_O[1]": {
+          "hide_name": 0,
+          "bits": [ 3877491 ] ,
+          "attributes": {
+            "ROUTING": "R1C8_Q6;;1;R1C8_S13;R1C8_Q6_S130;1;R2C8_E23;R2C8_S131_E230;1;R2C10_X02;R2C10_E232_X02;1;R2C10_A0;R2C10_X02_A0;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "led_OBUF_O_I_MUX2_LUT6_O_I1": {
+          "hide_name": 0,
+          "bits": [ 3877575 ] ,
+          "attributes": {
+            "ROUTING": "R2C10_OF0;;1;R2C10_I1MUX1;R2C10_OF0_DUMMY_I1MUX1;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:157.13-157.15"
+          }
+        },
+        "s_IBUF_I_O[1]": {
+          "hide_name": 0,
+          "bits": [ 3877488 ] ,
+          "attributes": {
+            "ROUTING": "R17C47_Q6;;1;R17C47_N26;R17C47_Q6_N260;1;R15C47_N27;R15C47_N262_N270;1;R13C47_N27;R13C47_N272_N270;1;R11C47_W27;R11C47_N272_W270;1;R11C45_W22;R11C45_W272_W220;1;R11C43_W23;R11C43_W222_W230;1;R11C41_W26;R11C41_W232_W260;1;R11C39_W27;R11C39_W262_W270;1;R11C37_W27;R11C37_W272_W270;1;R11C35_W27;R11C35_W272_W270;1;R11C33_W27;R11C33_W272_W270;1;R11C31_A0;R11C31_W272_A0;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "led_OBUF_O_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 3877577 ] ,
+          "attributes": {
+            "ROUTING": "R2C10_F2;;1;R2C10_I0MUX2;R2C10_F2_DUMMY_I0MUX2;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:158.41-158.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "A_IBUF_I_2_O[2]": {
+          "hide_name": 0,
+          "bits": [ 3877485 ] ,
+          "attributes": {
+            "ROUTING": "R29C11_Q6;;1;R29C11_N26;R29C11_Q6_N260;1;R27C11_N27;R27C11_N262_N270;1;R25C11_N22;R25C11_N272_N220;1;R23C11_N22;R23C11_N222_N220;1;R21C11_N23;R21C11_N222_N230;1;R19C11_N26;R19C11_N232_N260;1;R17C11_E26;R17C11_N262_E260;1;R17C13_E27;R17C13_E262_E270;1;R17C15_E22;R17C15_E272_E220;1;R17C17_N22;R17C17_E222_N220;1;R15C17_N22;R15C17_N222_N220;1;R13C17_E22;R13C17_N222_E220;1;R13C19_N22;R13C19_E222_N220;1;R11C19_E22;R11C19_N222_E220;1;R11C20_X05;R11C20_E221_X05;1;R11C20_A3;R11C20_X05_A3;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "led_OBUF_O_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 3877578 ] ,
+          "attributes": {
+            "ROUTING": "R2C10_F3;;1;R2C10_I1MUX2;R2C10_F3_DUMMY_I1MUX2;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:158.41-158.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "A_IBUF_I_1_O[2]": {
+          "hide_name": 0,
+          "bits": [ 3877482 ] ,
+          "attributes": {
+            "ROUTING": "R29C13_F6;;1;R29C13_W26;R29C13_F6_W260;1;R29C11_S26;R29C11_W262_S260;1;R28C11_N27;R28C11_N262_N270;1;R26C11_N22;R26C11_N272_N220;1;R24C11_N22;R24C11_N222_N220;1;R22C11_N22;R22C11_N222_N220;1;R20C11_N22;R20C11_N222_N220;1;R18C11_N23;R18C11_N222_N230;1;R16C11_N23;R16C11_N232_N230;1;R14C11_N23;R14C11_N232_N230;1;R12C11_N26;R12C11_N232_N260;1;R10C11_N27;R10C11_N262_N270;1;R8C11_N22;R8C11_N272_N220;1;R6C11_N22;R6C11_N222_N220;1;R4C11_N23;R4C11_N222_N230;1;R2C11_X02;R2C11_N232_X02;1;R2C11_A3;R2C11_X02_A3;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "led_OBUF_O_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 3877582 ] ,
+          "attributes": {
+            "ROUTING": "R2C10_F0;;1;R2C10_I0MUX0;R2C10_F0_DUMMY_I0MUX0;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:159.41-159.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "A_IBUF_I_O[2]": {
+          "hide_name": 0,
+          "bits": [ 3877479 ] ,
+          "attributes": {
+            "ROUTING": "R14C47_Q6;;1;R14C47_N26;R14C47_Q6_N260;1;R12C47_N26;R12C47_N262_N260;1;R10C47_W26;R10C47_N262_W260;1;R10C45_W26;R10C45_W262_W260;1;R10C43_W26;R10C43_W262_W260;1;R10C41_N26;R10C41_W262_N260;1;R8C41_W26;R8C41_N262_W260;1;R8C39_W26;R8C39_W262_W260;1;R8C37_W27;R8C37_W262_W270;1;R8C35_W22;R8C35_W272_W220;1;R8C33_N22;R8C33_W222_N220;1;R6C33_N23;R6C33_N222_N230;1;R4C33_N26;R4C33_N232_N260;1;R2C33_W26;R2C33_N262_W260;1;R2C31_W27;R2C31_W262_W270;1;R2C29_W22;R2C29_W272_W220;1;R2C27_W22;R2C27_W222_W220;1;R2C25_W22;R2C25_W222_W220;1;R2C23_W22;R2C23_W222_W220;1;R2C21_W23;R2C21_W222_W230;1;R2C19_W23;R2C19_W232_W230;1;R2C17_W23;R2C17_W232_W230;1;R2C15_W23;R2C15_W232_W230;1;R2C13_W23;R2C13_W232_W230;1;R2C11_W26;R2C11_W232_W260;1;R2C10_X07;R2C10_W261_X07;1;R2C10_A3;R2C10_X07_A3;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "led_OBUF_O_I_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 3877583 ] ,
+          "attributes": {
+            "ROUTING": "R2C10_F1;;1;R2C10_I1MUX0;R2C10_F1_DUMMY_I1MUX0;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:159.41-159.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "s_IBUF_I_O[0]": {
+          "hide_name": 0,
+          "bits": [ 3877476 ] ,
+          "attributes": {
+            "ROUTING": "R14C47_F6;;1;R14C47_W26;R14C47_F6_W260;1;R14C45_W26;R14C45_W262_W260;1;R14C43_W27;R14C43_W262_W270;1;R14C41_W27;R14C41_W272_W270;1;R14C39_N27;R14C39_W272_N270;1;R12C39_W27;R12C39_N272_W270;1;R12C37_W22;R12C37_W272_W220;1;R12C35_W22;R12C35_W222_W220;1;R12C33_W22;R12C33_W222_W220;1;R12C31_N22;R12C31_W222_N220;1;R11C31_X07;R11C31_N221_X07;1;R11C31_A2;R11C31_X07_A2;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "led_OBUF_O_2_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 3877549 ] ,
+          "attributes": {
+            "ROUTING": "R11C20_F3;;1;R11C20_I1MUX2;R11C20_F3_DUMMY_I1MUX2;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:158.41-158.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "A_IBUF_I_2_O[0]": {
+          "hide_name": 0,
+          "bits": [ 3877473 ] ,
+          "attributes": {
+            "ROUTING": "R13C47_F6;;1;R13C47_N26;R13C47_F6_N260;1;R11C47_W26;R11C47_N262_W260;1;R11C45_W26;R11C45_W262_W260;1;R11C43_W27;R11C43_W262_W270;1;R11C41_W22;R11C41_W272_W220;1;R11C39_W22;R11C39_W222_W220;1;R11C37_W22;R11C37_W222_W220;1;R11C35_W23;R11C35_W222_W230;1;R11C33_W26;R11C33_W232_W260;1;R11C31_W27;R11C31_W262_W270;1;R11C29_W22;R11C29_W272_W220;1;R11C27_W23;R11C27_W222_W230;1;R11C25_W26;R11C25_W232_W260;1;R11C23_W26;R11C23_W262_W260;1;R11C21_W26;R11C21_W262_W260;1;R11C20_X07;R11C20_W261_X07;1;R11C20_A2;R11C20_X07_A2;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "led_OBUF_O_2_I_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 3877548 ] ,
+          "attributes": {
+            "ROUTING": "R11C20_F2;;1;R11C20_I0MUX2;R11C20_F2_DUMMY_I0MUX2;1",
+            "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:158.41-158.66|c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "A_IBUF_I_1_O[0]": {
+          "hide_name": 0,
           "bits": [ 3877470 ] ,
           "attributes": {
-            "ROUTING": "R1C42_Q6;;1;R1C42_W26;R1C42_Q6_W260;1;R1C40_W26;R1C40_W262_W260;1;R1C38_S26;R1C38_W262_S260;1;R3C38_S27;R3C38_S262_S270;1;R5C38_S27;R5C38_S272_S270;1;R7C38_S27;R7C38_S272_S270;1;R9C38_S22;R9C38_S272_S220;1;R11C38_S22;R11C38_S222_S220;1;R13C38_S23;R13C38_S222_S230;1;R15C38_S23;R15C38_S232_S230;1;R17C38_W23;R17C38_S232_W230;1;R17C36_W26;R17C36_W232_W260;1;R17C34_W26;R17C34_W262_W260;1;R17C32_W27;R17C32_W262_W270;1;R17C30_W22;R17C30_W272_W220;1;R17C28_W23;R17C28_W222_W230;1;R17C26_W26;R17C26_W232_W260;1;R17C24_W26;R17C24_W262_W260;1;R17C22_W26;R17C22_W262_W260;1;R17C20_W26;R17C20_W262_W260;1;R17C18_W27;R17C18_W262_W270;1;R17C16_W27;R17C16_W272_W270;1;R17C14_W27;R17C14_W272_W270;1;R17C13_S27;R17C13_W271_S270;1;R18C13_B5;R18C13_S271_B5;1",
+            "ROUTING": "R1C42_Q6;;1;R1C42_W26;R1C42_Q6_W260;1;R1C40_W26;R1C40_W262_W260;1;R1C38_W26;R1C38_W262_W260;1;R1C36_W27;R1C36_W262_W270;1;R1C34_W22;R1C34_W272_W220;1;R1C32_W23;R1C32_W222_W230;1;R1C30_W26;R1C30_W232_W260;1;R1C28_W26;R1C28_W262_W260;1;R1C26_W27;R1C26_W262_W270;1;R1C24_W27;R1C24_W272_W270;1;R1C22_W27;R1C22_W272_W270;1;R1C20_W22;R1C20_W272_W220;1;R1C18_W22;R1C18_W222_W220;1;R1C16_W23;R1C16_W222_W230;1;R1C14_W26;R1C14_W232_W260;1;R1C12_W27;R1C12_W262_W270;1;R1C11_S27;R1C11_W271_S270;1;R2C11_A2;R2C11_S271_A2;1",
             "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
             "force_downto": "00000000000000000000000000000001"
           }
         },
         "$PACKER_GND_NET": {
           "hide_name": 1,
-          "bits": [ 3877529 ] ,
+          "bits": [ 3877602 ] ,
           "attributes": {
             "ROUTING": " "
           }
         },
-        "A_IBUF_I_O[1]": {
+        "A_IBUF_I_O[0]": {
           "hide_name": 0,
           "bits": [ 3877466 ] ,
           "attributes": {
-            "ROUTING": "R1C42_F6;;1;R1C42_S26;R1C42_F6_S260;1;R3C42_S26;R3C42_S262_S260;1;R5C42_S26;R5C42_S262_S260;1;R7C42_S26;R7C42_S262_S260;1;R9C42_S27;R9C42_S262_S270;1;R11C42_S22;R11C42_S272_S220;1;R13C42_S23;R13C42_S222_S230;1;R14C42_B1;R14C42_S231_B1;1",
+            "ROUTING": "R1C42_F6;;1;R1C42_W13;R1C42_F6_W130;1;R1C41_W23;R1C41_W131_W230;1;R1C39_W23;R1C39_W232_W230;1;R1C37_W23;R1C37_W232_W230;1;R1C35_W23;R1C35_W232_W230;1;R1C33_W23;R1C33_W232_W230;1;R1C31_W23;R1C31_W232_W230;1;R1C29_W23;R1C29_W232_W230;1;R1C27_W23;R1C27_W232_W230;1;R1C25_W23;R1C25_W232_W230;1;R1C23_W26;R1C23_W232_W260;1;R1C21_W27;R1C21_W262_W270;1;R1C19_W27;R1C19_W272_W270;1;R1C17_W27;R1C17_W272_W270;1;R1C15_W82;R1C15_W272_W820;1;R1C11_N27;R1C11_W824_N270;1;R2C11_W27;R2C11_S272_W270;1;R2C10_A2;R2C10_W271_A2;1",
             "src": "c:\\Users\\chisc\\DOWNLO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
             "force_downto": "00000000000000000000000000000001"
           }
         },
         "$PACKER_VCC_NET": {
           "hide_name": 1,
-          "bits": [ 3877531 ] ,
+          "bits": [ 3877604 ] ,
           "attributes": {
             "ROUTING": "VCC;;1;R1C1_W24;R1C1_VCC_W240;1;R1C1_C4;R1C1_E241_C4;1"
           }
