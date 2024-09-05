@@ -41,7 +41,6 @@ tablas de verdad y circuitos de cada módulo en el diseño.
 2. Realice al menos un testbench de auto-chequeo, usando SystemVerilog, en el que se muestre
 de manera simple el funcionamiento completo de la ALU en 4 bits. Las pruebas deben ser
 elaboradas de manera aleatoria.
-
 ## Plantamiento del problema
 Para este problema se reviso la bobliografía vista en el cursod de diseño lógico, se consulto el libro Digital Design and Computer Architecture, donde se presenta una sección que explica el funcionamiento de las ALU. Como lo dice la ALU, es una combinación de variables matematicas  y lógicas operacionales. (1), para este caso se tiene un parametro de N-bits, por lo cual se debe de trabajar bajo este proceso. Por lo cual las entradas A y B, tiene que estar dentro de este parametro. Para el control de la operaciones podemos basarme en la siguiente tabla.
 # Tabla de operaciones de la ALU
