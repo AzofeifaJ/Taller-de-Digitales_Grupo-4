@@ -4,19 +4,9 @@
  En el caso de una maquina de Moore las salidas dependen unicamente del estado actual, es decir que la salida está asociada con cada estado individual y se realiza un cambio hasta pasar por la transicion al siguiente estado.
  Para la máquina de Mealy las salidas depende tanto del estado actual como  delas entradas. Se puede realiza un cambio en la respuesta de una entraad sin necesidad de que el sistema haga una transiscion a un siguiente estado. 
  # Ejemplos de diagrama de bloque de una máquina Moore
- ![Maquina de MOORE](Laboratorio_2/Imagnes/Ejemplo maquna de MOORE.png)
- ## Ejemplos de Diagrama de Bloques
-
- ### Máquina de Moore
  ![Maquina de MOORE](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagnes/Ejemplo%20maquna%20de%20MOORE.png)
  # Ejemplos de diagrama de bloques de una máquina Mealy
- ![Maquina de MEALY](Imágenes/Ejemplo maquna de MEALY.png)
- ![Maquina de MEALY](Laboratorio_2/Imagnes/Ejemplo%20maquina%20de%20MEALY.png)
-
-
- ## Ejemplos de Diagrama de Bloques de una Máquina Mealy
-
-![Maquina de MEALY](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagnes/Ejemplo%20maquina%20de%20MEALY.png)
+ ![Maquina de MEALY](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagnes/Ejemplo%20maquina%20de%20MEALY.png)
 
 
  ## 2. Explique los conceptos de setup time y hold time. ¿Qué importancia tienen en el diseño de sistemas digitales?
