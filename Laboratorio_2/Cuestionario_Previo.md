@@ -5,6 +5,14 @@
  Para la máquina de Mealy las salidas depende tanto del estado actual como  delas entradas. Se puede realiza un cambio en la respuesta de una entraad sin necesidad de que el sistema haga una transiscion a un siguiente estado. 
  # Ejemplos de diagrama de bloque de una máquina Moore
  ![Maquina de MOORE](Laboratorio_2/Imagnes/Ejemplo maquna de MOORE.png)
+ ## Ejemplos de Diagrama de Bloques
+
+ ### Máquina de Moore
+ ![Maquina de MOORE](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagnes/Ejemplo%20maquna%20de%20MOORE.png)
+
+ ### Máquina de Mealy
+ ![Maquina de MEALY](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagnes/Ejemplo%20maquna%20de%20MEALY.png)
+
 
  # Ejemplos de diagrama de bloques de una máquina Mealy
  ![Maquina de MEALY](Imágenes/Ejemplo maquna de MEALY.png)
