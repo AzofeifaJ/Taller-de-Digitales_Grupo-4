@@ -9,13 +9,9 @@
 
  ### Máquina de Moore
  ![Maquina de MOORE](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagnes/Ejemplo%20maquna%20de%20MOORE.png)
-
- ### Máquina de Mealy
- ![Maquina de MEALY](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagnes/Ejemplo%20maquna%20de%20MEALY.png)
-
-
  # Ejemplos de diagrama de bloques de una máquina Mealy
  ![Maquina de MEALY](Imágenes/Ejemplo maquna de MEALY.png)
+ ![Maquina de MEALY](Laboratorio_2/Imagnes/Ejemplo%20maquina%20de%20MEALY.png)
 
  ## 2. Explique los conceptos de setup time y hold time. ¿Qué importancia tienen en el diseño de sistemas digitales?
  Respuesta: En circuitos digitales siempre se tiene un periodo para cada elemento deseado a realizar, en muchos casos este periodo se da a través de un reloj, circuitos como los flip-flops deben de tener dos conceptos para evitar que las tareas se realizacen de forma aleatoria o que se sobreponga una tarea 1 a una tarea 2. Estos conceptos son los setup time, el tiempo para configuracion y un tiempo de espera o en ingles hold time, estos conceptos son cruciales para garantizar el funcionamiento correcto del sistema. Claro esta que se diferencia del reloj ya que estos son temporales durante un estado del flip-flop, dando un tiempo para que capture y almacene datos más precisos y exactos. 
