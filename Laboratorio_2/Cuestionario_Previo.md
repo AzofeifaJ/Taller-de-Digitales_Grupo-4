@@ -4,7 +4,7 @@
  En el caso de una maquina de Moore las salidas dependen unicamente del estado actual, es decir que la salida está asociada con cada estado individual y se realiza un cambio hasta pasar por la transicion al siguiente estado.
  Para la máquina de Mealy las salidas depende tanto del estado actual como  delas entradas. Se puede realiza un cambio en la respuesta de una entraad sin necesidad de que el sistema haga una transiscion a un siguiente estado. 
  # Ejemplos de diagrama de bloque de una máquina Moore
- ![Maquina de MOORE](Imágenes/Ejemplo maquna de MOORE.png)
+ ![Maquina de MOORE](Laboratorio_2/Imagnes/Ejemplo maquna de MOORE.png)
 
  # Ejemplos de diagrama de bloques de una máquina Mealy
  ![Maquina de MEALY](Imágenes/Ejemplo maquna de MEALY.png)
