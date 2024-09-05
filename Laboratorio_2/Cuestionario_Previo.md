@@ -4,10 +4,17 @@
  En el caso de una maquina de Moore las salidas dependen unicamente del estado actual, es decir que la salida está asociada con cada estado individual y se realiza un cambio hasta pasar por la transicion al siguiente estado.
  Para la máquina de Mealy las salidas depende tanto del estado actual como  delas entradas. Se puede realiza un cambio en la respuesta de una entraad sin necesidad de que el sistema haga una transiscion a un siguiente estado. 
  # Ejemplos de diagrama de bloque de una máquina Moore
+<<<<<<< HEAD
  ![Maquina de MOORE](Imagnes/Ejemplo maquna de MOORE.png)
  
  # Ejemplos de diagrama de bloques de una máquina Mealy
  ![Maquina de MEALY](Ejemplo maquina de MOORE.png)
+=======
+ ![Maquina de MOORE](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagnes/Ejemplo%20maquna%20de%20MOORE.png)
+ # Ejemplos de diagrama de bloques de una máquina Mealy
+ ![Maquina de MEALY](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagnes/Ejemplo%20maquina%20de%20MEALY.png)
+
+>>>>>>> 40cbf644a41d842d3882248ccfe0276af41248bc
 
  ## 2. Explique los conceptos de setup time y hold time. ¿Qué importancia tienen en el diseño de sistemas digitales?
  Respuesta: En circuitos digitales siempre se tiene un periodo para cada elemento deseado a realizar, en muchos casos este periodo se da a través de un reloj, circuitos como los flip-flops deben de tener dos conceptos para evitar que las tareas se realizacen de forma aleatoria o que se sobreponga una tarea 1 a una tarea 2. Estos conceptos son los setup time, el tiempo para configuracion y un tiempo de espera o en ingles hold time, estos conceptos son cruciales para garantizar el funcionamiento correcto del sistema. Claro esta que se diferencia del reloj ya que estos son temporales durante un estado del flip-flop, dando un tiempo para que capture y almacene datos más precisos y exactos. 
@@ -43,7 +50,7 @@ Podemos ver que recibimos una señal de reloj global, una señal de habilitacion
 
 
  ### Bibliografía
- [1] M. Alavi, S. Aliaga, and M. Murga, "Máquinas de Estado Finito," *Revista de Investigación Estudiantil Iluminate*, vol. 8, pp. 41, 2016.
- [2] Cadence PCB, "What is Setup and Hold Time," *Cadence Design Systems*, 2023. [Online]. Available: https://resources.pcb.cadence.com/blog/what-is-setup-and-hold-time. [Accessed: 04-Sep-2024].
- [3] Intel Corporation, "Clock Enables on Logic," *Intel Corporation*, 2024. [Online]. Available: https://www.intel.com/content/www/us/en/docs/programmable/683174/24-1/clock-enables-on-logic.html. [Accessed: 04-Sep-2024].
+ 1. M. Alavi, S. Aliaga, and M. Murga, "Máquinas de Estado Finito," *Revista de Investigación Estudiantil Iluminate*, vol. 8, pp. 41, 2016.
+ 2. Cadence PCB, "What is Setup and Hold Time," *Cadence Design Systems*, 2023. [Online]. Available: https://resources.pcb.cadence.com/blog/what-is-setup-and-hold-time. [Accessed: 04-Sep-2024].
+ 3. Intel Corporation, "Clock Enables on Logic," *Intel Corporation*, 2024. [Online]. Available: https://www.intel.com/content/www/us/en/docs/programmable/683174/24-1/clock-enables-on-logic.html. [Accessed: 04-Sep-2024].
 
