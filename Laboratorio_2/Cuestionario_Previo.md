@@ -78,23 +78,21 @@ Configuración: Ambos dispositivos deben tener la misma configuración de baud r
 Bits de Datos: La cantidad de bits en cada carácter de datos.
 Bits de Parada: Bits adicionales enviados al final de cada byte para indicar el final del dato.
 - Control de Flujo: Mecanismos para controlar el flujo de datos y evitar la pérdida de datos. En estos hay 2 vias: LA primera utiliza líneas adicionales como RTS (Request to Send) y CTS (Clear to Send) que es por medio del harware.Y la segunda utiliza caracteres especiales para controlar el flujo, como XON/XOFF. [4]
- Uso del puerto serial en Linux
+ Uso del puerto serial en Linux.
 Los puertos seriales se representan como archivos de dispositivos, generalmente en /dev/ttyS* (para puertos seriales reales) o /dev/ttyUSB* (para dispositivos USB seriales). Para la configuración se utilizan comandos como stty para configurar los parámetros de la UART y herramientas como screen o minicom para abrir una comunicación serial. [5]
 
 
-
-
-
  ## 8. Investigue el funcionamiento básico del controlador ST7789V de la pantalla LCD RGB de la tang nano 9k. La hoja de datos será entregado por el profesor del curso.
- Respuesta:
+ Respuesta: El controlador está diseñado para manejar pantallas de 240x320 píxeles y soporta RGB de 18 bits. [9]
 
 
  ### Bibliografía
  1. M. Alavi, S. Aliaga, and M. Murga, "Máquinas de Estado Finito," *Revista de Investigación Estudiantil Iluminate*, vol. 8, pp. 41, 2016.
  2. Cadence PCB, "What is Setup and Hold Time," *Cadence Design Systems*, 2023. [Online]. Available: https://resources.pcb.cadence.com/blog/what-is-setup-and-hold-time. [Accessed: 04-Sep-2024].
  3. Intel Corporation, "Clock Enables on Logic," *Intel Corporation*, 2024. [Online]. Available: https://www.intel.com/content/www/us/en/docs/programmable/683174/24-1/clock-enables-on-logic.html. [Accessed: 04-Sep-2024].
- 4. https://www.ti.com/lit/ug/sprugp1/sprugp1.pdf?ts=1725631628616&ref_url=https%253A%252F%252Fwww.google.com%252F
- 5. https://developer.technexion.com/docs/using-uart-from-a-linux-shell
+ 4. Texas Instruments, TMS320C6000 Chip Support Library API Reference Guide, SPRUGP1, Apr. 2010. [Online]. Available: https://www.ti.com/lit/ug/sprugp1/sprugp1.pdf. [Accessed: Sept. 06, 2024].
+ 5. TechNexion, Using UART from a Linux Shell, Sept. 2021. [Online]. Available: https://developer.technexion.com/docs/using-uart-from-a-linux-shell. [Accessed: Sept. 06, 2024].
  6. Tocci, R. J., & Widmer, N. S. (1994). Digital Systems: Principles and Applications. Prentice Hall.
  7. Wakerly, J. F. (1990). Digital design: Principles and practices. Prentice-Hall International.
  8. Digital Design and Computer Architecture. (2022). Elsevier. https://doi.org/10.1016/c2019-0-00213-0
+ 9. Sitronix, ST7789V Datasheet, [Online]. Available: https://www.alldatasheet.com/datasheet-pdf/view/1132511/SITRONIX/ST7789V.html. [Accessed: Sept. 06, 2024].
