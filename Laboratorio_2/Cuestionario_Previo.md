@@ -41,8 +41,14 @@ Los problemas de metastabilidad ocurren cuando una señal asíncrona, como la de
 
 
 Circuito de sincronizador simple [7]:![syncroreco](https://github.com/user-attachments/assets/76a8c2ec-7f65-404e-b18f-4355791f092c)
+
+
 Circuito de sincronizador multi-cycle [7]: ![syncromulti](https://github.com/user-attachments/assets/1a3e011f-f0b2-4a23-8053-e675970c0feb)
+
+
 Circuito de sincronizador en cascada [7]: ![syncrocascade](https://github.com/user-attachments/assets/7536f3eb-eae9-4d0f-a2b3-428472077423)
+
+
 
  ## 6. Investigue sobre la especificación de la interfaz SPI. Preste atención a los aspectos necesarios para poder diseñar un controlador maestro de SPI, adem´ as de los diferentes modos de SPI.
  Respuesta: La interfaz SPI (Serial Peripheral Interface) es un protocolo de comunicación comúnmente usado en sistemas digitales que permite al maestro intercambiar datos con dispositivos esclavos. En el diseño de un controlador maestro SPI, es esencial entender varios aspectos clave. [8]
