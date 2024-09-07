@@ -44,8 +44,13 @@ Configuración: Ambos dispositivos deben tener la misma configuración de baud r
 Bits de Datos: La cantidad de bits en cada carácter de datos.
 Bits de Parada: Bits adicionales enviados al final de cada byte para indicar el final del dato.
 - Control de Flujo: Mecanismos para controlar el flujo de datos y evitar la pérdida de datos. En estos hay 2 vias: LA primera utiliza líneas adicionales como RTS (Request to Send) y CTS (Clear to Send) que es por medio del harware.Y la segunda utiliza caracteres especiales para controlar el flujo, como XON/XOFF. [4]
+ Uso del puerto serial en Linux
+Los puertos seriales se representan como archivos de dispositivos, generalmente en /dev/ttyS* (para puertos seriales reales) o /dev/ttyUSB* (para dispositivos USB seriales). Para la configuración se utilizan comandos como stty para configurar los parámetros de la UART y herramientas como screen o minicom para abrir una comunicación serial. [5]
 
- 
+
+
+
+
  ## 8. Investigue el funcionamiento básico del controlador ST7789V de la pantalla LCD RGB de la tang nano 9k. La hoja de datos será entregado por el profesor del curso.
  Respuesta:
 
@@ -55,4 +60,4 @@ Bits de Parada: Bits adicionales enviados al final de cada byte para indicar el 
  2. Cadence PCB, "What is Setup and Hold Time," *Cadence Design Systems*, 2023. [Online]. Available: https://resources.pcb.cadence.com/blog/what-is-setup-and-hold-time. [Accessed: 04-Sep-2024].
  3. Intel Corporation, "Clock Enables on Logic," *Intel Corporation*, 2024. [Online]. Available: https://www.intel.com/content/www/us/en/docs/programmable/683174/24-1/clock-enables-on-logic.html. [Accessed: 04-Sep-2024].
  4. https://www.ti.com/lit/ug/sprugp1/sprugp1.pdf?ts=1725631628616&ref_url=https%253A%252F%252Fwww.google.com%252F
-
+ 5. https://developer.technexion.com/docs/using-uart-from-a-linux-shell
