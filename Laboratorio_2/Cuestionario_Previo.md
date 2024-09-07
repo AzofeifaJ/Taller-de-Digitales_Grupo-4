@@ -37,13 +37,22 @@ Podemos ver que recibimos una señal de reloj global, una señal de habilitacion
  ## 6. Investigue sobre la especificación de la interfaz SPI. Preste atención a los aspectos necesarios para poder diseñar un controlador maestro de SPI, adem´ as de los diferentes modos de SPI.
  
  ## 7. Investigue sobre la comunicación serie UART. Preste atención a las diferentes características de configuración necesarias para la comunicación serie mediante UART (por ejemplo, baud rate, paridad, etc). Además, investigue cómo puede utilizar puertos seriales en su computadora, considerando el sistema operativo que utilice.
+ Respuesta: UART  hace referencia a un protocolo de comunicación serial que se utiliza para enviar y recibir datos entre dos dispositivos. UN dato diferenciador de este es que no requiere de un reloj para poder sincronizar la comunicación entre los dispositivos.
+- Baud Rate: La velocidad de transmisión de datos.
+Configuración: Ambos dispositivos deben tener la misma configuración de baud rate para poder comunicarse correctamente.
+- Paridad: Un método de detección de errores.
+Bits de Datos: La cantidad de bits en cada carácter de datos.
+Bits de Parada: Bits adicionales enviados al final de cada byte para indicar el final del dato.
+- Control de Flujo: Mecanismos para controlar el flujo de datos y evitar la pérdida de datos. En estos hay 2 vias: LA primera utiliza líneas adicionales como RTS (Request to Send) y CTS (Clear to Send) que es por medio del harware.Y la segunda utiliza caracteres especiales para controlar el flujo, como XON/XOFF. [4]
+
  
  ## 8. Investigue el funcionamiento básico del controlador ST7789V de la pantalla LCD RGB de la tang nano 9k. La hoja de datos será entregado por el profesor del curso.
-
+ Respuesta:
 
 
  ### Bibliografía
  1. M. Alavi, S. Aliaga, and M. Murga, "Máquinas de Estado Finito," *Revista de Investigación Estudiantil Iluminate*, vol. 8, pp. 41, 2016.
  2. Cadence PCB, "What is Setup and Hold Time," *Cadence Design Systems*, 2023. [Online]. Available: https://resources.pcb.cadence.com/blog/what-is-setup-and-hold-time. [Accessed: 04-Sep-2024].
  3. Intel Corporation, "Clock Enables on Logic," *Intel Corporation*, 2024. [Online]. Available: https://www.intel.com/content/www/us/en/docs/programmable/683174/24-1/clock-enables-on-logic.html. [Accessed: 04-Sep-2024].
+ 4. https://www.ti.com/lit/ug/sprugp1/sprugp1.pdf?ts=1725631628616&ref_url=https%253A%252F%252Fwww.google.com%252F
 
