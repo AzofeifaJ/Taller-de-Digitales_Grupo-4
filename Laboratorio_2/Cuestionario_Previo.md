@@ -83,7 +83,7 @@ Los puertos seriales se representan como archivos de dispositivos, generalmente 
 
 
  ## 8. Investigue el funcionamiento básico del controlador ST7789V de la pantalla LCD RGB de la tang nano 9k. La hoja de datos será entregado por el profesor del curso.
- Respuesta: El controlador está diseñado para manejar pantallas de 240x320 píxeles y soporta RGB de 18 bits. [9]
+ Respuesta: El controlador está diseñado para manejar pantallas de 240x320 píxeles y soporta RGB de 18 bits. El controlador permite dibujar píxeles, líneas, y formas directamente en la memoria de la pantalla. El usuario puede definir un área de ventana en la pantalla para actualizar solo esa región, lo que optimiza el rendimiento y minimiza el uso de ancho de banda usando el puerto SPI. [9]
 
 
  ### Bibliografía
