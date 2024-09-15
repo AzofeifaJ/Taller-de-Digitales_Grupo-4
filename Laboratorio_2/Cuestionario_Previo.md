@@ -4,9 +4,9 @@
  En el caso de una maquina de Moore las salidas dependen unicamente del estado actual, es decir que la salida está asociada con cada estado individual y se realiza un cambio hasta pasar por la transicion al siguiente estado.
  Para la máquina de Mealy las salidas depende tanto del estado actual como  delas entradas. Se puede realiza un cambio en la respuesta de una entraad sin necesidad de que el sistema haga una transiscion a un siguiente estado. 
  # Ejemplos de diagrama de bloque de una máquina Moore
- ![Maquina de MOORE](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagnes/Ejemplo%20maquna%20de%20MOORE.png)
+ ![Maquina de MOORE](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes/Ejemplo%20maquna%20de%20MOORE.png)
  # Ejemplos de diagrama de bloques de una máquina Mealy
- ![Maquina de MEALY](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagnes/Ejemplo%20maquina%20de%20MEALY.png)
+ ![Maquina de MEALY](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes/Ejemplo%20maquina%20de%20MEALY.png)
 
 
  ## 2. Explique los conceptos de setup time y hold time. ¿Qué importancia tienen en el diseño de sistemas digitales?
@@ -33,17 +33,66 @@ Podemos ver que recibimos una señal de reloj global, una señal de habilitacion
  
 
 ## 5. Investigue sobre el fenómeno de rebotes y ruido en pulsadores e interruptores. Defina qué técnicas digitales (circuitos) se utilizan para cancelar este fenómeno. Además, investigue sobre los problemas de metastabilidad cuando se tienen entradas asíncronas en circuitos digitales. Finalmente, presente circuitos que permitan la sincronización de entradas como pulsadores e interruptores.
- 
+ Respuesta: El rebote y el ruido en pulsadores e interruptores son problemas comunes en sistemas digitales. Cuando se presiona un pulsador, los contactos mecánicos no se estabilizan de inmediato, generando múltiples transiciones antes de alcanzar un estado estable, lo que se conoce como rebote. Además, el ruido, causado por interferencias electromagnéticas o fluctuaciones eléctricas, puede producir falsos cambios en la señal, afectando la precisión del sistema. [6]
+
+Para mitigar estos problemas, existen varias técnicas. Una solución común es el debouncing por software, donde se espera un breve período (10-20 ms) después de detectar un cambio en la señal antes de confirmarlo. Esto asegura que la señal se estabilice y evita la detección de múltiples transiciones no deseadas. En cuanto al debouncing por hardware, se puede utilizar una red RC (resistencia y capacitor) para suavizar los cambios rápidos o un flip-flop que almacena el último estado estable de la señal, ignorando los rebotes. Otra opción es el uso de Schmitt Triggers, que requieren un cambio más significativo en la señal para alterarla, eliminando pequeñas fluctuaciones y asegurando una señal más limpia. [6]
+
+Los problemas de metastabilidad ocurren cuando una señal asíncrona, como la de un pulsador, se introduce en un sistema digital sincronizado. Si la señal cambia cerca del borde de una transición de reloj, puede quedar en un estado inestable, lo que genera comportamientos impredecibles. Para evitar la metastabilidad, se emplean flip-flops en serie: el primero captura la señal asíncrona, mientras que el segundo la estabiliza antes de que sea procesada. En aplicaciones más críticas, se pueden usar tres flip-flops para garantizar una mayor estabilidad de la señal. [6]
+
+
+Circuito de sincronizador simple [7]:![syncroreco](https://github.com/user-attachments/assets/76a8c2ec-7f65-404e-b18f-4355791f092c)
+
+
+
+
+Circuito de sincronizador multi-cycle [7]: ![syncromulti](https://github.com/user-attachments/assets/1a3e011f-f0b2-4a23-8053-e675970c0feb)
+
+
+
+
+Circuito de sincronizador en cascada [7]: ![syncrocascade](https://github.com/user-attachments/assets/7536f3eb-eae9-4d0f-a2b3-428472077423)
+
+
+
  ## 6. Investigue sobre la especificación de la interfaz SPI. Preste atención a los aspectos necesarios para poder diseñar un controlador maestro de SPI, adem´ as de los diferentes modos de SPI.
+ Respuesta: La interfaz SPI (Serial Peripheral Interface) es un protocolo de comunicación comúnmente usado en sistemas digitales que permite al maestro intercambiar datos con dispositivos esclavos. En el diseño de un controlador maestro SPI, es esencial entender varios aspectos clave. [8]
+
+SPI utiliza las señales SCLK (Serial Clock), MOSI (Master Out Slave In), MISO (Master In Slave Out) y SS/CS (Slave Select/Chip Select). El maestro genera el reloj (SCLK) que sincroniza la transferencia de datos, envía datos al esclavo a través de MOSI, recibe datos del esclavo a través de MISO, y selecciona el esclavo activo usando SS/CS. [8]
+
+El reloj (SCLK) es fundamental para la comunicación, y su frecuencia debe ser compatible con los dispositivos esclavos. Además, el maestro debe gestionar la selección del esclavo usando la señal SS/CS para habilitar el dispositivo con el que quiere comunicarse. [8]
+
+SPI opera en cuatro modos, determinados por la polaridad del reloj (CPOL) y la fase del reloj (CPHA) [8]:
+
+-Modo 0: El reloj es bajo cuando está inactivo y los datos se muestrean en el flanco de subida del reloj.
+-Modo 1: El reloj es bajo cuando está inactivo y los datos se muestrean en el flanco de bajada del reloj.
+-Modo 2: El reloj es alto cuando está inactivo y los datos se muestrean en el flanco de bajada del reloj.
+-Modo 3: El reloj es alto cuando está inactivo y los datos se muestrean en el flanco de subida del reloj.
+
+Para diseñar un controlador maestro SPI, es importante manejar correctamente la generación del reloj, la selección del esclavo y la transferencia de datos. También se debe configurar el modo SPI apropiado para asegurar la compatibilidad con los dispositivos esclavos.
  
  ## 7. Investigue sobre la comunicación serie UART. Preste atención a las diferentes características de configuración necesarias para la comunicación serie mediante UART (por ejemplo, baud rate, paridad, etc). Además, investigue cómo puede utilizar puertos seriales en su computadora, considerando el sistema operativo que utilice.
- 
- ## 8. Investigue el funcionamiento básico del controlador ST7789V de la pantalla LCD RGB de la tang nano 9k. La hoja de datos será entregado por el profesor del curso.
+ Respuesta: UART  hace referencia a un protocolo de comunicación serial que se utiliza para enviar y recibir datos entre dos dispositivos. UN dato diferenciador de este es que no requiere de un reloj para poder sincronizar la comunicación entre los dispositivos.
+- Baud Rate: La velocidad de transmisión de datos.
+Configuración: Ambos dispositivos deben tener la misma configuración de baud rate para poder comunicarse correctamente.
+- Paridad: Un método de detección de errores.
+Bits de Datos: La cantidad de bits en cada carácter de datos.
+Bits de Parada: Bits adicionales enviados al final de cada byte para indicar el final del dato.
+- Control de Flujo: Mecanismos para controlar el flujo de datos y evitar la pérdida de datos. En estos hay 2 vias: LA primera utiliza líneas adicionales como RTS (Request to Send) y CTS (Clear to Send) que es por medio del harware.Y la segunda utiliza caracteres especiales para controlar el flujo, como XON/XOFF. [4]
+ Uso del puerto serial en Linux.
+Los puertos seriales se representan como archivos de dispositivos, generalmente en /dev/ttyS* (para puertos seriales reales) o /dev/ttyUSB* (para dispositivos USB seriales). Para la configuración se utilizan comandos como stty para configurar los parámetros de la UART y herramientas como screen o minicom para abrir una comunicación serial. [5]
 
+
+ ## 8. Investigue el funcionamiento básico del controlador ST7789V de la pantalla LCD RGB de la tang nano 9k. La hoja de datos será entregado por el profesor del curso.
+ Respuesta: El controlador está diseñado para manejar pantallas de 240x320 píxeles y soporta RGB de 18 bits. El controlador permite dibujar píxeles, líneas, y formas directamente en la memoria de la pantalla. El usuario puede definir un área de ventana en la pantalla para actualizar solo esa región, lo que optimiza el rendimiento y minimiza el uso de ancho de banda usando el puerto SPI. [9]
 
 
  ### Bibliografía
  1. M. Alavi, S. Aliaga, and M. Murga, "Máquinas de Estado Finito," *Revista de Investigación Estudiantil Iluminate*, vol. 8, pp. 41, 2016.
  2. Cadence PCB, "What is Setup and Hold Time," *Cadence Design Systems*, 2023. [Online]. Available: https://resources.pcb.cadence.com/blog/what-is-setup-and-hold-time. [Accessed: 04-Sep-2024].
  3. Intel Corporation, "Clock Enables on Logic," *Intel Corporation*, 2024. [Online]. Available: https://www.intel.com/content/www/us/en/docs/programmable/683174/24-1/clock-enables-on-logic.html. [Accessed: 04-Sep-2024].
-
+ 4. Texas Instruments, TMS320C6000 Chip Support Library API Reference Guide, SPRUGP1, Apr. 2010. [Online]. Available: https://www.ti.com/lit/ug/sprugp1/sprugp1.pdf. [Accessed: Sept. 06, 2024].
+ 5. TechNexion, Using UART from a Linux Shell, Sept. 2021. [Online]. Available: https://developer.technexion.com/docs/using-uart-from-a-linux-shell. [Accessed: Sept. 06, 2024].
+ 6. Tocci, R. J., & Widmer, N. S. (1994). Digital Systems: Principles and Applications. Prentice Hall.
+ 7. Wakerly, J. F. (1990). Digital design: Principles and practices. Prentice-Hall International.
+ 8. Digital Design and Computer Architecture. (2022). Elsevier. https://doi.org/10.1016/c2019-0-00213-0
+ 9. Sitronix, ST7789V Datasheet, [Online]. Available: https://www.alldatasheet.com/datasheet-pdf/view/1132511/SITRONIX/ST7789V.html. [Accessed: Sept. 06, 2024].
