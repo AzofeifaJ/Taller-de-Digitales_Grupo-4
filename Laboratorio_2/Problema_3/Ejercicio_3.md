@@ -29,11 +29,11 @@ Como sabemos el periodo de timepo de una FPGA en nuestro caso la tang nano 9k, e
 
 De esta manera aplicamos tres codigos estraidos por medio de internet para aplicar una tramnsmiscion, una recepción y una manera bidireccional que es la que deberíamos de aplicar en este problema.
 ## Codigo  Módulo uart_tx (Transmisor)
-
+[]()
 ## Módulo uart_rx (Receptor)
-
+[]()
 ## Módulo UART bidireccional (Integración)
-
+[]()
 ## Implementación en tarjeta. 
 Ya por ultimo esta parte se demostrara como se aplica a la esta comunicacion entre la computadora y la FPGA, de manera que se desarrollo tres pruebas a realizar.
 # Envio de comunicacion del teclado a la computadora
