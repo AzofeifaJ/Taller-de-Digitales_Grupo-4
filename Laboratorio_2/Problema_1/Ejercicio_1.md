@@ -19,7 +19,7 @@ damente las señales.
 
 ## Planteamiento del problema
 Para este caso se diseño un diagrama de bloques de manera que podamos implementar la señal anti rebote que se puede causar en la salida de los leds de la FPGA. Este diagrama consta de 5 etapas, un boton/pulsador, dos entradas para el resety el sincronizador a partir de un clk (reloj), para mantener un frecuencia de flancos positivos a la hora de ejecutar, todo esto se muestra en el siguiente diagrama.
-*Diagrama de bloques para el ejercicio 1*
+# Diagrama de bloques para el ejercicio 1
 ![Diagrama de bloques](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes/DiagrBloq.png)
 
 ### Esplicacion del diagrama
