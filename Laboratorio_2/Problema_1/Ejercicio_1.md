@@ -19,7 +19,7 @@ damente las señales.
 
 ## Planteamiento del problema
 Para este caso se diseño un diagrama de bloques de manera que podamos implementar la señal anti rebote que se puede causar en la salida de los leds de la FPGA. Este diagrama consta de 5 etapas, un boton/pulsador, dos entradas para el resety el sincronizador a partir de un clk (reloj), para mantener un frecuencia de flancos positivos a la hora de ejecutar, todo esto se muestra en el siguiente diagrama.
-*Diagrama de bloques para el ejercicio 1*
+# Diagrama de bloques para el ejercicio 1
 ![Diagrama de bloques](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes/DiagrBloq.png)
 
 ### Esplicacion del diagrama
@@ -27,7 +27,7 @@ Iniciamos con un puldo a dado por un botón o pulsador de manera que este al no 
 Por ulitmo esto se tiene que hacer con un reloj por lo que debemos sincronizar todo el modulo top, esta sincronización se ve en la etapa de sincronizado como se muestra en el siguiente codigo. 
 
 ## Codigo de prubas en vivado.
-Antes de subir el archivo a la tarjeta Tang Nano 9k, se debe realizar una prueba, está se realizó en Vivado, dicho codigo está  [](). De manera que comprobamos su funcionamiento a través de un banco de pruebas, este se visualiza en el siguiente codigo  [](), al realizar está prueba se debera ver como si variamos los intervalos del pulsación del botón este mantiene una cuenta perfecta de los 15 nuemeros posibles en su formato binario de manera que el module de anti rebote está funcionando de manera perfecta. 
+Antes de subir el archivo a la tarjeta Tang Nano 9k, se debe realizar una prueba, está se realizó en Vivado, dicho codigo está  [top.sv](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Problema_1/top.sv). De manera que comprobamos su funcionamiento a través de un banco de pruebas, este se visualiza en el siguiente codigo  [testbench top.sv](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Problema_1/top_tb.sv), al realizar está prueba se debera ver como si variamos los intervalos del pulsación del botón este mantiene una cuenta perfecta de los 15 nuemeros posibles en su formato binario de manera que el module de anti rebote está funcionando de manera perfecta. 
 ![]()
 ## Implementación en tarjeta. 
 Ya por ultimo esta parte se demostrara en las demas parte del laboratorio donde se debe de incluir dicho funcionamiento a través de un teclado y como este funcionamiento tambien nos ayudara en la sincronización entre la computadora y la tarjeta como en su vecerversa. 
