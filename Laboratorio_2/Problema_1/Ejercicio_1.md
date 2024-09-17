@@ -20,7 +20,7 @@ damente las señales.
 ## Planteamiento del problema
 Para este caso se diseño un diagrama de bloques de manera que podamos implementar la señal anti rebote que se puede causar en la salida de los leds de la FPGA. Este diagrama consta de 5 etapas, un boton/pulsador, dos entradas para el resety el sincronizador a partir de un clk (reloj), para mantener un frecuencia de flancos positivos a la hora de ejecutar, todo esto se muestra en el siguiente diagrama.
 *Diagrama de bloques para el ejercicio 1*
-![Diagrama de bloques]([Laboratorio_2/Imagenes/DiagrBloq.png](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes/DiagrBloq.png))
+![Diagrama de bloques](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes/DiagrBloq.png)
 
 ### Esplicacion del diagrama
 Iniciamos con un puldo a dado por un botón o pulsador de manera que este al no tener las etapas nesesarias si reslizamos una cuenta donde cada flanco de subida que el bptón sea pulsado cambie de numero, mejor dicho que aumente 1 en la cuenta del numero binario, como estamos usando un FPGA Tang Nano 9k tenemos 7 leds, es decir el número tiene un espacio de 7 bits. Ahora si no aplicamos las etapas como vemos en el siguiente video se puede presentar el caso de que al apretar rápido no se de una cuenta correcta en los ledes, de esta forma implementamos una etapa para antirebote que en segmentos de 20 ns espere a que la señal se estabilice antes de hacer el cambio para evitar esos saltos de en la cuenta como se ve en el sigueinte codigo. 
