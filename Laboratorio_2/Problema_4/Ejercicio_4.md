@@ -20,7 +20,7 @@ ración para programar la LCD. Puede basarse en alguna biblioteca de Arduino o d
  y P2:Azul como configuración 2 por ejemplo. A partir de estos dos colores se pintará una
  grilla de colores en pantalla ante el accionar del teclado de la laptop. Debe ser posible
  alternar entre cada configuraci´ on una vez inicializada el LCD.
-![Figura]()
+![Figura](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/figura.png)
 
 ## Planteamiento del problema
 Para este caso se investigo como es el código para activar la pantalla que trae la FPGA Tang nano 9k, por lo cual hicimos uso de las practicas del tutorial de LUSHAY Labs, donde se enciende la pantalla con un color. A partir de aquí debemos de implementar el SPI para desarrollar la comunicación entre la computadora y la FPGA.
