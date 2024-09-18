@@ -27,9 +27,14 @@ Iniciamos con un puldo a dado por un botón o pulsador de manera que este al no 
 Por ulitmo esto se tiene que hacer con un reloj por lo que debemos sincronizar todo el modulo top, esta sincronización se ve en la etapa de sincronizado como se muestra en el siguiente codigo. 
 
 ## Codigo de prubas en vivado.
-Antes de subir el archivo a la tarjeta Tang Nano 9k, se debe realizar una prueba, está se realizó en Vivado, dicho codigo está  [Codigo de prueba systemverilog](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Problema_1/top.sv). De manera que comprobamos su funcionamiento a través de un banco de pruebas, este se visualiza en el siguiente codigo  [Testbech codigo top.sv](Laboratorio_2/Problema_1/top_tb.sv), al realizar está prueba se debera ver como si variamos los intervalos del pulsación del botón este mantiene una cuenta perfecta de los 15 nuemeros posibles en su formato binario de manera que el module de anti rebote está funcionando de manera perfecta. Esto lo podemos ver ya que en la siguiete imagen se ve como se comporta el sistema sin un modulo antirebote, de manera que si hace la cuenta pero si aplicamos esto de manera a un circuito analógico no realiza la cuenta de acuerdo a la cantidad de pulsaciones. 
-![Simulacion](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes/contandor%20con%20rebote.png)
+Antes de subir el archivo a la tarjeta Tang Nano 9k, se debe realizar una prueba, está se realizó en Vivado, dicho codigo está  [Codigo de prueba systemverilog](Laboratorio_2/Problema_1/top.sv). De manera que comprobamos su funcionamiento a través de un banco de pruebas, este se visualiza en el siguiente codigo  [Testbech codigo top.sv](Laboratorio_2/Problema_1/top_tb.sv), al realizar está prueba se debera ver como si variamos los intervalos del pulsación del botón este mantiene una cuenta perfecta de los 15 nuemeros posibles en su formato binario de manera que el module de anti rebote está funcionando de manera perfecta. Esto lo podemos ver ya que en la siguiete imagen se ve como se comporta el sistema sin un modulo antirebote, de manera que si hace la cuenta pero si aplicamos esto de manera a un circuito analógico no realiza la cuenta de acuerdo a la cantidad de pulsaciones. 
+![Simulacion](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/contador%20con%20antirebote.png)
 Si le aplicaamos el module de antirebote podemos ver que tanto en la simulacion este realiza una pulsacion estable en la entrada EN para que se haga una cuenta más exacta de las pulsaciones. 
-![Simulacion](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes/contador%20con%20antirebote.png)
+![Simulacion](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/contandor%20con%20rebote.png)
 ## Implementación en tarjeta. 
 Ya por ultimo esta parte se demostrara en las demas parte del laboratorio donde se debe de incluir dicho funcionamiento a través de un teclado y como este funcionamiento tambien nos ayudara en la sincronización entre la computadora y la tarjeta como en su vecerversa. 
+# Conteo de 5 bits sin modulo anti-rebote
+[Video demostración](Laboratorio_2/Imagenes_y_videos/sinrebote.mp4)
+# Conteo de 5 bits con modulo anti-rebote y sincronización
+[Video demostración](Laboratorio_2/Imagenes_y_videos/conrebote.mp4)
+
