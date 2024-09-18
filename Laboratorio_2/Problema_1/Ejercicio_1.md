@@ -34,7 +34,7 @@ Si le aplicaamos el module de antirebote podemos ver que tanto en la simulacion 
 ## Implementación en tarjeta. 
 Ya por ultimo esta parte se demostrara en las demas parte del laboratorio donde se debe de incluir dicho funcionamiento a través de un teclado y como este funcionamiento tambien nos ayudara en la sincronización entre la computadora y la tarjeta como en su vecerversa. 
 # Conteo de 5 bits sin modulo anti-rebote
-[Video demostración](Laboratorio_2/Imagenes_y_videos/sinrebote.mp4)
+[Video demostración](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/sinrebote.mp4)
 # Conteo de 5 bits con modulo anti-rebote y sincronización
 [Video demostración](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/conrebote.mp4)
 
