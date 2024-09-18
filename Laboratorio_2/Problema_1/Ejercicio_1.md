@@ -36,5 +36,5 @@ Ya por ultimo esta parte se demostrara en las demas parte del laboratorio donde 
 # Conteo de 5 bits sin modulo anti-rebote
 [Video demostración](Laboratorio_2/Imagenes_y_videos/sinrebote.mp4)
 # Conteo de 5 bits con modulo anti-rebote y sincronización
-[Video demostración](Laboratorio_2/Imagenes_y_videos/conrebote.mp4)
+[Video demostración](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/conrebote.mp4)
 
