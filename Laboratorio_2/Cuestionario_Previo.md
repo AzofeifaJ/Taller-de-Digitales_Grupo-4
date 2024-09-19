@@ -102,6 +102,6 @@ Los puertos seriales se representan como archivos de dispositivos, generalmente 
 2.	TuxtlaTec, “FPGA UART_RX VERILOG TANG NANO 9K primera parte (NO FSM).” [Online]. Available: https://www.youtube.com/watch?v=sXebwpe98AY&t=115s. [Accessed: 11-Sep-2024].
 3. TuxtlaTec, “UART RX parte 2, Verilog para FPGA Tang Nano 9k uart 9600 bps recepción RX.” [Online]. Available: https://www.youtube.com/watch?v=09uyBYjoM7w&t=1600s. [Accessed: 17-Sep-2024].
 4.	TuxtlaTec, “HDL uart tx Verilog para tarjeta Tang nano 9k.” [Online]. Available: https://www.youtube.com/watch?v=LmwNRFB1HiI. [Accessed: 17-Sep-2024].
-5.		TangNano-9K-example: TangNano-9K-example project [Online]. Available:https://github.com/sipeed/TangNano-9K-example
+5.	 TangNano-9K-example TangNano-9K-example project. [Online]. Available:https://github.com/sipeed/TangNano-9K-example
 6.		kingyo, Tang-Nano_PartyParrot [Online]. Available: https://github.com/kingyoPiyo/Tang-Nano_PartyParrot
 
