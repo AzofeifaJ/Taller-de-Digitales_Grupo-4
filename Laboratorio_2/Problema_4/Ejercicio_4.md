@@ -28,7 +28,9 @@ Para este caso se transimite, de acuerdo al problema 3 9600 bps, por lo cual el 
 
 ## Pruebas 
 Para esta aparto se realizo una prueba utilizando la herramienta de Vivado, por medio de un testbench para conocer como actua el codigo en la FPGA. 
+![Figura](C:\Users\chisc\Downloads\GitHub\Laboratorio-1_Taller-de-Digitales_Grupo-4\Laboratorio_2\Imagenes_y_videos\tesbecnch codigo externo.png)
 Como se puede denotar las pruebas al incio al contener un codigo fuente externo nos presento muchas salidas y otras donde el propio progrma no determinanba como demeria de ser la señal por lo cual se tuvo que reeditar el codigo para obtener una señal en el testbech más clara del problema. 
+![figura](tb actualizado.png)
 Como se puede apresiar en este codigo podemos de terminar el como funciona la interesación de la pantalla con la FPGA y calramente como este actua con la computadora a través de un SPI. De manera que tenemos más claro como continuar con el problema 4. 
 
 
@@ -36,6 +38,7 @@ Como se puede apresiar en este codigo podemos de terminar el como funciona la in
 Se debe de establecer una comunicación entre la computadora y la FPGA, la cual por el momento presenta problemas. 
 
 En esta parte establecimos lo dos colores azul y verde en la pantalla para ya defienir como se debe de interactuar con ellos. 
+
 En esta parte establecimos una comunicación directa entre la computadora y la FPGA para que varie los colores de la pantalla para este caso podemos ver que la tarjeta dectetaba otro color el rojo, por lo cual daba el color azul seguido de una pantalla negra la cual segun el codiogo deberia se la verde y una pantalla rojo, por lo cual la interación esta correcta pero se debe de determinar los colores para que no se sobreponga otros. 
 Por ultimo se intento establecer que por medio del teclado se cambiaran los colores pero en este caso solo se tiene una pantalla blanca donde no hay cambio de estos. 
 
