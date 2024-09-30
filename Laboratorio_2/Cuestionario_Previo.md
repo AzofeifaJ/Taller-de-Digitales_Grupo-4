@@ -4,9 +4,9 @@
  En el caso de una maquina de Moore las salidas dependen unicamente del estado actual, es decir que la salida está asociada con cada estado individual y se realiza un cambio hasta pasar por la transicion al siguiente estado.
  Para la máquina de Mealy las salidas depende tanto del estado actual como  delas entradas. Se puede realiza un cambio en la respuesta de una entraad sin necesidad de que el sistema haga una transiscion a un siguiente estado. 
  # Ejemplos de diagrama de bloque de una máquina Moore
- ![Maquina de MOORE](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes/Ejemplo%20maquna%20de%20MOORE.png)
+ ![Maquina de MOORE](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/Ejemplo%20maquna%20de%20MOORE.png)
  # Ejemplos de diagrama de bloques de una máquina Mealy
- ![Maquina de MEALY](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes/Ejemplo%20maquina%20de%20MEALY.png)
+ ![Maquina de MEALY](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/Ejemplo%20maquina%20de%20MEALY.png)
 
 
  ## 2. Explique los conceptos de setup time y hold time. ¿Qué importancia tienen en el diseño de sistemas digitales?
@@ -87,6 +87,7 @@ Los puertos seriales se representan como archivos de dispositivos, generalmente 
 
 
  ### Bibliografía
+ ##Cuestionario Previo
  1. M. Alavi, S. Aliaga, and M. Murga, "Máquinas de Estado Finito," *Revista de Investigación Estudiantil Iluminate*, vol. 8, pp. 41, 2016.
  2. Cadence PCB, "What is Setup and Hold Time," *Cadence Design Systems*, 2023. [Online]. Available: https://resources.pcb.cadence.com/blog/what-is-setup-and-hold-time. [Accessed: 04-Sep-2024].
  3. Intel Corporation, "Clock Enables on Logic," *Intel Corporation*, 2024. [Online]. Available: https://www.intel.com/content/www/us/en/docs/programmable/683174/24-1/clock-enables-on-logic.html. [Accessed: 04-Sep-2024].
@@ -96,3 +97,11 @@ Los puertos seriales se representan como archivos de dispositivos, generalmente 
  7. Wakerly, J. F. (1990). Digital design: Principles and practices. Prentice-Hall International.
  8. Digital Design and Computer Architecture. (2022). Elsevier. https://doi.org/10.1016/c2019-0-00213-0
  9. Sitronix, ST7789V Datasheet, [Online]. Available: https://www.alldatasheet.com/datasheet-pdf/view/1132511/SITRONIX/ST7789V.html. [Accessed: Sept. 06, 2024].
+## Problemas a resolver en el proyecto.
+1.	kingyo, “Party parrot on tang nano FPGA.” [Online]. Available: https://www.youtube.com/watch?v=d6vprVDSv0o. [Accessed: 13-Sep-2024].
+2.	TuxtlaTec, “FPGA UART_RX VERILOG TANG NANO 9K primera parte (NO FSM).” [Online]. Available: https://www.youtube.com/watch?v=sXebwpe98AY&t=115s. [Accessed: 11-Sep-2024].
+3. TuxtlaTec, “UART RX parte 2, Verilog para FPGA Tang Nano 9k uart 9600 bps recepción RX.” [Online]. Available: https://www.youtube.com/watch?v=09uyBYjoM7w&t=1600s. [Accessed: 17-Sep-2024].
+4.	TuxtlaTec, “HDL uart tx Verilog para tarjeta Tang nano 9k.” [Online]. Available: https://www.youtube.com/watch?v=LmwNRFB1HiI. [Accessed: 17-Sep-2024].
+5.	 TangNano-9K-example TangNano-9K-example project. [Online]. Available:https://github.com/sipeed/TangNano-9K-example
+6.	 kingyo, Tang_Nano_PartyParrot. [Online]. Available: https://github.com/kingyoPiyo/Tang-Nano_PartyParrot
+

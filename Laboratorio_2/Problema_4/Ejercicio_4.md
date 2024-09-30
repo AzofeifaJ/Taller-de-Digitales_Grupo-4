@@ -24,6 +24,7 @@ ración para programar la LCD. Puede basarse en alguna biblioteca de Arduino o d
 
 ## Planteamiento del problema
 Para este caso se investigo como es el código para activar la pantalla que trae la FPGA Tang nano 9k, por lo cual hicimos uso de las practicas del tutorial de LUSHAY Labs, donde se enciende la pantalla con un color. A partir de aquí debemos de implementar el SPI para desarrollar la comunicación entre la computadora y la FPGA.
+Para este caso se transimite, de acuerdo al problema 3 9600 bps, por lo cual el receptor va a recibir un inicio con el MSB en cero, de acuerdo que apartir de aquí recibimos la cantidad de bits que queremos transmitir esto de acuerdo a la lógica de la UART_RX y la UART_TX ya que hay se hibridad se puede transmitir o enviar desde la tang nano 9k al computador o viceversa. Pero en este caso lo que queremos es que se transimita a la pantalla LCD, para que está cambie de color entre azul y verde la presionar una tecla del teclado. De manera que sea la computadora la que decida como debe ser lo que transmite la Tang Nano 9k. Por ultimo al implemtar el sistema de sincronización y antirebote del problema 1, este tendra una duracion de 104.6 us entre cada disparo de pulso, demanera que haci se evite señales contaminadas a las señales dadas por la computador y recibidas por la tarjeta. 
 
 ## Pruebas 
 Para esta aparto se realizo una prueba utilizando la herramienta de Vivado, por medio de un testbench para conocer como actua el codigo en la FPGA. 
