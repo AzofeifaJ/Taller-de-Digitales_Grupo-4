@@ -1,4 +1,4 @@
-module topf(
+module top(
     input  logic clk,        // Entrada de reloj
     input  logic rst_n,      // Botón de reinicio activo en bajo
     input  logic select,     // Botón select

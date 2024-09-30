@@ -25,7 +25,16 @@ ración para programar la LCD. Puede basarse en alguna biblioteca de Arduino o d
 ## Planteamiento del problema
 Para este caso se investigo como es el código para activar la pantalla que trae la FPGA Tang nano 9k, por lo cual hicimos uso de las practicas del tutorial de LUSHAY Labs, donde se enciende la pantalla con un color. A partir de aquí debemos de implementar el SPI para desarrollar la comunicación entre la computadora y la FPGA.
 
+## Pruebas 
+Para esta aparto se realizo una prueba utilizando la herramienta de Vivado, por medio de un testbench para conocer como actua el codigo en la FPGA. 
+Como se puede denotar las pruebas al incio al contener un codigo fuente externo nos presento muchas salidas y otras donde el propio progrma no determinanba como demeria de ser la señal por lo cual se tuvo que reeditar el codigo para obtener una señal en el testbech más clara del problema. 
+Como se puede apresiar en este codigo podemos de terminar el como funciona la interesación de la pantalla con la FPGA y calramente como este actua con la computadora a través de un SPI. De manera que tenemos más claro como continuar con el problema 4. 
+
+
 ## Implementación en tarjeta. 
 Se debe de establecer una comunicación entre la computadora y la FPGA, la cual por el momento presenta problemas. 
 
+En esta parte establecimos lo dos colores azul y verde en la pantalla para ya defienir como se debe de interactuar con ellos. 
+En esta parte establecimos una comunicación directa entre la computadora y la FPGA para que varie los colores de la pantalla para este caso podemos ver que la tarjeta dectetaba otro color el rojo, por lo cual daba el color azul seguido de una pantalla negra la cual segun el codiogo deberia se la verde y una pantalla rojo, por lo cual la interación esta correcta pero se debe de determinar los colores para que no se sobreponga otros. 
+Por ultimo se intento establecer que por medio del teclado se cambiaran los colores pero en este caso solo se tiene una pantalla blanca donde no hay cambio de estos. 
 

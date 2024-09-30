@@ -1,46 +1,23 @@
 `timescale 1ps/1ps
 
 module top(
-	input clk,       // Reloj 27Mhz
-	input resetn,    // Reset activo bajo
+	input clk, // 27M
+	input resetn,
 
-	output ser_tx,   // UART transmisión (no utilizado en este código)
-	input ser_rx,    // UART recepción (no utilizado en este código)
+	output ser_tx,
+	input ser_rx,
 
-	output lcd_resetn, // Reset para la pantalla LCD
-	output lcd_clk,    // Señal de reloj para la pantalla LCD
-	output lcd_cs,     // Señal de selección de chip para la pantalla LCD
-	output lcd_rs,     // Señal de registro de comando/datos para la pantalla LCD
-	output lcd_data    // Línea de datos (MOSI)
+	output lcd_resetn,
+	output lcd_clk,
+	output lcd_cs,
+	output lcd_rs,
+	output lcd_data
 );
-/*    // UART signals
-    reg [7:0] tx_data;
-    reg tx_start;
-    wire tx_done;
-    wire [7:0] rx_data;
-    wire rx_ready;
-    // Instantiate UART transmitter
-    uart_tx uart_tx_inst (
-        .clk(clk),
-        .resetn(resetn),
-        .tx_data(tx_data),
-        .tx_start(tx_start),
-        .ser_tx(ser_tx),
-        .tx_done(tx_done)
-    );
-    // Instantiate UART receiver
-    uart_rx uart_rx_inst (
-        .clk(clk),
-        .resetn(resetn),
-        .ser_rx(ser_rx),
-        .rx_data(rx_data),
-        .rx_ready(rx_ready)
-    );*/
-localparam MAX_CMDS = 69;  // Máximo de comandos para la inicialización del LCD
+
+localparam MAX_CMDS = 69;
 
 wire [8:0] init_cmd[MAX_CMDS:0];
 
-// Secuencia de comandos de inicialización de la pantalla LCD (ST7789V)
 assign init_cmd[ 0] = 9'h036;
 assign init_cmd[ 1] = 9'h170;
 assign init_cmd[ 2] = 9'h03A;
@@ -100,68 +77,77 @@ assign init_cmd[55] = 9'h120;
 assign init_cmd[56] = 9'h123;
 assign init_cmd[57] = 9'h021;
 assign init_cmd[58] = 9'h029;
-assign init_cmd[59] = 9'h02A; // Comando columna
+
+assign init_cmd[59] = 9'h02A; // column
 assign init_cmd[60] = 9'h100;
 assign init_cmd[61] = 9'h128;
 assign init_cmd[62] = 9'h101;
 assign init_cmd[63] = 9'h117;
-assign init_cmd[64] = 9'h02B; // Comando fila
+assign init_cmd[64] = 9'h02B; // row
 assign init_cmd[65] = 9'h100;
 assign init_cmd[66] = 9'h135;
 assign init_cmd[67] = 9'h100;
 assign init_cmd[68] = 9'h1BB;
-assign init_cmd[69] = 9'h02C; // Comenzar escritura en memoria
+assign init_cmd[69] = 9'h02C; // start
 
-// Estados de la inicialización
-localparam INIT_RESET   = 4'b0000; // 100ms durante el reset
-localparam INIT_PREPARE = 4'b0001; // 200ms después del reset
-localparam INIT_WAKEUP  = 4'b0010; // Comando para salir del modo sleep
-localparam INIT_SNOOZE  = 4'b0011; // Espera 120ms después de despertar
-localparam INIT_WORKING = 4'b0100; // Envío de comandos y datos
-localparam INIT_DONE    = 4'b0101; // Inicialización completada
+localparam INIT_RESET   = 4'b0000; // delay 100ms while reset
+localparam INIT_PREPARE = 4'b0001; // delay 200ms after reset
+localparam INIT_WAKEUP  = 4'b0010; // write cmd 0x11 MIPI_DCS_EXIT_SLEEP_MODE
+localparam INIT_SNOOZE  = 4'b0011; // delay 120ms after wakeup
+localparam INIT_WORKING = 4'b0100; // write command & data
+localparam INIT_DONE    = 4'b0101; // all done
 
 `ifdef MODELTECH
+
 localparam CNT_100MS = 32'd2700000;
 localparam CNT_120MS = 32'd3240000;
 localparam CNT_200MS = 32'd5400000;
+
 `else
-// Simulación rápida
+
+// speedup for simulation
 localparam CNT_100MS = 32'd27;
 localparam CNT_120MS = 32'd32;
 localparam CNT_200MS = 32'd54;
+
 `endif
 
-// Variables de control y estado
-reg [3:0] init_state;
-reg [6:0] cmd_index;
+
+reg [ 3:0] init_state;
+reg [ 6:0] cmd_index;
 reg [31:0] clk_cnt;
-reg [4:0] bit_loop;
+reg [ 4:0] bit_loop;
+
 reg [15:0] pixel_cnt;
+
 reg lcd_cs_r;
 reg lcd_rs_r;
 reg lcd_reset_r;
+
 reg [7:0] spi_data;
 
 assign lcd_resetn = lcd_reset_r;
-assign lcd_clk    = ~clk;      // Reloj invertido
+assign lcd_clk    = ~clk;
 assign lcd_cs     = lcd_cs_r;
 assign lcd_rs     = lcd_rs_r;
-assign lcd_data   = spi_data[7]; // MSB de los datos
+assign lcd_data   = spi_data[7]; // MSB
 
-// Color verde en formato RGB565
-wire [15:0] pixel = 16'hFFFF; // Color blanco en formato RGB565
+// gen color bar
+wire [15:0] pixel = (pixel_cnt >= 21600) ? 16'hF800 :
+					(pixel_cnt >= 10800) ? 16'h07E0 : 16'h001F;
 
-// Máquina de estados y control
-always @(posedge clk or negedge resetn) begin
+always@(posedge clk or negedge resetn) begin
 	if (~resetn) begin
 		clk_cnt <= 0;
 		cmd_index <= 0;
 		init_state <= INIT_RESET;
+
 		lcd_cs_r <= 1;
 		lcd_rs_r <= 1;
 		lcd_reset_r <= 0;
 		spi_data <= 8'hFF;
 		bit_loop <= 0;
+
 		pixel_cnt <= 0;
 	end else begin
 
@@ -171,7 +157,7 @@ always @(posedge clk or negedge resetn) begin
 				if (clk_cnt == CNT_100MS) begin
 					clk_cnt <= 0;
 					init_state <= INIT_PREPARE;
-					lcd_reset_r <= 1; // Salir de reset
+					lcd_reset_r <= 1;
 				end else begin
 					clk_cnt <= clk_cnt + 1;
 				end
@@ -188,17 +174,19 @@ always @(posedge clk or negedge resetn) begin
 
 			INIT_WAKEUP : begin
 				if (bit_loop == 0) begin
-					// Enviar comando para salir de sleep
+					// start
 					lcd_cs_r <= 0;
 					lcd_rs_r <= 0;
-					spi_data <= 8'h11; // Comando para salir de sleep
+					spi_data <= 8'h11; // exit sleep
 					bit_loop <= bit_loop + 1;
 				end else if (bit_loop == 8) begin
+					// end
 					lcd_cs_r <= 1;
 					lcd_rs_r <= 1;
 					bit_loop <= 0;
 					init_state <= INIT_SNOOZE;
 				end else begin
+					// loop
 					spi_data <= { spi_data[6:0], 1'b1 };
 					bit_loop <= bit_loop + 1;
 				end
@@ -218,16 +206,19 @@ always @(posedge clk or negedge resetn) begin
 					init_state <= INIT_DONE;
 				end else begin
 					if (bit_loop == 0) begin
+						// start
 						lcd_cs_r <= 0;
 						lcd_rs_r <= init_cmd[cmd_index][8];
 						spi_data <= init_cmd[cmd_index][7:0];
 						bit_loop <= bit_loop + 1;
 					end else if (bit_loop == 8) begin
+						// end
 						lcd_cs_r <= 1;
 						lcd_rs_r <= 1;
 						bit_loop <= 0;
-						cmd_index <= cmd_index + 1; // Siguiente comando
+						cmd_index <= cmd_index + 1; // next command
 					end else begin
+						// loop
 						spi_data <= { spi_data[6:0], 1'b1 };
 						bit_loop <= bit_loop + 1;
 					end
@@ -236,22 +227,28 @@ always @(posedge clk or negedge resetn) begin
 
 			INIT_DONE : begin
 				if (pixel_cnt == 32400) begin
-					; // Stop (pantalla llena)
+					; // stop
 				end else begin
 					if (bit_loop == 0) begin
+						// start
 						lcd_cs_r <= 0;
 						lcd_rs_r <= 1;
-						spi_data <= pixel[15:8]; // Byte alto del color verde
+//						spi_data <= 8'hF8; // RED
+						spi_data <= pixel[15:8];
 						bit_loop <= bit_loop + 1;
 					end else if (bit_loop == 8) begin
-						spi_data <= pixel[7:0]; // Byte bajo del color verde
+						// next byte
+//						spi_data <= 8'h00; // RED
+						spi_data <= pixel[7:0];
 						bit_loop <= bit_loop + 1;
 					end else if (bit_loop == 16) begin
+						// end
 						lcd_cs_r <= 1;
 						lcd_rs_r <= 1;
 						bit_loop <= 0;
-						pixel_cnt <= pixel_cnt + 1; // Siguiente pixel
+						pixel_cnt <= pixel_cnt + 1; // next pixel
 					end else begin
+						// loop
 						spi_data <= { spi_data[6:0], 1'b1 };
 						bit_loop <= bit_loop + 1;
 					end
@@ -259,122 +256,8 @@ always @(posedge clk or negedge resetn) begin
 			end
 
 		endcase
+
 	end
 end
 
-endmodule
-
-module uart_tx(
-    input wire clk,
-    input wire resetn,
-    input wire [7:0] tx_data,
-    input wire tx_start,
-    output reg ser_tx,
-    output reg tx_done
-);
-    // UART parameters
-    parameter BAUD_RATE = 115200;
-    parameter CLOCK_FREQ = 27000000; // 27 MHz
-    localparam DIVISOR = CLOCK_FREQ / BAUD_RATE;
-
-    // UART state
-    reg [15:0] divisor_cnt;
-    reg [3:0] bit_cnt;
-    reg [7:0] shift_reg;
-    reg tx_busy;
-    reg tx_enable;
-
-    always @(posedge clk or negedge resetn) begin
-        if (~resetn) begin
-            divisor_cnt <= 0;
-            bit_cnt <= 0;
-            shift_reg <= 0;
-            tx_busy <= 0;
-            ser_tx <= 1;
-            tx_done <= 0;
-            tx_enable <= 0;
-        end else begin
-            if (tx_start && !tx_busy) begin
-                tx_busy <= 1;
-                tx_enable <= 1;
-                shift_reg <= tx_data;
-                bit_cnt <= 0;
-                divisor_cnt <= 0;
-                tx_done <= 0;
-            end
-
-            if (tx_enable) begin
-                if (divisor_cnt < (DIVISOR - 1)) begin
-                    divisor_cnt <= divisor_cnt + 1;
-                end else begin
-                    divisor_cnt <= 0;
-                    if (bit_cnt < 8) begin
-                        ser_tx <= shift_reg[0];
-                        shift_reg <= shift_reg >> 1;
-                        bit_cnt <= bit_cnt + 1;
-                    end else begin
-                        ser_tx <= 1; // Idle state
-                        tx_busy <= 0;
-                        tx_done <= 1;
-                        tx_enable <= 0;
-                    end
-                end
-            end
-        end
-    end
-endmodule
-
-module uart_rx(
-    input wire clk,
-    input wire resetn,
-    input wire ser_rx,
-    output reg [7:0] rx_data,
-    output reg rx_ready
-);
-    // UART parameters
-    parameter BAUD_RATE = 115200;
-    parameter CLOCK_FREQ = 27000000; // 27 MHz
-    localparam DIVISOR = CLOCK_FREQ / BAUD_RATE;
-
-    // UART state
-    reg [15:0] divisor_cnt;
-    reg [3:0] bit_cnt;
-    reg [7:0] shift_reg;
-    reg rx_busy;
-    reg rx_start;
-    reg rx_sample;
-    
-    always @(posedge clk or negedge resetn) begin
-        if (~resetn) begin
-            divisor_cnt <= 0;
-            bit_cnt <= 0;
-            shift_reg <= 0;
-            rx_busy <= 0;
-            rx_start <= 0;
-            rx_ready <= 0;
-        end else begin
-            if (rx_busy) begin
-                if (divisor_cnt < (DIVISOR - 1)) begin
-                    divisor_cnt <= divisor_cnt + 1;
-                end else begin
-                    divisor_cnt <= 0;
-                    if (bit_cnt < 8) begin
-                        shift_reg <= {ser_rx, shift_reg[7:1]};
-                        bit_cnt <= bit_cnt + 1;
-                    end else begin
-                        rx_data <= shift_reg;
-                        rx_ready <= 1;
-                        rx_busy <= 0;
-                    end
-                end
-            end else if (!ser_rx && !rx_start) begin
-                rx_start <= 1;
-                rx_busy <= 1;
-                bit_cnt <= 0;
-                divisor_cnt <= 0;
-            end else if (rx_ready) begin
-                rx_ready <= 0;
-            end
-        end
-    end
 endmodule
