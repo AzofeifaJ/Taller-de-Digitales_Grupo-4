@@ -28,9 +28,9 @@ Para este caso se transimite, de acuerdo al problema 3 9600 bps, por lo cual el 
 
 ## Pruebas 
 Para esta aparto se realizo una prueba utilizando la herramienta de Vivado, por medio de un testbench para conocer como actua el codigo en la FPGA. 
-![Figura](C:\Users\chisc\Downloads\GitHub\Laboratorio-1_Taller-de-Digitales_Grupo-4\Laboratorio_2\Imagenes_y_videos\tesbecnch codigo externo.png)
+![Figura](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/tesbecnch%20codigo%20externo.png)
 Como se puede denotar las pruebas al incio al contener un codigo fuente externo nos presento muchas salidas y otras donde el propio progrma no determinanba como demeria de ser la señal por lo cual se tuvo que reeditar el codigo para obtener una señal en el testbech más clara del problema. 
-![figura](tb actualizado.png)
+![figura](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/tb%20actualizado.png)
 Como se puede apresiar en este codigo podemos de terminar el como funciona la interesación de la pantalla con la FPGA y calramente como este actua con la computadora a través de un SPI. De manera que tenemos más claro como continuar con el problema 4. 
 
 
