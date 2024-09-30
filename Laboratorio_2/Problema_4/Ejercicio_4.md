@@ -41,4 +41,5 @@ En esta parte establecimos lo dos colores azul y verde en la pantalla para ya de
 
 En esta parte establecimos una comunicación directa entre la computadora y la FPGA para que varie los colores de la pantalla para este caso podemos ver que la tarjeta dectetaba otro color el rojo, por lo cual daba el color azul seguido de una pantalla negra la cual segun el codiogo deberia se la verde y una pantalla rojo, por lo cual la interación esta correcta pero se debe de determinar los colores para que no se sobreponga otros. 
 Por ultimo se intento establecer que por medio del teclado se cambiaran los colores pero en este caso solo se tiene una pantalla blanca donde no hay cambio de estos. 
+[Video demostración](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/Pruebas%20en%20FPGA.mp4)
 
