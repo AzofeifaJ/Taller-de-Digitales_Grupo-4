@@ -27,7 +27,7 @@ Como sabemos el periodo de timepo de una FPGA en nuestro caso la tang nano 9k, e
 
 De esta manera aplicamos tres codigos estraidos de un repositorio de un [repositorio de Github](https://github.com/MuhammadMajiid/UART?tab=readme-ov-file) para aplicar una tramnsmiscion, una recepción y una manera bidireccional que es la que deberíamos de aplicar en este problema.
 ## Codigo  Módulo uart_tx (Transmisor)
-![Modulo Tx](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/DiagrBloq.png)
+![Modulo Tx]([https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/DiagrBloq.png](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/UART_Tx.png))
 []()
 ## Módulo uart_rx (Receptor)
 []()
