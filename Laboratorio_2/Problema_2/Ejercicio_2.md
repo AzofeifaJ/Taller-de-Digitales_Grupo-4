@@ -28,4 +28,7 @@ La Figura 2 muestra un diagrama básico de una interfaz para un teclado hexadeci
 
 ## Planteamiento del problema
 El problema plantea la necesidad de desarrollar un sistema para gestionar un teclado hexadecimal en una FPGA, donde se deben escanear filas y columnas de manera eficiente para detectar qué tecla ha sido presionada. El sistema también debe eliminar los rebotes que se producen al pulsar una tecla, evitando lecturas erróneas y garantizando una salida estable en formato hexadecimal. Para lograr esto, es esencial dividir la señal de reloj original, demasiado rápida para un escaneo eficaz, y utilizar un contador para activar cada fila del teclado de forma secuencial. Además, el sistema debe convertir las señales de las columnas en un código binario y generar la salida hexadecimal correspondiente, asegurando que la detección de teclas sea precisa, incluso después de un posible reset del sistema.
-# Diagrama de bloques para el ejercicio 2
+# Tabla de la verdad
+![Tablateclado](https://github.com/user-attachments/assets/a8aae660-2ecd-4c1d-a2dc-d409d03a8265)
+
+
