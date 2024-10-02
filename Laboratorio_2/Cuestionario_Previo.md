@@ -87,7 +87,7 @@ Los puertos seriales se representan como archivos de dispositivos, generalmente 
 
 
  ### Bibliografía
- ##Cuestionario Previo
+ ## Cuestionario Previo
  1. M. Alavi, S. Aliaga, and M. Murga, "Máquinas de Estado Finito," *Revista de Investigación Estudiantil Iluminate*, vol. 8, pp. 41, 2016.
  2. Cadence PCB, "What is Setup and Hold Time," *Cadence Design Systems*, 2023. [Online]. Available: https://resources.pcb.cadence.com/blog/what-is-setup-and-hold-time. [Accessed: 04-Sep-2024].
  3. Intel Corporation, "Clock Enables on Logic," *Intel Corporation*, 2024. [Online]. Available: https://www.intel.com/content/www/us/en/docs/programmable/683174/24-1/clock-enables-on-logic.html. [Accessed: 04-Sep-2024].
