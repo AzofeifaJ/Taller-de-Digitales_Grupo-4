@@ -28,7 +28,7 @@ Como sabemos el periodo de timepo de una FPGA en nuestro caso la tang nano 9k, e
 De esta manera aplicamos tres codigos estraidos de un [repositorio de Github](https://github.com/MuhammadMajiid/UART?tab=readme-ov-file) para aplicar una tramnsmiscion, una recepción y una manera bidireccional que es la que deberíamos de aplicar en este problema.
 ## Codigo  Módulo uart_tx (Transmisor)
 ![Modulo Tx](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/UART_Tx.png)
-[]()
+En este módulo la se tiene una señal bandera de lectura donde esta hace que el dódulo lea la señal de entrada por medio de la revisión de cada cierta cantidad de baudios hata poder leer el número de n bits que se ingresó, una ve finalizado esto se envía una señal de bandera que desactiva la lectura indicando directamente que ya se leyó el dato recibido.
 ## Módulo uart_rx (Receptor)
 []()
 ## Módulo UART bidireccional (Integración)
