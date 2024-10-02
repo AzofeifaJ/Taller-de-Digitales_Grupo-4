@@ -25,7 +25,7 @@ Apartir de aqui, suponiendo que la parte dos sirve podemos establecer una serie 
 Por otra parte debemos de realizar los calculos para la tasa de baudios, los cuales corresponde a la cantidad de bits tramitidos por sengundo. Como se determino en el enunciado tenenmos una tasa de 9600 baudios, por lo cual si calculamos el tiempo es de: Tiempo de tramision de bits=1/9600=104.17μs. 
 Como sabemos el periodo de timepo de una FPGA en nuestro caso la tang nano 9k, es muy superior por lo cual debemos de aplicar una division de frecuencia de 27MHz por lo cual un factor de division es de: Factor de división=27000000/9600=2812.5 
 
-De esta manera aplicamos tres codigos estraidos de un repositorio de un ![repositorio de Github]([https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Problema_1/top.sv](https://github.com/MuhammadMajiid/UART?tab=readme-ov-file)) para aplicar una tramnsmiscion, una recepción y una manera bidireccional que es la que deberíamos de aplicar en este problema.
+De esta manera aplicamos tres codigos estraidos de un repositorio de un [repositorio de Github](https://github.com/MuhammadMajiid/UART?tab=readme-ov-file) para aplicar una tramnsmiscion, una recepción y una manera bidireccional que es la que deberíamos de aplicar en este problema.
 ## Codigo  Módulo uart_tx (Transmisor)
 []()
 ## Módulo uart_rx (Receptor)
