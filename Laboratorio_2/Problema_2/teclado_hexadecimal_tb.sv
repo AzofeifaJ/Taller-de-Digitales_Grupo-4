@@ -1,4 +1,4 @@
-module teclado_hexadecimal_fpga_tb();
+module teclado_hexadecimal_tb();
 
     // Variables para entradas y salidas
     reg clk;
@@ -8,7 +8,7 @@ module teclado_hexadecimal_fpga_tb();
     wire [1:0] current_row;  // Salida de filas activas
 
     // Instancia del módulo principal
-    teclado_hexadecimal_fpga uut (
+    teclado_hexadecimal uut (
         .clk(clk),
         .reset(reset),
         .cols(cols),
