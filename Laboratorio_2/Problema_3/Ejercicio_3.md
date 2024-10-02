@@ -30,7 +30,7 @@ De esta manera aplicamos tres codigos estraidos de un [repositorio de Github](ht
 ![Modulo Tx](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/UART_Tx.png)
 En este módulo se tiene una señal bandera de lectura donde esta hace que el dódulo lea la señal de entrada por medio de la revisión de cada cierta cantidad de baudios hata poder leer el número de n bits que se ingresó, una ve finalizado esto se envía una señal de bandera que desactiva la lectura indicando directamente que ya se leyó el dato recibido.
 
-![Modulo Tx][https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/uart2.png]
+![Modulo Tx](https://github.com/AzofeifaJ/Taller-de-Digitales_Grupo-4/blob/main/Laboratorio_2/Imagenes_y_videos/uart2.png)
 ## Módulo uart_rx (Receptor)
 []()
 ## Módulo UART bidireccional (Integración)
