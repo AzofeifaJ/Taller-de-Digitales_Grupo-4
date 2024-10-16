@@ -68,4 +68,10 @@ de la herramienta ISA ampliando está área y su uso.
 
 
 # Referencias para la investigación previa.
+[1]	“RISC-V, código abierto para transformar radicalmente la industria de los chips,” MIT Technology Review, 01-Jan-1970. [Online]. Available: https://www.technologyreview.es/s/15050/risc-v-codigo-abierto-para-transformar-radicalmente-la-industria-de-los-chips. [Accessed: 16-Oct-2024].
+[2]	Isaac, “RISC-V: toda la información de la arquitectura,” Profesional Review, 22-Apr-2022. [Online]. Available: https://www.profesionalreview.com/2022/04/22/risc-v/. [Accessed: 16-Oct-2024].
+[3]	C. G. Valenzuela, “Qué es RISC-V y por qué promete revolucionar el sector de los procesadores,” Computer Hoy, 11-May-2024. [Online]. Available: https://computerhoy.20minutos.es/tecnologia/risc-v-promete-revolucionar-sector-procesadores-1384044. [Accessed: 16-Oct-2024].
+[4]	ComputerHoy.com, “¿qué es RISC-V?” [Online]. Available: https://www.youtube.com/watch?v=wg3j35gQ71k. [Accessed: 16-Oct-2024].
+[5]	R. Sene and RISC-V Community News, “RISC-V international RISC-V: The open standard RISC instruction set architecture,” Riscv.org. [Online]. Available: https://riscv.org/. [Accessed: 16-Oct-2024].
+
 # Referencias para la aplicacion practica del proyecto. 
