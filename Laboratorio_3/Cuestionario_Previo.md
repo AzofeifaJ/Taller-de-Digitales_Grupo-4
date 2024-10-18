@@ -62,10 +62,59 @@ de la herramienta ISA ampliando está área y su uso.
 **Pregunta 2:** Investigue que es un toolchain para desarrollo de software empotrado (embedded).
 
 **Pregunta 3:** Investigue como se elabora un mapa de memoria de un procesador.
+ Un mapa de memoria se hace con el fin de poder diseñar y entender cómo un procesador interactúa con la memoria en un sistema, éste define ñas direcciones y diferentes bloques de memoria. 
+ Para poder crear uno de estos mapas de memoria primeramente debemos definir el tamaño del bus de dirreciones, en este caso será de 32 bits, esto nos dice cuántas direcciones úede acceder el procesador.
+ Lo segundo a tener en cuenta es asignar las regiones de memora, en qué rango de direcciones estará la memoria RAM, la memoria ROM y los dispositivos periféricos. Algunos periféricos requieren acceso directo a la memoria, lo que puede implicar reservar ciertas áreas del espacio de direcciones para dichos dispositivos. El acceso a periféricos como puertos de E/S o controladores de gráficos se realiza en ubicaciones específicas del mapa de memoria.
+ Tercero, es organizar de manera jerárquica por medio de tablas, para poder indicarel rango de direcciones correspondiente a cada dispoitivo o bloque de memoria.
+Tomado de [6]
 
 **Pregunta 4:**  Investigue sobre el uso de memorias RAM y ROM en FPGA. Tanto memorias internas como
  externas en la FPGA.
+ 1. Memoria RAM interna en FPGA
+Las FPGAs incluyen bloques de memoria interna (a menudo denominados "Block RAM" o BRAM), que son bancos de memoria RAM embebidos en el chip de la FPGA. Estas memorias se utilizan para el almacenamiento temporal de datos, buffers, o como memorias de acceso rápido durante la ejecución de aplicaciones.
 
+Características: Las memorias RAM internas suelen ser SRAM (Static RAM), lo que les permite acceso rápido y síncrono a los datos. Son muy útiles para almacenar datos de alta velocidad necesarios en procesamiento paralelo o en aplicaciones que requieren alta eficiencia en el manejo de datos.
+
+Ventajas:
+
+Baja latencia, ya que están embebidas en la FPGA.
+Alta velocidad de acceso.
+Ideal para aplicaciones donde se necesita un almacenamiento temporal rápido, como en el procesamiento de señales o de imágenes.
+Limitaciones:
+
+Tamaño limitado en comparación con las memorias externas, ya que el espacio dentro de la FPGA es finito.
+
+ 2. Memoria ROM interna en FPGA
+La memoria ROM (Read-Only Memory) interna en las FPGAs se utiliza para almacenar datos permanentes o configuraciones que no cambian durante la operación. En muchas aplicaciones, se utiliza ROM para almacenar tablas de búsqueda (Look-Up Tables, LUTs) o microcódigos.
+
+Características: En las FPGAs, las ROM internas pueden ser implementadas a partir de las LUTs programables o como parte de los bloques de memoria dedicados. La programación de estas memorias se realiza durante la configuración de la FPGA.
+
+Aplicaciones: Ideal para el almacenamiento de datos constantes, como tablas de coeficientes para procesamiento de señales o configuraciones iniciales.
+
+ 3. Memoria RAM externa en FPGA
+Para aplicaciones que requieren grandes volúmenes de almacenamiento, las FPGAs pueden conectarse a memorias RAM externas, como DRAM (Dynamic RAM) o SRAM externas. Estas memorias se utilizan cuando la cantidad de datos supera la capacidad de los bloques de RAM internos.
+
+Características:
+
+DRAM externa es más lenta que la SRAM interna, pero ofrece mayor capacidad.
+Las FPGAs modernas incluyen controladores de memoria dedicados que permiten conectarse a memorias DRAM de alta velocidad (como DDR3 o DDR4), lo que facilita la expansión de la memoria disponible.
+Aplicaciones:
+
+Procesamiento de video y gráficos.
+Aplicaciones donde se requiere un gran buffer de datos, como redes o grandes matrices de procesamiento.
+
+ 4. Memoria ROM externa en FPGA
+Las memorias ROM externas, como EEPROM o Flash, se utilizan principalmente para almacenar el archivo de configuración (bitstream) que configura la FPGA durante el encendido. Una vez que la FPGA está configurada, la memoria ROM externa se puede utilizar para almacenar firmware u otros datos necesarios para la operación de la FPGA.
+
+Características:
+
+La ROM externa se utiliza para cargar la configuración inicial de la FPGA (bitstream).
+También puede almacenar datos no volátiles o códigos de inicialización.
+Aplicaciones:
+
+Configuración y arranque de la FPGA.
+Almacenamiento de datos de calibración o configuraciones de usuario.
+Tomado de [7]
 
 # Referencias para la investigación previa.
 [1]	“RISC-V, código abierto para transformar radicalmente la industria de los chips,” MIT Technology Review, 01-Jan-1970. [Online]. Available: https://www.technologyreview.es/s/15050/risc-v-codigo-abierto-para-transformar-radicalmente-la-industria-de-los-chips. [Accessed: 16-Oct-2024].
@@ -73,5 +122,13 @@ de la herramienta ISA ampliando está área y su uso.
 [3]	C. G. Valenzuela, “Qué es RISC-V y por qué promete revolucionar el sector de los procesadores,” Computer Hoy, 11-May-2024. [Online]. Available: https://computerhoy.20minutos.es/tecnologia/risc-v-promete-revolucionar-sector-procesadores-1384044. [Accessed: 16-Oct-2024].
 [4]	ComputerHoy.com, “¿qué es RISC-V?” [Online]. Available: https://www.youtube.com/watch?v=wg3j35gQ71k. [Accessed: 16-Oct-2024].
 [5]	R. Sene and RISC-V Community News, “RISC-V international RISC-V: The open standard RISC instruction set architecture,” Riscv.org. [Online]. Available: https://riscv.org/. [Accessed: 16-Oct-2024].
+[6] J. L. Hennessy y D. A. Patterson, Computer Architecture: A Quantitative Approach, 6th ed., Morgan Kaufmann, 2018.
+[7] M. J. Wirthlin, "High-Reliability FPGA-Based Systems: Space, Radiation, and Beyond," Proceedings of the IEEE, vol. 103, no. 3, pp. 379-389, March 2015.
+
+
+
+
+
+
 
 # Referencias para la aplicacion practica del proyecto. 
