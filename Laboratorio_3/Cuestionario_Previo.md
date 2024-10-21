@@ -60,7 +60,7 @@ Permitiendo que su simplicidad, eficiencia y flexibilidad de la arquitectura, pr
 de la herramienta ISA ampliando está área y su uso. 
 
 **Pregunta 2:** Investigue que es un toolchain para desarrollo de software empotrado (embedded).
-
+Un toolchain para desarrollo de software embebido es un conjunto de herramientas que permite convertir el código fuente en ejecutable para dispositivos con recursos limitados, como microcontroladores. Incluye un compilador para traducir el código a instrucciones de máquina específicas del hardware, un enlazador para combinar los archivos generados, y un depurador para probar y corregir el software. Además, puede incorporar otras herramientas como ensambladores o flasheadores. Cada toolchain está diseñado para trabajar con arquitecturas específicas, facilitando el desarrollo y despliegue en sistemas embebidos [8].
 **Pregunta 3:** Investigue como se elabora un mapa de memoria de un procesador.
  Un mapa de memoria se hace con el fin de poder diseñar y entender cómo un procesador interactúa con la memoria en un sistema, éste define ñas direcciones y diferentes bloques de memoria. 
  Para poder crear uno de estos mapas de memoria primeramente debemos definir el tamaño del bus de dirreciones, en este caso será de 32 bits, esto nos dice cuántas direcciones úede acceder el procesador.
@@ -124,7 +124,7 @@ Tomado de [7]
 [5]	R. Sene and RISC-V Community News, “RISC-V international RISC-V: The open standard RISC instruction set architecture,” Riscv.org. [Online]. Available: https://riscv.org/. [Accessed: 16-Oct-2024].
 [6] J. L. Hennessy y D. A. Patterson, Computer Architecture: A Quantitative Approach, 6th ed., Morgan Kaufmann, 2018.
 [7] M. J. Wirthlin, "High-Reliability FPGA-Based Systems: Space, Radiation, and Beyond," Proceedings of the IEEE, vol. 103, no. 3, pp. 379-389, March 2015.
-
+[8] A. Burns and A. Wellings, "Embedded Systems and Real-Time Programming," Addison-Wesley, 2001.
 
 
 
