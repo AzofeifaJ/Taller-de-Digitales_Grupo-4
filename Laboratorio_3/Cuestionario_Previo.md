@@ -125,10 +125,3 @@ Tomado de [7]
 [6] J. L. Hennessy y D. A. Patterson, Computer Architecture: A Quantitative Approach, 6th ed., Morgan Kaufmann, 2018.
 [7] M. J. Wirthlin, "High-Reliability FPGA-Based Systems: Space, Radiation, and Beyond," Proceedings of the IEEE, vol. 103, no. 3, pp. 379-389, March 2015.
 [8] A. Burns and A. Wellings, "Embedded Systems and Real-Time Programming," Addison-Wesley, 2001.
-
-
-
-
-
-
-# Referencias para la aplicacion practica del proyecto. 
