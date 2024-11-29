@@ -1,5 +1,5 @@
 ###   Interfaz para teclado hexadecimal
-La Figura 2 muestra un diagrama básico de una interfaz para un teclado hexadecimal. En el
+La Figura 1 muestra un diagrama básico de una interfaz para un teclado hexadecimal. En el
  laboratorio 1 se desarrollaron los bloques combinacionales presentes en el sub-cuadro protoboard.
  En este laboratorio se completará la interfaz por medio de bloques implementados en la FPGA.
  
